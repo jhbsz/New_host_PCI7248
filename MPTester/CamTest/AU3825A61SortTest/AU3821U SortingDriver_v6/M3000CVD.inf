@@ -1,0 +1,4051 @@
+;------------------------------------------------------------------------------
+; Installation inf for USB2.0 Camera Device
+;
+; Support Windows XP / Windows Vista / Windows 7
+;
+; Copyright (c) ALi Corporation.
+;------------------------------------------------------------------------------
+[Version]
+Signature   ="$CHICAGO$"
+Class       =Image
+ClassGuid   ={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider    =%VENDOR%
+LayoutFile  =Layout.inf, Layout1.inf, Layout2.inf
+CatalogFile =S6000CVd.cat
+DriverVer   =06/05/2012,2.22.0.6
+
+[Manufacturer]
+%Mfg%=ALiCam, NTx86.5.1, NTx86.6.0, NTamd64, NTamd64.6.0
+
+[ALiCam.NTx86.5.1]
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId1%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId2%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId3%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId4%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId5%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId6%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId7%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId8%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId9%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId10%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId11%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId12%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId13%
+%ALiCam.DeviceDesc%=ALiCam.xp32,USB\%ALiCam.DeviceId14%
+%ALiCam1.DeviceDesc%=ALiCam1.xp32,USB\%ALiCam1.DeviceId%
+%ALiCam1.DeviceDesc%=ALiCam1.xp32,USB\%ALiCam1.DeviceId1%
+%ALiCam1.DeviceDesc%=ALiCam1.xp32,USB\%ALiCam1.DeviceId2%
+%ALiCam1.DeviceDesc%=ALiCam1.xp32,USB\%ALiCam1.DeviceId3%
+%ALiCam1.DeviceDesc%=ALiCam1.xp32,USB\%ALiCam1.DeviceId4%
+%ALiCam1.DeviceDesc%=ALiCam1.xp32,USB\%ALiCam1.DeviceId5%
+%ALiCam1.DeviceDesc%=ALiCam1.xp32,USB\%ALiCam1.DeviceId6%
+%ALiCam1.DeviceDesc%=ALiCam1.xp32,USB\%ALiCam1.DeviceId7%
+%ALiCam1.DeviceDesc%=ALiCam1.xp32,USB\%ALiCam1.DeviceId8%
+%ALiCam1.DeviceDesc%=ALiCam1.xp32,USB\%ALiCam1.DeviceId9%
+%ALiCam2.DeviceDesc%=ALiCam2.xp32,USB\%ALiCam2.DeviceId%
+%ALiCam3.DeviceDesc%=ALiCam3.xp32,USB\%ALiCam3.DeviceId%
+%ALiCam3.DeviceDesc%=ALiCam3.xp32,USB\%ALiCam3.DeviceId1%
+%ALiCam4.DeviceDesc%=ALiCam4.xp32,USB\%ALiCam4.DeviceId%
+%ALiCam5.DeviceDesc%=ALiCam5.xp32,USB\%ALiCam5.DeviceId%
+%ALiCam6.DeviceDesc%=ALiCam6.xp32,USB\%ALiCam6.DeviceId%
+%ALiCam6.DeviceDesc%=ALiCam6.xp32,USB\%ALiCam6.DeviceId1%
+%ALiCam6.DeviceDesc%=ALiCam6.xp32,USB\%ALiCam6.DeviceId2%
+%ALiCam6.DeviceDesc%=ALiCam6.xp32,USB\%ALiCam6.DeviceId3%
+%ALiCam6.DeviceDesc%=ALiCam6.xp32,USB\%ALiCam6.DeviceId4%
+
+
+[ALiCam.NTx86.6.0]
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId1%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId2%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId3%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId4%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId5%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId6%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId7%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId8%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId9%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId10%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId11%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId12%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId13%
+%ALiCam.DeviceDesc%=ALiCam.vi32,USB\%ALiCam.DeviceId14%
+%ALiCam1.DeviceDesc%=ALiCam1.vi32,USB\%ALiCam1.DeviceId%
+%ALiCam1.DeviceDesc%=ALiCam1.vi32,USB\%ALiCam1.DeviceId1%
+%ALiCam1.DeviceDesc%=ALiCam1.vi32,USB\%ALiCam1.DeviceId2%
+%ALiCam1.DeviceDesc%=ALiCam1.vi32,USB\%ALiCam1.DeviceId3%
+%ALiCam1.DeviceDesc%=ALiCam1.vi32,USB\%ALiCam1.DeviceId4%
+%ALiCam1.DeviceDesc%=ALiCam1.vi32,USB\%ALiCam1.DeviceId5%
+%ALiCam1.DeviceDesc%=ALiCam1.vi32,USB\%ALiCam1.DeviceId6%
+%ALiCam1.DeviceDesc%=ALiCam1.vi32,USB\%ALiCam1.DeviceId7%
+%ALiCam1.DeviceDesc%=ALiCam1.vi32,USB\%ALiCam1.DeviceId8%
+%ALiCam1.DeviceDesc%=ALiCam1.vi32,USB\%ALiCam1.DeviceId9%
+%ALiCam2.DeviceDesc%=ALiCam2.vi32,USB\%ALiCam2.DeviceId%
+%ALiCam3.DeviceDesc%=ALiCam3.vi32,USB\%ALiCam3.DeviceId%
+%ALiCam3.DeviceDesc%=ALiCam3.vi32,USB\%ALiCam3.DeviceId1%
+%ALiCam4.DeviceDesc%=ALiCam4.vi32,USB\%ALiCam4.DeviceId%
+%ALiCam5.DeviceDesc%=ALiCam5.vi32,USB\%ALiCam5.DeviceId%
+%ALiCam6.DeviceDesc%=ALiCam6.vi32,USB\%ALiCam6.DeviceId%
+%ALiCam6.DeviceDesc%=ALiCam6.vi32,USB\%ALiCam6.DeviceId1%
+%ALiCam6.DeviceDesc%=ALiCam6.vi32,USB\%ALiCam6.DeviceId2%
+%ALiCam6.DeviceDesc%=ALiCam6.vi32,USB\%ALiCam6.DeviceId3%
+%ALiCam6.DeviceDesc%=ALiCam6.vi32,USB\%ALiCam6.DeviceId4%
+
+[ALiCam.NTamd64]
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId1%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId2%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId3%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId4%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId5%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId6%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId7%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId8%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId9%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId10%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId11%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId12%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId13%
+%ALiCam.DeviceDesc%=ALiCam.xp64,USB\%ALiCam.DeviceId14%
+%ALiCam1.DeviceDesc%=ALiCam1.xp64,USB\%ALiCam1.DeviceId%
+%ALiCam1.DeviceDesc%=ALiCam1.xp64,USB\%ALiCam1.DeviceId1%
+%ALiCam1.DeviceDesc%=ALiCam1.xp64,USB\%ALiCam1.DeviceId2%
+%ALiCam1.DeviceDesc%=ALiCam1.xp64,USB\%ALiCam1.DeviceId3%
+%ALiCam1.DeviceDesc%=ALiCam1.xp64,USB\%ALiCam1.DeviceId4%
+%ALiCam1.DeviceDesc%=ALiCam1.xp64,USB\%ALiCam1.DeviceId5%
+%ALiCam1.DeviceDesc%=ALiCam1.xp64,USB\%ALiCam1.DeviceId6%
+%ALiCam1.DeviceDesc%=ALiCam1.xp64,USB\%ALiCam1.DeviceId7%
+%ALiCam1.DeviceDesc%=ALiCam1.xp64,USB\%ALiCam1.DeviceId8%
+%ALiCam1.DeviceDesc%=ALiCam1.xp64,USB\%ALiCam1.DeviceId9%
+%ALiCam2.DeviceDesc%=ALiCam2.xp64,USB\%ALiCam2.DeviceId%
+%ALiCam3.DeviceDesc%=ALiCam3.xp64,USB\%ALiCam3.DeviceId%
+%ALiCam3.DeviceDesc%=ALiCam3.xp64,USB\%ALiCam3.DeviceId1%
+%ALiCam4.DeviceDesc%=ALiCam4.xp64,USB\%ALiCam4.DeviceId%
+%ALiCam5.DeviceDesc%=ALiCam5.xp64,USB\%ALiCam5.DeviceId%
+%ALiCam6.DeviceDesc%=ALiCam6.xp64,USB\%ALiCam6.DeviceId%
+%ALiCam6.DeviceDesc%=ALiCam6.xp64,USB\%ALiCam6.DeviceId1%
+%ALiCam6.DeviceDesc%=ALiCam6.xp64,USB\%ALiCam6.DeviceId2%
+%ALiCam6.DeviceDesc%=ALiCam6.xp64,USB\%ALiCam6.DeviceId3%
+%ALiCam6.DeviceDesc%=ALiCam6.xp64,USB\%ALiCam6.DeviceId4%
+
+[ALiCam.NTamd64.6.0]
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId1%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId2%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId3%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId4%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId5%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId6%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId7%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId8%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId9%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId10%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId11%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId12%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId13%
+%ALiCam.DeviceDesc%=ALiCam.vi64,USB\%ALiCam.DeviceId14%
+%ALiCam1.DeviceDesc%=ALiCam1.vi64,USB\%ALiCam1.DeviceId%
+%ALiCam1.DeviceDesc%=ALiCam1.vi64,USB\%ALiCam1.DeviceId1%
+%ALiCam1.DeviceDesc%=ALiCam1.vi64,USB\%ALiCam1.DeviceId2%
+%ALiCam1.DeviceDesc%=ALiCam1.vi64,USB\%ALiCam1.DeviceId3%
+%ALiCam1.DeviceDesc%=ALiCam1.vi64,USB\%ALiCam1.DeviceId4%
+%ALiCam1.DeviceDesc%=ALiCam1.vi64,USB\%ALiCam1.DeviceId5%
+%ALiCam1.DeviceDesc%=ALiCam1.vi64,USB\%ALiCam1.DeviceId6%
+%ALiCam1.DeviceDesc%=ALiCam1.vi64,USB\%ALiCam1.DeviceId7%
+%ALiCam1.DeviceDesc%=ALiCam1.vi64,USB\%ALiCam1.DeviceId8%
+%ALiCam1.DeviceDesc%=ALiCam1.vi64,USB\%ALiCam1.DeviceId9%
+%ALiCam2.DeviceDesc%=ALiCam2.vi64,USB\%ALiCam2.DeviceId%
+%ALiCam3.DeviceDesc%=ALiCam3.vi64,USB\%ALiCam3.DeviceId%
+%ALiCam3.DeviceDesc%=ALiCam3.vi64,USB\%ALiCam3.DeviceId1%
+%ALiCam4.DeviceDesc%=ALiCam4.vi64,USB\%ALiCam4.DeviceId%
+%ALiCam5.DeviceDesc%=ALiCam5.vi64,USB\%ALiCam5.DeviceId%
+%ALiCam6.DeviceDesc%=ALiCam6.vi64,USB\%ALiCam6.DeviceId%
+%ALiCam6.DeviceDesc%=ALiCam6.vi64,USB\%ALiCam6.DeviceId1%
+%ALiCam6.DeviceDesc%=ALiCam6.vi64,USB\%ALiCam6.DeviceId2%
+%ALiCam6.DeviceDesc%=ALiCam6.vi64,USB\%ALiCam6.DeviceId3%
+%ALiCam6.DeviceDesc%=ALiCam6.vi64,USB\%ALiCam6.DeviceId4%
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[SourceDisksNames]
+1=%DISK_NAME%,,,
+
+[SourceDisksFiles.x86] ; files for x86
+S6000KNT.sys =1, .\x32,
+S6000Remov.exe =1, .\x32,
+S6000Dex.dll =1
+S6000Vex.dll =1
+S6000Twn.ds  =1
+S6000Twn.ini =1
+S6000Twn.src =1
+S6000Twn.dll =1
+S6000Rmv.dll =1
+S6000DIF.dll =1
+;S6000Mnt.exe =1
+
+[SourceDisksFiles.amd64] ; files for x64
+S6000KNT.sys =1, .\x64,
+S6000Remov.exe =1, .\x64,
+S6000Dex.dll =1
+S6000Vex.dll =1
+S6000Twn.ds  =1
+S6000Twn.ini =1
+S6000Twn.src =1
+S6000Twn.dll =1
+S6000Rmv.dll =1
+S6000DIF.dll =1
+;S6000Mnt.exe =1
+
+[DestinationDirs]
+DefaultDestDir =10
+FileCpy.KnlDrv =10,system32\drivers
+FileCpy.DevBin =10,system32\drivers
+FileCpy.DrvExt =10,system
+FileCpy.TwnDrv =10,Twain_32\S6000
+FileCpy.TwnCfg =10
+FileCpy.AppExe =10,%CAMERA_FILEPATH_APP%
+FileCpy.Uninst =10,system
+FileCpy.Coinst =11
+
+
+;---------------------------------------------------------------
+;           USB2.0 Web Camera
+;---------------------------------------------------------------
+[ALiCam.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+;M091015
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam.Driver.AddReg,Uninstall.AddReg,UninstInfo.AddReg,ALiCam.Conferencing.AddReg,StreamSetting
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam1.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam1.Driver.AddReg,Uninstall1.AddReg,UninstInfo.AddReg,ALiCam1.Conferencing.AddReg,StreamSetting1
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam2.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam2.Driver.AddReg,Uninstall2.AddReg,UninstInfo.AddReg,ALiCam2.Conferencing.AddReg,StreamSetting2
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam3.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam3.Driver.AddReg,Uninstall3.AddReg,UninstInfo.AddReg,ALiCam3.Conferencing.AddReg,StreamSetting3
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam4.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam4.Driver.AddReg,Uninstall4.AddReg,UninstInfo.AddReg,ALiCam4.Conferencing.AddReg,StreamSetting4
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam5.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam5.Driver.AddReg,Uninstall5.AddReg,UninstInfo.AddReg,ALiCam5.Conferencing.AddReg,StreamSetting5
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam6.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam6.Driver.AddReg,Uninstall6.AddReg,UninstInfo.AddReg,ALiCam6.Conferencing.AddReg,StreamSetting6
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam7.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam7.Driver.AddReg,Uninstall7.AddReg,UninstInfo.AddReg,ALiCam7.Conferencing.AddReg,StreamSetting7
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam8.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam8.Driver.AddReg,Uninstall8.AddReg,UninstInfo.AddReg,ALiCam8.Conferencing.AddReg,StreamSetting8
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam9.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam9.Driver.AddReg,Uninstall9.AddReg,UninstInfo.AddReg,ALiCam9.Conferencing.AddReg,StreamSetting9
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam10.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam10.Driver.AddReg,Uninstall10.AddReg,UninstInfo.AddReg,ALiCam10.Conferencing.AddReg,StreamSetting10
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam11.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam11.Driver.AddReg,Uninstall11.AddReg,UninstInfo.AddReg,ALiCam11.Conferencing.AddReg,StreamSetting11
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam12.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam12.Driver.AddReg,Uninstall12.AddReg,UninstInfo.AddReg,ALiCam12.Conferencing.AddReg,StreamSetting12
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam13.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam13.Driver.AddReg,Uninstall13.AddReg,UninstInfo.AddReg,ALiCam13.Conferencing.AddReg,StreamSetting13
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam14.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam14.Driver.AddReg,Uninstall14.AddReg,UninstInfo.AddReg,ALiCam14.Conferencing.AddReg,StreamSetting14
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam15.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam15.Driver.AddReg,Uninstall15.AddReg,UninstInfo.AddReg,ALiCam15.Conferencing.AddReg,StreamSetting15
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam16.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam16.Driver.AddReg,Uninstall16.AddReg,UninstInfo.AddReg,ALiCam16.Conferencing.AddReg,StreamSetting16
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam17.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam17.Driver.AddReg,Uninstall17.AddReg,UninstInfo.AddReg,ALiCam17.Conferencing.AddReg,StreamSetting17
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam18.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam18.Driver.AddReg,Uninstall18.AddReg,UninstInfo.AddReg,ALiCam18.Conferencing.AddReg,StreamSetting18
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam19.xp32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp32.AddReg,ALiCam.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam19.Driver.AddReg,Uninstall19.AddReg,UninstInfo.AddReg,ALiCam19.Conferencing.AddReg,StreamSetting19
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+
+[ALiCam.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam.Driver.AddReg,Uninstall.AddReg,UninstInfo.AddReg,ALiCam.Conferencing.AddReg,StreamSetting
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam1.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam1.Driver.AddReg,Uninstall1.AddReg,UninstInfo.AddReg,ALiCam1.Conferencing.AddReg,StreamSetting1
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam2.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam2.Driver.AddReg,Uninstall2.AddReg,UninstInfo.AddReg,ALiCam2.Conferencing.AddReg,StreamSetting2
+
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam3.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam3.Driver.AddReg,Uninstall3.AddReg,UninstInfo.AddReg,ALiCam3.Conferencing.AddReg,StreamSetting3
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam4.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam4.Driver.AddReg,Uninstall4.AddReg,UninstInfo.AddReg,ALiCam4.Conferencing.AddReg,StreamSetting4
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam5.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam5.Driver.AddReg,Uninstall5.AddReg,UninstInfo.AddReg,ALiCam5.Conferencing.AddReg,StreamSetting5
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam6.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam6.Driver.AddReg,Uninstall6.AddReg,UninstInfo.AddReg,ALiCam6.Conferencing.AddReg,StreamSetting6
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam7.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam7.Driver.AddReg,Uninstall7.AddReg,UninstInfo.AddReg,ALiCam7.Conferencing.AddReg,StreamSetting7
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam8.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam8.Driver.AddReg,Uninstall8.AddReg,UninstInfo.AddReg,ALiCam8.Conferencing.AddReg,StreamSetting8
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam9.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam9.Driver.AddReg,Uninstall9.AddReg,UninstInfo.AddReg,ALiCam9.Conferencing.AddReg,StreamSetting9
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam10.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam10.Driver.AddReg,Uninstall10.AddReg,UninstInfo.AddReg,ALiCam10.Conferencing.AddReg,StreamSetting10
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam11.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam11.Driver.AddReg,Uninstall11.AddReg,UninstInfo.AddReg,ALiCam11.Conferencing.AddReg,StreamSetting11
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam12.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam12.Driver.AddReg,Uninstall12.AddReg,UninstInfo.AddReg,ALiCam12.Conferencing.AddReg,StreamSetting12
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam13.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam13.Driver.AddReg,Uninstall13.AddReg,UninstInfo.AddReg,ALiCam13.Conferencing.AddReg,StreamSetting13
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam14.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam14.Driver.AddReg,Uninstall14.AddReg,UninstInfo.AddReg,ALiCam14.Conferencing.AddReg,StreamSetting14
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam15.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam15.Driver.AddReg,Uninstall15.AddReg,UninstInfo.AddReg,ALiCam15.Conferencing.AddReg,StreamSetting15
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam16.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam16.Driver.AddReg,Uninstall16.AddReg,UninstInfo.AddReg,ALiCam16.Conferencing.AddReg,StreamSetting16
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam17.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam17.Driver.AddReg,Uninstall17.AddReg,UninstInfo.AddReg,ALiCam17.Conferencing.AddReg,StreamSetting17
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam18.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam18.Driver.AddReg,Uninstall18.AddReg,UninstInfo.AddReg,ALiCam18.Conferencing.AddReg,StreamSetting18
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam19.vi32]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi32.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x32.Runonce,OutSettings.AddReg,ALiCam19.Driver.AddReg,Uninstall19.AddReg,UninstInfo.AddReg,ALiCam19.Conferencing.AddReg,StreamSetting19
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam1.Driver.AddReg,Uninstall.x64.AddReg,UninstInfo.x64.AddReg,ALiCam.x64.Conferencing.AddReg,StreamSetting
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam1.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam1.Driver.AddReg,Uninstall1.x64.AddReg,UninstInfo.x64.AddReg,ALiCam1.x64.Conferencing.AddReg,StreamSetting1
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam2.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam2.Driver.AddReg,Uninstall2.x64.AddReg,UninstInfo.x64.AddReg,ALiCam2.x64.Conferencing.AddReg,StreamSetting2
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam3.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,Uninstall3.x64.AddReg,UninstInfo.x64.AddReg,ALiCam3.x64.Conferencing.AddReg,StreamSetting3
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam4.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam4.Driver.AddReg,Uninstall4.x64.AddReg,UninstInfo.x64.AddReg,ALiCam4.x64.Conferencing.AddReg,StreamSetting4
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam5.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam5.Driver.AddReg,Uninstall5.x64.AddReg,UninstInfo.x64.AddReg,ALiCam5.x64.Conferencing.AddReg,StreamSetting5
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam6.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam6.Driver.AddReg,Uninstall6.x64.AddReg,UninstInfo.x64.AddReg,ALiCam6.x64.Conferencing.AddReg,StreamSetting6
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam7.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam7.Driver.AddReg,Uninstall7.x64.AddReg,UninstInfo.x64.AddReg,ALiCam7.x64.Conferencing.AddReg,StreamSetting7
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam8.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam8.Driver.AddReg,Uninstall8.x64.AddReg,UninstInfo.x64.AddReg,ALiCam8.x64.Conferencing.AddReg,StreamSetting8
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam9.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam9.Driver.AddReg,Uninstall9.x64.AddReg,UninstInfo.x64.AddReg,ALiCam9.x64.Conferencing.AddReg,StreamSetting9
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam10.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam10.Driver.AddReg,Uninstall10.x64.AddReg,UninstInfo.x64.AddReg,ALiCam10.x64.Conferencing.AddReg,StreamSetting10
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam11.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,Uninstall11.x64.AddReg,UninstInfo.x64.AddReg,ALiCam11.x64.Conferencing.AddReg,StreamSetting11
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam12.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam12.Driver.AddReg,Uninstall12.x64.AddReg,UninstInfo.x64.AddReg,ALiCam12.x64.Conferencing.AddReg,StreamSetting12
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam13.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam13.Driver.AddReg,Uninstall13.x64.AddReg,UninstInfo.x64.AddReg,ALiCam13.x64.Conferencing.AddReg,StreamSetting13
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam14.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam14.Driver.AddReg,Uninstall14.x64.AddReg,UninstInfo.x64.AddReg,ALiCam14.x64.Conferencing.AddReg,StreamSetting14
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam15.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam15.Driver.AddReg,Uninstall15.x64.AddReg,UninstInfo.x64.AddReg,ALiCam15.x64.Conferencing.AddReg,StreamSetting15
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam16.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam16.Driver.AddReg,Uninstall16.x64.AddReg,UninstInfo.x64.AddReg,ALiCam16.x64.Conferencing.AddReg,StreamSetting16
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam17.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam17.Driver.AddReg,Uninstall17.x64.AddReg,UninstInfo.x64.AddReg,ALiCam17.x64.Conferencing.AddReg,StreamSetting17
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam18.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam18.Driver.AddReg,Uninstall18.x64.AddReg,UninstInfo.x64.AddReg,ALiCam18.x64.Conferencing.AddReg,StreamSetting18
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam19.xp64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.xp64.AddReg,ALiCam.x64.Prop.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam19.Driver.AddReg,Uninstall19.x64.AddReg,UninstInfo.x64.AddReg,ALiCam19.x64.Conferencing.AddReg,StreamSetting19
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam.Driver.AddReg,Uninstall.x64.AddReg,UninstInfo.x64.AddReg,ALiCam.x64.Conferencing.AddReg,StreamSetting
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam1.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam1.Driver.AddReg,Uninstall1.x64.AddReg,UninstInfo.x64.AddReg,ALiCam1.x64.Conferencing.AddReg,StreamSetting1
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam2.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam2.Driver.AddReg,Uninstall2.x64.AddReg,UninstInfo.x64.AddReg,ALiCam2.x64.Conferencing.AddReg,StreamSetting2
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam3.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam3.Driver.AddReg,Uninstall3.x64.AddReg,UninstInfo.x64.AddReg,ALiCam3.x64.Conferencing.AddReg,StreamSetting3
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam4.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam4.Driver.AddReg,Uninstall4.x64.AddReg,UninstInfo.x64.AddReg,ALiCam4.x64.Conferencing.AddReg,StreamSetting4
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam5.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam5.Driver.AddReg,Uninstall5.x64.AddReg,UninstInfo.x64.AddReg,ALiCam5.x64.Conferencing.AddReg,StreamSetting5
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam6.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam6.Driver.AddReg,Uninstall6.x64.AddReg,UninstInfo.x64.AddReg,ALiCam6.x64.Conferencing.AddReg,StreamSetting6
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam7.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam7.Driver.AddReg,Uninstall7.x64.AddReg,UninstInfo.x64.AddReg,ALiCam7.x64.Conferencing.AddReg,StreamSetting7
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam8.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam8.Driver.AddReg,Uninstall8.x64.AddReg,UninstInfo.x64.AddReg,ALiCam8.x64.Conferencing.AddReg,StreamSetting8
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam9.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam9.Driver.AddReg,Uninstall9.x64.AddReg,UninstInfo.x64.AddReg,ALiCam9.x64.Conferencing.AddReg,StreamSetting9
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam10.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam10.Driver.AddReg,Uninstall10.x64.AddReg,UninstInfo.x64.AddReg,ALiCam10.x64.Conferencing.AddReg,StreamSetting10
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam11.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam11.Driver.AddReg,Uninstall11.x64.AddReg,UninstInfo.x64.AddReg,ALiCam11.x64.Conferencing.AddReg,StreamSetting11
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam12.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam12.Driver.AddReg,Uninstall12.x64.AddReg,UninstInfo.x64.AddReg,ALiCam12.x64.Conferencing.AddReg,StreamSetting12
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam13.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam13.Driver.AddReg,Uninstall13.x64.AddReg,UninstInfo.x64.AddReg,ALiCam13.x64.Conferencing.AddReg,StreamSetting13
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam14.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam14.Driver.AddReg,Uninstall14.x64.AddReg,UninstInfo.x64.AddReg,ALiCam14.x64.Conferencing.AddReg,StreamSetting14
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam15.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam15.Driver.AddReg,Uninstall15.x64.AddReg,UninstInfo.x64.AddReg,ALiCam15.x64.Conferencing.AddReg,StreamSetting15
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam16.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam16.Driver.AddReg,Uninstall16.x64.AddReg,UninstInfo.x64.AddReg,ALiCam16.x64.Conferencing.AddReg,StreamSetting16
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam17.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam17.Driver.AddReg,Uninstall17.x64.AddReg,UninstInfo.x64.AddReg,ALiCam17.x64.Conferencing.AddReg,StreamSetting17
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam18.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam18.Driver.AddReg,Uninstall18.x64.AddReg,UninstInfo.x64.AddReg,ALiCam18.x64.Conferencing.AddReg,StreamSetting18
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam19.vi64]
+Include       =ks.inf,kscaptur.inf
+Needs         =KS.Registration,KSCAPTUR.Registration.NT
+AddReg        =ALiCam.vi64.AddReg,CameraEnvSetting,SensorRegSetting,AddReg.x64.Runonce,OutSettings.AddReg,ALiCam19.Driver.AddReg,Uninstall19.x64.AddReg,UninstInfo.x64.AddReg,ALiCam19.x64.Conferencing.AddReg,StreamSetting19
+CopyFiles     =FileCpy.KnlDrv,FileCpy.DevBin,FileCpy.DrvExt,FileCpy.TwnDrv,FileCpy.TwnCfg,FileCpy.Uninst,FileCpy.AppExe
+
+SubClass      =StillImage
+DeviceType    =3
+DeviceSubType =1
+Capabilities  =0x31
+Events        =LiveCam.Events
+DeviceData    =LiveCam.DeviceData
+ICMProfiles   ="sRGB Color Space Profile.icm"
+
+[ALiCam.xp32.HW]
+AddReg = ALiCam.HW.AddReg
+
+[ALiCam1.xp32.HW]
+AddReg = ALiCam1.HW.AddReg
+
+[ALiCam2.xp32.HW]
+AddReg = ALiCam2.HW.AddReg
+
+[ALiCam3.xp32.HW]
+AddReg = ALiCam3.HW.AddReg
+
+[ALiCam4.xp32.HW]
+AddReg = ALiCam4.HW.AddReg
+
+[ALiCam5.xp32.HW]
+AddReg = ALiCam5.HW.AddReg
+
+[ALiCam6.xp32.HW]
+AddReg = ALiCam6.HW.AddReg
+
+[ALiCam7.xp32.HW]
+AddReg = ALiCam7.HW.AddReg
+
+[ALiCam8.xp32.HW]
+AddReg = ALiCam8.HW.AddReg
+
+[ALiCam9.xp32.HW]
+AddReg = ALiCam9.HW.AddReg
+
+[ALiCam10.xp32.HW]
+AddReg = ALiCam10.HW.AddReg
+
+[ALiCam11.xp32.HW]
+AddReg = ALiCam11.HW.AddReg
+
+[ALiCam12.xp32.HW]
+AddReg = ALiCam12.HW.AddReg
+
+[ALiCam13.xp32.HW]
+AddReg = ALiCam13.HW.AddReg
+
+[ALiCam14.xp32.HW]
+AddReg = ALiCam14.HW.AddReg
+
+[ALiCam15.xp32.HW]
+AddReg = ALiCam15.HW.AddReg
+
+[ALiCam16.xp32.HW]
+AddReg = ALiCam16.HW.AddReg
+
+[ALiCam17.xp32.HW]
+AddReg = ALiCam17.HW.AddReg
+
+[ALiCam18.xp32.HW]
+AddReg = ALiCam18.HW.AddReg
+
+[ALiCam19.xp32.HW]
+AddReg = ALiCam19.HW.AddReg
+
+[ALiCam.vi32.HW]
+AddReg = ALiCam.HW.AddReg
+
+[ALiCam1.vi32.HW]
+AddReg = ALiCam1.HW.AddReg
+
+[ALiCam2.vi32.HW]
+AddReg = ALiCam2.HW.AddReg
+
+[ALiCam3.vi32.HW]
+AddReg = ALiCam3.HW.AddReg
+
+[ALiCam4.vi32.HW]
+AddReg = ALiCam4.HW.AddReg
+
+[ALiCam5.vi32.HW]
+AddReg = ALiCam5.HW.AddReg
+
+[ALiCam6.vi32.HW]
+AddReg = ALiCam6.HW.AddReg
+
+[ALiCam7.vi32.HW]
+AddReg = ALiCam7.HW.AddReg
+
+[ALiCam8.vi32.HW]
+AddReg = ALiCam8.HW.AddReg
+
+[ALiCam9.vi32.HW]
+AddReg = ALiCam9.HW.AddReg
+
+[ALiCam10.vi32.HW]
+AddReg = ALiCam10.HW.AddReg
+
+[ALiCam11.vi32.HW]
+AddReg = ALiCam11.HW.AddReg
+
+[ALiCam12.vi32.HW]
+AddReg = ALiCam12.HW.AddReg
+
+[ALiCam13.vi32.HW]
+AddReg = ALiCam13.HW.AddReg
+
+[ALiCam14.vi32.HW]
+AddReg = ALiCam14.HW.AddReg
+
+[ALiCam15.vi32.HW]
+AddReg = ALiCam15.HW.AddReg
+
+[ALiCam16.vi32.HW]
+AddReg = ALiCam16.HW.AddReg
+
+[ALiCam17.vi32.HW]
+AddReg = ALiCam17.HW.AddReg
+
+[ALiCam18.vi32.HW]
+AddReg = ALiCam18.HW.AddReg
+
+[ALiCam19.vi32.HW]
+AddReg = ALiCam19.HW.AddReg
+
+[ALiCam.xp64.HW]
+AddReg = ALiCam.HW.AddReg
+
+[ALiCam1.xp64.HW]
+AddReg = ALiCam1.HW.AddReg
+
+[ALiCam2.xp64.HW]
+AddReg = ALiCam2.HW.AddReg
+
+[ALiCam3.xp64.HW]
+AddReg = ALiCam3.HW.AddReg
+
+[ALiCam4.xp64.HW]
+AddReg = ALiCam4.HW.AddReg
+
+[ALiCam5.xp64.HW]
+AddReg = ALiCam5.HW.AddReg
+
+[ALiCam6.xp64.HW]
+AddReg = ALiCam6.HW.AddReg
+
+[ALiCam7.xp64.HW]
+AddReg = ALiCam7.HW.AddReg
+
+[ALiCam8.xp64.HW]
+AddReg = ALiCam8.HW.AddReg
+
+[ALiCam9.xp64.HW]
+AddReg = ALiCam9.HW.AddReg
+
+[ALiCam10.xp64.HW]
+AddReg = ALiCam10.HW.AddReg
+
+[ALiCam11.xp64.HW]
+AddReg = ALiCam11.HW.AddReg
+
+[ALiCam12.xp64.HW]
+AddReg = ALiCam12.HW.AddReg
+
+[ALiCam13.xp64.HW]
+AddReg = ALiCam13.HW.AddReg
+
+[ALiCam14.xp64.HW]
+AddReg = ALiCam14.HW.AddReg
+
+[ALiCam15.xp64.HW]
+AddReg = ALiCam15.HW.AddReg
+
+[ALiCam16.xp64.HW]
+AddReg = ALiCam16.HW.AddReg
+
+[ALiCam17.xp64.HW]
+AddReg = ALiCam17.HW.AddReg
+
+[ALiCam18.xp64.HW]
+AddReg = ALiCam18.HW.AddReg
+
+[ALiCam19.xp64.HW]
+AddReg = ALiCam19.HW.AddReg
+
+[ALiCam.vi64.HW]
+AddReg = ALiCam.HW.AddReg
+
+[ALiCam1.vi64.HW]
+AddReg = ALiCam1.HW.AddReg
+
+[ALiCam2.vi64.HW]
+AddReg = ALiCam2.HW.AddReg
+
+[ALiCam3.vi64.HW]
+AddReg = ALiCam3.HW.AddReg
+
+[ALiCam4.vi64.HW]
+AddReg = ALiCam4.HW.AddReg
+
+[ALiCam5.vi64.HW]
+AddReg = ALiCam5.HW.AddReg
+
+[ALiCam6.vi64.HW]
+AddReg = ALiCam6.HW.AddReg
+
+[ALiCam7.vi64.HW]
+AddReg = ALiCam7.HW.AddReg
+
+[ALiCam8.vi64.HW]
+AddReg = ALiCam8.HW.AddReg
+
+[ALiCam9.vi64.HW]
+AddReg = ALiCam9.HW.AddReg
+
+[ALiCam10.vi64.HW]
+AddReg = ALiCam10.HW.AddReg
+
+[ALiCam11.vi64.HW]
+AddReg = ALiCam11.HW.AddReg
+
+[ALiCam12.vi64.HW]
+AddReg = ALiCam12.HW.AddReg
+
+[ALiCam13.vi64.HW]
+AddReg = ALiCam13.HW.AddReg
+
+[ALiCam14.vi64.HW]
+AddReg = ALiCam14.HW.AddReg
+
+[ALiCam15.vi64.HW]
+AddReg = ALiCam15.HW.AddReg
+
+[ALiCam16.vi64.HW]
+AddReg = ALiCam16.HW.AddReg
+
+[ALiCam17.vi64.HW]
+AddReg = ALiCam17.HW.AddReg
+
+[ALiCam18.vi64.HW]
+AddReg = ALiCam18.HW.AddReg
+
+[ALiCam19.vi64.HW]
+AddReg = ALiCam19.HW.AddReg
+
+[ALiCam.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam.DeviceDesc%
+
+[ALiCam1.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam1.DeviceDesc%
+
+[ALiCam2.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam2.DeviceDesc%
+
+[ALiCam3.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam3.DeviceDesc%
+
+[ALiCam4.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam4.DeviceDesc%
+
+[ALiCam5.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam5.DeviceDesc%
+
+[ALiCam6.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam6.DeviceDesc%
+
+[ALiCam7.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam7.DeviceDesc%
+
+[ALiCam8.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam8.DeviceDesc%
+
+[ALiCam9.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam9.DeviceDesc%
+
+[ALiCam10.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam10.DeviceDesc%
+
+[ALiCam11.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam11.DeviceDesc%
+
+[ALiCam12.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam12.DeviceDesc%
+
+[ALiCam13.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam13.DeviceDesc%
+
+[ALiCam14.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam14.DeviceDesc%
+
+[ALiCam15.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam15.DeviceDesc%
+
+[ALiCam16.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam16.DeviceDesc%
+
+[ALiCam17.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam17.DeviceDesc%
+
+[ALiCam18.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam18.DeviceDesc%
+
+[ALiCam19.HW.AddReg]
+HKR,,"FriendlyName",,%ALiCam19.DeviceDesc%
+
+[ALiCam.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam1.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam2.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam3.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam4.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam5.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam6.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam7.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam8.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam9.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam10.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam11.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam12.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam13.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam14.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam15.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam16.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam17.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam18.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam19.xp32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam1.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam2.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam3.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam4.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam5.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam6.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam7.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam8.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam9.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam10.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam11.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam12.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam13.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam14.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam15.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam16.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam17.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam18.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam19.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+
+[ALiCam.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam1.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam2.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam3.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam4.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam5.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam6.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam7.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam8.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam9.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam10.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam11.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam12.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam13.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam14.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam15.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam16.xp64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam17.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam18.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam19.vi32.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+
+[ALiCam.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam1.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam2.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam3.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam4.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam5.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam6.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam7.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam8.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam9.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam10.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam11.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam12.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam13.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam14.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam15.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam16.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam17.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam18.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[ALiCam19.vi64.CoInstallers]
+AddReg        =CoInstallers.AddReg
+CopyFiles     =FileCpy.Coinst
+
+[LiveCam.Events]
+; These are events that the device issues to trigger application
+; launching.
+
+[LiveCam.DeviceData]
+; Ancillary data to be associated with this device.  TwainDS is the
+; name of the data source that a TWAIN-compliant app will be open
+; in response to an event.
+TwainDS="LiveCam M5603"
+
+Server=local
+UI DLL=sti.dll
+UI Class ID={5d8ef5a3-ac13-11d2-a093-00c04f72dc3c}
+
+[Uninstall.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam.DeviceDesc%
+
+[Uninstall1.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam1.DeviceDesc%
+
+[Uninstall2.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam2.DeviceDesc%
+
+[Uninstall3.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam3.DeviceDesc%
+
+[Uninstall4.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam4.DeviceDesc%
+
+[Uninstall5.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam5.DeviceDesc%
+
+[Uninstall6.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam6.DeviceDesc%
+
+[Uninstall7.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam7.DeviceDesc%
+
+[Uninstall8.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam8.DeviceDesc%
+
+[Uninstall9.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam9.DeviceDesc%
+
+[Uninstall10.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam10.DeviceDesc%
+
+[Uninstall11.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam11.DeviceDesc%
+
+[Uninstall12.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam12.DeviceDesc%
+
+[Uninstall13.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam13.DeviceDesc%
+
+[Uninstall14.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam14.DeviceDesc%
+
+[Uninstall15.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam15.DeviceDesc%
+
+[Uninstall16.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam16.DeviceDesc%
+
+[Uninstall17.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam17.DeviceDesc%
+
+[Uninstall18.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam18.DeviceDesc%
+
+[Uninstall19.AddReg]
+HKLM,SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam19.DeviceDesc%
+
+[UninstInfo.AddReg]
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"UninstallString",0x00000002,"Rundll32.exe S6000Rmv.dll,WinMainRmv"
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayIcon",0x00000002,%10%\%CAMERA_FILEPATH_APP%\Livecam.exe
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayVersion",0x00000002,%ALiCam.DriverVer%
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"Publisher",0x00000002,%VENDOR%
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"Version",0x00010001,%UninstVersion% ;0x026F000C ;Version 2.0111.12.3
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"MajorVersion",0x00010001,%UninstMjVersion% ;2 ;MajorVersion 2
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"MinorVersion",0x00010001,%UninstMnVersion% ;111 ;MinorVersion
+
+;--------------- X 64 ------------------;
+[Uninstall.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam.DeviceDesc%
+
+[Uninstall1.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam1.DeviceDesc%
+
+[Uninstall2.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam2.DeviceDesc%
+
+[Uninstall3.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam3.DeviceDesc%
+
+[Uninstall4.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam4.DeviceDesc%
+
+[Uninstall5.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam5.DeviceDesc%
+
+[Uninstall6.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam6.DeviceDesc%
+
+[Uninstall7.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam7.DeviceDesc%
+
+[Uninstall8.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam8.DeviceDesc%
+
+[Uninstall9.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam9.DeviceDesc%
+
+[Uninstall10.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam10.DeviceDesc%
+
+[Uninstall11.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam11.DeviceDesc%
+
+[Uninstall12.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam12.DeviceDesc%
+
+[Uninstall13.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam13.DeviceDesc%
+
+[Uninstall14.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam14.DeviceDesc%
+
+[Uninstall15.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam15.DeviceDesc%
+
+[Uninstall16.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam16.DeviceDesc%
+
+[Uninstall17.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam17.DeviceDesc%
+
+[Uninstall18.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam18.DeviceDesc%
+
+[Uninstall19.x64.AddReg]
+HKLM,SoftWare\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,,0x00000002
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayName",0x00000002,%ALiCam19.DeviceDesc%
+
+[UninstInfo.x64.AddReg]
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"UninstallString",0x00000002,"Rundll32.exe S6000Rmv.dll,WinMainRmv"
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayIcon",0x00000002,%10%\%CAMERA_FILEPATH_APP%\Livecam.exe
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"DisplayVersion",0x00000002,%ALiCam.DriverVer%
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"Publisher",0x00000002,%VENDOR%
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"Version",0x00010001,%UninstVersion% ;0x026F000C ;Version 2.0111.12.3
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"MajorVersion",0x00010001,%UninstMjVersion% ;2 ;MajorVersion 2
+HKLM,SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\%InstallShiled.GUID%,"MinorVersion",0x00010001,%UninstMnVersion% ;111 ;MinorVersion
+
+
+[ALiCam.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam.DeviceDesc%
+
+[ALiCam1.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam1.DeviceDesc%
+
+[ALiCam2.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam2.DeviceDesc%
+
+[ALiCam3.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam3.DeviceDesc%
+
+[ALiCam4.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam4.DeviceDesc%
+
+[ALiCam5.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam5.DeviceDesc%
+
+[ALiCam6.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam6.DeviceDesc%
+
+[ALiCam7.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam7.DeviceDesc%
+
+[ALiCam8.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam8.DeviceDesc%
+
+[ALiCam9.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam9.DeviceDesc%
+
+[ALiCam10.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam10.DeviceDesc%
+
+[ALiCam11.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam11.DeviceDesc%
+
+[ALiCam12.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam12.DeviceDesc%
+
+[ALiCam13.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam13.DeviceDesc%
+
+[ALiCam14.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam14.DeviceDesc%
+
+[ALiCam15.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam15.DeviceDesc%
+
+[ALiCam16.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam16.DeviceDesc%
+
+[ALiCam17.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam17.DeviceDesc%
+
+[ALiCam18.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam18.DeviceDesc%
+
+[ALiCam19.Driver.AddReg]
+HKR,,"FriendlyName",,%ALiCam19.DeviceDesc%
+
+[OutSettings.AddReg]
+HKR,,HardwareConfig,1,1
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,S6000KNT.sys
+HKR,,FormatMode,0x00010001,0
+HKR,,CreateFileName,,"AUTO"
+HKR,,PowerDownWhenUnopened,3,00
+HKR,,DontSuspendIfStreamsAreRunning,3,01
+HKR,,VideoClassMode,0x00010001,3
+HKR,,IsSupportRGB,0x00010001,1
+HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
+
+[ALiCam.xp32.AddReg]
+HKR,,NBSelectiveSuspend,3,01
+
+[ALiCam.vi32.AddReg]
+HKR,,NBSelectiveSuspend,3,01
+
+[ALiCam.xp64.AddReg]
+HKR,,NBSelectiveSuspend,3,01
+
+[ALiCam.vi64.AddReg]
+HKR,,NBSelectiveSuspend,3,01
+
+[AddReg.x32.Runonce]
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Run",%ALiCam.StartupName%,0x00000000,"Rundll32.exe S6000Rmv.dll ,WinMainRmv /StartStillMnt"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\RunOnce",%ALiCam.StartupName%,0x00000000,"Rundll32.exe S6000Rmv.dll ,WinMainRmv /StartStillMnt"
+
+[AddReg.x64.Runonce]
+HKLM,"Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Run",%ALiCam.StartupName%,0x00000000,"%10%\SysWOW64\Rundll32.exe S6000Rmv.dll,WinMainRmv /StartStillMnt"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\RunOnce",%ALiCam.StartupName%,0x00000000,"%10%\SysWOW64\Rundll32.exe S6000Rmv.dll,WinMainRmv /StartStillMnt"
+
+[ALiCam.Prop.AddReg]
+HKCR,CLSID\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003},,,M5606 Custom Interface handler
+HKCR,CLSID\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003}\InprocServer32,,,S6000Dex.dll
+HKCR,CLSID\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003}\InprocServer32,ThreadingModel,,Both
+
+HKCR,CLSID\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983002},,,M5606 Custom Property Page
+HKCR,CLSID\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983002}\InprocServer32,,,S6000Dex.dll
+HKCR,CLSID\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983002}\InprocServer32,ThreadingModel,,Both
+
+HKCR,CLSID\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983003},,,M5606 Custom Property Page
+HKCR,CLSID\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983003}\InprocServer32,,,S6000Dex.dll
+HKCR,CLSID\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983003}\InprocServer32,ThreadingModel,,Both
+
+HKLM,System\CurrentControlSet\Control\MediaInterfaces\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003},,,M5606 Custom Interface handler
+HKLM,System\CurrentControlSet\Control\MediaInterfaces\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003},IID,1, CC, BF, 38, 8C, 4D, 8D, 5A, 4A, 88, 5B, 27, 0A, 9B, 4B, 60, 03
+
+HKLM,System\CurrentControlSet\Control\MediaSets\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003},,,M5606 Custom Interface handler
+HKLM,System\CurrentControlSet\Control\MediaSets\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003}\PropertyPages
+HKLM,System\CurrentControlSet\Control\MediaSets\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003}\PropertyPages\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983002}
+
+HKLM,System\CurrentControlSet\Control\MediaSets\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003},,,M5606 Custom Interface handler
+HKLM,System\CurrentControlSet\Control\MediaSets\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003}\PropertyPages
+HKLM,System\CurrentControlSet\Control\MediaSets\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003}\PropertyPages\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983003}
+
+[ALiCam.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam1.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam1.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam1.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam1.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam1.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam1.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam2.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam2.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam2.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam2.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam2.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam2.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam3.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam3.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam3.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam3.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam3.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam3.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam4.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam4.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam4.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam4.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam4.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam4.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam5.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam5.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam5.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam5.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam5.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam5.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam6.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam6.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam6.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam6.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam6.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam6.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam7.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam7.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam7.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam7.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam7.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam7.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam8.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam8.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam8.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam8.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam8.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam8.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam9.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam9.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam9.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam9.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam9.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam9.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam10.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam10.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam10.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam10.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam10.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam10.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+
+[ALiCam11.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam11.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam11.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam11.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam11.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam11.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam12.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam12.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam12.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam12.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam12.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam12.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam13.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam13.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam13.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam13.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam13.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam13.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam14.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam14.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam14.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam14.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam14.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam14.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam15.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam15.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam15.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam15.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam15.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam15.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam16.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam16.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam16.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam16.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam16.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam16.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam17.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam17.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam17.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam17.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam17.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam17.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam18.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam18.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam18.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam18.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam18.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam18.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam19.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam19.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam19.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam19.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam19.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam19.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam.x64.Prop.AddReg]
+HKCR,WOW6432Node\CLSID\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003},,,M5606 Custom Interface handler
+HKCR,WOW6432Node\CLSID\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003}\InprocServer32,,,S6000Dex.dll
+HKCR,WOW6432Node\CLSID\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003}\InprocServer32,ThreadingModel,,Both
+
+HKCR,WOW6432Node\CLSID\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983002},,,M5606 Custom Property Page
+HKCR,WOW6432Node\CLSID\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983002}\InprocServer32,,,S6000Dex.dll
+HKCR,WOW6432Node\CLSID\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983002}\InprocServer32,ThreadingModel,,Both
+
+HKCR,WOW6432Node\CLSID\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983003},,,M5606 Custom Property Page
+HKCR,WOW6432Node\CLSID\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983003}\InprocServer32,,,S6000Dex.dll
+HKCR,WOW6432Node\CLSID\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983003}\InprocServer32,ThreadingModel,,Both
+
+HKLM,System\CurrentControlSet\Control\MediaInterfaces\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003},,,M5606 Custom Interface handler
+HKLM,System\CurrentControlSet\Control\MediaInterfaces\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003},IID,1, CC, BF, 38, 8C, 4D, 8D, 5A, 4A, 88, 5B, 27, 0A, 9B, 4B, 60, 03
+
+HKLM,System\CurrentControlSet\Control\MediaSets\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003},,,M5606 Custom Interface handler
+HKLM,System\CurrentControlSet\Control\MediaSets\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003}\PropertyPages
+HKLM,System\CurrentControlSet\Control\MediaSets\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003}\PropertyPages\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983002}
+
+HKLM,System\CurrentControlSet\Control\MediaSets\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003},,,M5606 Custom Interface handler
+HKLM,System\CurrentControlSet\Control\MediaSets\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003}\PropertyPages
+HKLM,System\CurrentControlSet\Control\MediaSets\{8C38BFCC-8D4D-4A5A-885B-270A9B4B6003}\PropertyPages\{7EBBB1AF-C455-4f97-B5E7-9D4E5B983003}
+
+[ALiCam.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam1.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam1.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam1.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam1.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam1.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam1.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam2.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam2.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam2.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam2.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam2.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam2.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+
+[ALiCam3.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam3.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam3.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam3.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam3.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam3.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam4.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam4.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam4.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam4.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam4.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam4.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam5.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam5.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam5.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam5.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam5.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam5.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam6.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam6.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam6.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam6.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam6.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam6.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam7.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam7.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam7.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam7.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam7.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam7.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam8.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam8.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam8.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam8.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam8.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam8.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam9.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam9.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam9.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam9.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam9.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam9.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam10.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam10.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam10.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam10.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam10.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam10.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+
+[ALiCam11.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam11.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam11.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam11.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam11.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam11.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam12.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam12.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam12.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam12.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam12.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam12.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam13.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam13.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam13.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam13.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam13.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam13.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam14.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam14.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam14.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam14.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam14.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam14.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam15.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam15.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam15.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam15.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam15.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam15.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam16.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam16.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam16.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam16.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam16.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam16.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam17.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam17.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam17.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam17.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam17.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam17.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam18.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam18.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam18.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam18.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam18.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam18.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[ALiCam19.x64.Conferencing.AddReg]
+HKLM,Software\Microsoft\Conferencing\CaptureDefaultFormats\%ALiCam19.DeviceDesc%,"DefaultFormat",0x00000000,"I420, 320x240x12"
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam19.DeviceDesc%,"dwDialogs",0x00000001, 02, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam19.DeviceDesc%,"dwImageSize",0x00000001, 40, 04, 40, 80
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam19.DeviceDesc%,"dwNumColors",0x00000001, 28, 00, 00, 00
+HKLM,Software\Microsoft\Conferencing\CaptureDevices\%ALiCam19.DeviceDesc%,"dwStreamingMode",0x00000001, 01, 00, 00, 00
+
+[CoInstallers.AddReg]
+HKR,,CoInstallers32,0x00010000,"S6000DIF.dll, S6000CoInstallEntryPoint"
+
+[FileCpy.KnlDrv]
+S6000KNT.sys,,,4
+
+[FileCpy.DevBin]
+
+[FileCpy.DrvExt]
+S6000Dex.dll,,,4
+S6000Vex.dll,,,4
+
+[FileCpy.TwnDrv]
+S6000Twn.dll,,,4
+S6000Twn.ds,,,4
+
+[FileCpy.TwnCfg]
+S6000Twn.ini,,,4
+S6000Twn.src,,,4
+
+[FileCpy.AppExe]
+;S6000Mnt.exe ,,,4
+
+[FileCpy.Uninst]
+S6000Rmv.dll,,,4
+S6000Remov.exe,,,4
+
+[FileCpy.Coinst]
+S6000DIF.dll,,,4
+
+[ALiCam.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam1.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam2.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam3.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam4.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam5.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam6.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam7.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam8.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam9.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam10.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam11.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam12.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam13.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam14.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam15.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam16.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam17.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam18.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam19.xp32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam1.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam2.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam3.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam4.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam5.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam6.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam7.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam8.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam9.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam10.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam11.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam12.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam13.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam14.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam15.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam16.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam17.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam18.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam19.vi32.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam1.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam2.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam3.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam4.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam5.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam6.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam7.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam8.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam9.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam10.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam11.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam12.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam13.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam14.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam15.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam16.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam17.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam18.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam19.xp64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam1.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam2.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam3.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam4.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam5.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam6.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam7.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam8.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam9.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam10.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam11.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam12.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam13.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam14.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam15.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam16.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam17.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam18.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[ALiCam19.vi64.Services]
+AddService=%ALiCam.ServiceName%,0x00000002,S6000KNT.ServiceInstall
+
+[S6000KNT.ServiceInstall]
+DisplayName   =%ALiCam.DevSrvDesc%
+ServiceType   =1
+StartType     =3
+ErrorControl  =1
+ServiceBinary =%10%\System32\Drivers\S6000KNT.sys
+
+
+[ALiCam.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam.VideoCapture
+
+[ALiCam1.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam1.VideoCapture
+
+[ALiCam2.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam2.VideoCapture
+
+[ALiCam3.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam3.VideoCapture
+
+[ALiCam4.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam4.VideoCapture
+
+[ALiCam5.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam5.VideoCapture
+
+[ALiCam6.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam6.VideoCapture
+
+[ALiCam7.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam7.VideoCapture
+
+[ALiCam8.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam8.VideoCapture
+
+[ALiCam9.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam9.VideoCapture
+
+[ALiCam10.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam10.VideoCapture
+
+[ALiCam11.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam11.VideoCapture
+
+[ALiCam12.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam12.VideoCapture
+
+[ALiCam13.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam13.VideoCapture
+
+[ALiCam14.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam14.VideoCapture
+
+[ALiCam15.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam15.VideoCapture
+
+[ALiCam16.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam16.VideoCapture
+
+[ALiCam17.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam17.VideoCapture
+
+[ALiCam18.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam18.VideoCapture
+
+[ALiCam19.xp32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam19.VideoCapture
+
+[ALiCam.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam.VideoCapture
+
+[ALiCam1.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam1.VideoCapture
+
+[ALiCam2.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam2.VideoCapture
+
+[ALiCam3.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam3.VideoCapture
+
+[ALiCam4.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam4.VideoCapture
+
+[ALiCam5.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam5.VideoCapture
+
+[ALiCam6.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam6.VideoCapture
+
+[ALiCam7.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam7.VideoCapture
+
+[ALiCam8.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam8.VideoCapture
+
+[ALiCam9.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam9.VideoCapture
+
+[ALiCam10.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam10.VideoCapture
+
+[ALiCam11.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam11.VideoCapture
+
+[ALiCam12.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam12.VideoCapture
+
+[ALiCam13.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam13.VideoCapture
+
+[ALiCam14.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam14.VideoCapture
+
+[ALiCam15.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam15.VideoCapture
+
+[ALiCam16.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam16.VideoCapture
+
+[ALiCam17.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam17.VideoCapture
+
+[ALiCam18.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam18.VideoCapture
+
+[ALiCam19.vi32.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam19.VideoCapture
+
+[ALiCam.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam.VideoCapture
+
+[ALiCam1.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam1.VideoCapture
+
+[ALiCam2.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam2.VideoCapture
+
+[ALiCam3.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam3.VideoCapture
+
+[ALiCam4.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam4.VideoCapture
+
+[ALiCam5.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam5.VideoCapture
+
+[ALiCam6.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam6.VideoCapture
+
+[ALiCam7.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam7.VideoCapture
+
+[ALiCam8.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam8.VideoCapture
+
+[ALiCam9.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam9.VideoCapture
+
+[ALiCam10.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam10.VideoCapture
+
+[ALiCam11.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam11.VideoCapture
+
+[ALiCam12.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam12.VideoCapture
+
+[ALiCam13.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam13.VideoCapture
+
+[ALiCam14.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam14.VideoCapture
+
+[ALiCam15.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam15.VideoCapture
+
+[ALiCam16.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam16.VideoCapture
+[ALiCam17.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam17.VideoCapture
+
+[ALiCam18.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam18.VideoCapture
+
+[ALiCam19.xp64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam19.VideoCapture
+
+[ALiCam.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam.VideoCapture
+
+[ALiCam1.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam1.VideoCapture
+
+[ALiCam2.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam2.VideoCapture
+
+[ALiCam3.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam3.VideoCapture
+
+[ALiCam4.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam4.VideoCapture
+
+[ALiCam5.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam5.VideoCapture
+
+[ALiCam6.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam6.VideoCapture
+
+[ALiCam7.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam7.VideoCapture
+
+[ALiCam8.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam8.VideoCapture
+
+[ALiCam9.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam9.VideoCapture
+
+[ALiCam10.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam10.VideoCapture
+
+[ALiCam11.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam11.VideoCapture
+
+[ALiCam12.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam12.VideoCapture
+
+[ALiCam13.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam13.VideoCapture
+
+[ALiCam14.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam14.VideoCapture
+
+[ALiCam15.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam15.VideoCapture
+
+[ALiCam16.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam16.VideoCapture
+
+[ALiCam17.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam17.VideoCapture
+
+[ALiCam18.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam18.VideoCapture
+
+[ALiCam19.vi64.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,ALiCam19.VideoCapture
+
+[ALiCam.VideoCapture]
+AddReg=ALiCam.VideoCapture.AddReg
+
+[ALiCam1.VideoCapture]
+AddReg=ALiCam1.VideoCapture.AddReg
+
+[ALiCam2.VideoCapture]
+AddReg=ALiCam2.VideoCapture.AddReg
+
+[ALiCam3.VideoCapture]
+AddReg=ALiCam3.VideoCapture.AddReg
+
+[ALiCam4.VideoCapture]
+AddReg=ALiCam4.VideoCapture.AddReg
+
+[ALiCam5.VideoCapture]
+AddReg=ALiCam5.VideoCapture.AddReg
+
+[ALiCam6.VideoCapture]
+AddReg=ALiCam6.VideoCapture.AddReg
+
+[ALiCam7.VideoCapture]
+AddReg=ALiCam7.VideoCapture.AddReg
+
+[ALiCam8.VideoCapture]
+AddReg=ALiCam8.VideoCapture.AddReg
+
+[ALiCam9.VideoCapture]
+AddReg=ALiCam9.VideoCapture.AddReg
+
+[ALiCam10.VideoCapture]
+AddReg=ALiCam10.VideoCapture.AddReg
+
+[ALiCam11.VideoCapture]
+AddReg=ALiCam11.VideoCapture.AddReg
+
+[ALiCam12.VideoCapture]
+AddReg=ALiCam12.VideoCapture.AddReg
+
+[ALiCam13.VideoCapture]
+AddReg=ALiCam13.VideoCapture.AddReg
+
+[ALiCam14.VideoCapture]
+AddReg=ALiCam14.VideoCapture.AddReg
+
+[ALiCam15.VideoCapture]
+AddReg=ALiCam15.VideoCapture.AddReg
+
+[ALiCam16.VideoCapture]
+AddReg=ALiCam16.VideoCapture.AddReg
+
+[ALiCam17.VideoCapture]
+AddReg=ALiCam17.VideoCapture.AddReg
+
+[ALiCam18.VideoCapture]
+AddReg=ALiCam18.VideoCapture.AddReg
+
+[ALiCam19.VideoCapture]
+AddReg=ALiCam19.VideoCapture.AddReg
+
+[ALiCam.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam1.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam1.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam2.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam2.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam3.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam3.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam4.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam4.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam5.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam5.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam6.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam6.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam7.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam7.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam8.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam8.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam9.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam9.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam10.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam10.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam11.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam11.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam12.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam12.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam13.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam13.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam14.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam14.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam15.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam15.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam16.VideoCapture.AddReg]
+HKR,,CLSID,,%ProxyVidCap.CLSID%
+HKR,,FriendlyName,,%ALiCam16.DeviceDesc%
+HKR,,ExtensionDLL,,%ALiCam.ExtensionDLL%
+
+[ALiCam17.VideoCapture]
+AddReg=ALiCam17.VideoCapture.AddReg
+
+[ALiCam18.VideoCapture]
+AddReg=ALiCam18.VideoCapture.AddReg
+
+[ALiCam19.VideoCapture]
+AddReg=ALiCam19.VideoCapture.AddReg
+
+[StreamSetting]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam.DeviceDesc%
+
+[StreamSetting1]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam1.DeviceDesc%
+
+[StreamSetting2]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam2.DeviceDesc%
+
+[StreamSetting3]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam3.DeviceDesc%
+
+[StreamSetting4]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam4.DeviceDesc%
+
+[StreamSetting5]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam5.DeviceDesc%
+
+[StreamSetting6]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam6.DeviceDesc%
+
+[StreamSetting7]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam7.DeviceDesc%
+
+[StreamSetting8]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam8.DeviceDesc%
+
+[StreamSetting9]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam9.DeviceDesc%
+
+[StreamSetting10]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam10.DeviceDesc%
+
+
+[StreamSetting11]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam11.DeviceDesc%
+
+[StreamSetting12]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam12.DeviceDesc%
+
+[StreamSetting13]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam13.DeviceDesc%
+
+[StreamSetting14]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam14.DeviceDesc%
+
+[StreamSetting15]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam15.DeviceDesc%
+
+[StreamSetting15]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam16.DeviceDesc%
+
+[StreamSetting17]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam17.DeviceDesc%
+
+[StreamSetting18]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam18.DeviceDesc%
+
+[StreamSetting19]
+HKLM,%CAMERA_ENV_REGISTRY%,  FriendlyName, 0x00000000,  %ALiCam19.DeviceDesc%
+
+[CameraEnvSetting]
+
+;*********************************************
+; Camera global environment setting
+;*********************************************
+HKR,,  CamSensorVendor, 0x00010001,  00000004
+HKR,,  CamMajorType,    0x00010001,  00000002
+HKR,,  CamSubType,      0x00010001,  00000000
+HKR,,  CamAudioSupport, 0x00010001,  00000001
+
+HKR,,  SnapshotPos,     0x00010001,  00000001
+
+HKR,,  ImageBufferSize,      0x00010001,   00921600
+HKR,,  RawFrameBufferSize,   0x00010001,   00614406
+
+HKLM,%CAMERA_ENV_REGISTRY%,  UsbVersion,   0x00010001,  00000000
+HKLM,%CAMERA_ENV_REGISTRY%,  DefaultFlip,  0x00010001,  00000000
+HKLM,%CAMERA_ENV_REGISTRY%,  DebugMode,    0x00010001,  00000000
+HKLM,%CAMERA_ENV_REGISTRY%,  ConditionFlg, 0x00010001,  00000000
+HKLM,%CAMERA_ENV_REGISTRY%,  ExtendMode,   0x00010001,  00000000
+HKLM,%CAMERA_ENV_REGISTRY%,  StillImage,   0x00010001,  00000010
+HKLM,%CAMERA_ENV_REGISTRY%,  TwainImage,   0x00010001,  00000050
+HKLM,%CAMERA_ENV_REGISTRY%,  FullImage,    0x00010001,  00000000
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceStatus, 0x00010001,  00000000
+HKLM,%CAMERA_ENV_REGISTRY%,  PlaySound,    0x00010001,  00000000
+HKLM,%CAMERA_ENV_REGISTRY%,  fIsFirstInstall, 0x00010001,  00000001
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId,     0x00000000, %ALiCam.DeviceId%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId1,    0x00000000, %ALiCam.DeviceId1%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId2,    0x00000000, %ALiCam.DeviceId2%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId3,    0x00000000, %ALiCam.DeviceId3%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId4,    0x00000000, %ALiCam.DeviceId4%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId5,    0x00000000, %ALiCam.DeviceId5%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId6,    0x00000000, %ALiCam.DeviceId6%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId7,    0x00000000, %ALiCam.DeviceId7%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId8,    0x00000000, %ALiCam.DeviceId8%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId9,    0x00000000, %ALiCam.DeviceId9%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId10,   0x00000000, %ALiCam.DeviceId10%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId11,   0x00000000, %ALiCam.DeviceId11%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId12,   0x00000000, %ALiCam.DeviceId12%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId13,   0x00000000, %ALiCam.DeviceId13%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId14,   0x00000000, %ALiCam.DeviceId14%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId15,   0x00000000, %ALiCam1.DeviceId%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId16,   0x00000000, %ALiCam1.DeviceId1%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId17,   0x00000000, %ALiCam1.DeviceId2%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId18,   0x00000000, %ALiCam1.DeviceId3%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId19,   0x00000000, %ALiCam1.DeviceId4%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId20,   0x00000000, %ALiCam1.DeviceId5%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId21,   0x00000000, %ALiCam1.DeviceId6%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId22,   0x00000000, %ALiCam1.DeviceId7%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId23,   0x00000000, %ALiCam1.DeviceId8%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId24,   0x00000000, %ALiCam1.DeviceId9%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId25,   0x00000000, %ALiCam2.DeviceId%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId26,   0x00000000, %ALiCam3.DeviceId%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId27,   0x00000000, %ALiCam3.DeviceId1%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId28,   0x00000000, %ALiCam4.DeviceId%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId29,   0x00000000, %ALiCam5.DeviceId%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId30,   0x00000000, %ALiCam6.DeviceId%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId31,   0x00000000, %ALiCam6.DeviceId1%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId32,   0x00000000, %ALiCam6.DeviceId2%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId33,   0x00000000, %ALiCam6.DeviceId3%
+HKLM,%CAMERA_ENV_REGISTRY%,  DeviceId34,   0x00000000, %ALiCam6.DeviceId4%
+
+HKLM,%CAMERA_ENV_REGISTRY%,  Mfg,          0x00000000,  %Mfg%
+HKLM,%CAMERA_ENV_REGISTRY%,  LaunchApp,    0x00000000,  %10%\%CAMERA_FILEPATH_APP%\LiveCam.exe
+HKLM,%CAMERA_ENV_REGISTRY%,  LangFilePath, 0x00000000,  %10%\%CAMERA_FILEPATH_APP%
+HKLM,%CAMERA_ENV_REGISTRY%,  PropertyPage, 0x00010001,   0x0000080c
+
+
+;*********************************************
+; Default VideoFormat setting
+;*********************************************
+; High Speed (Video Format Setting0)
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting0, FormatID,   0x00010001, 00000003
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting0, FormatNum,  0x00010001, 00000006
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting0, FormatSize, 0x00000001, A0, 80, 50, 3C, 2C, 24, 28, 1E, 16, 12, 14, 0F, 00, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed (Video Format Setting1)
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting1, FormatID,   0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting1, FormatNum,  0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting1, FormatSize, 0x00000001, 50, 3C, 2C, 24, 28, 1E, 16, 12, 14, 0F, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed (Video Format Setting2)
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting2, FormatID,   0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting2, FormatNum,  0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting2, FormatSize, 0x00000001, 50, 3C, 2C, 24, 28, 1E, 16, 12, 14, 0F, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed (Video Format Setting3)
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting3, FormatID,   0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting3, FormatNum,  0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting3, FormatSize, 0x00000001, 50, 3C, 2C, 24, 28, 1E, 16, 12, 14, 0F, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed (Video Format Setting4)
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting4, FormatID,   0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting4, FormatNum,  0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\HighSpeed\Setting4, FormatSize, 0x00000001, 50, 3C, 2C, 24, 28, 1E, 16, 12, 14, 0F, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed (Video Format Setting0)
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting0, FormatID,   0x00010001, 00000002
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting0, FormatNum,  0x00010001, 00000005
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting0, FormatSize, 0x00000001, 50, 3C, 2C, 24, 28, 1E, 16, 12, 14, 0F, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed (Video Format Setting1)
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting1, FormatID,   0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting1, FormatNum,  0x00010001, 00000005
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting1, FormatSize, 0x00000001, 50, 3C, 2C, 24, 28, 1E, 16, 12, 14, 0F, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed (Video Format Setting2)
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting2, FormatID,   0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting2, FormatNum,  0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting2, FormatSize, 0x00000001, 50, 3C, 2C, 24, 28, 1E, 16, 12, 14, 0F, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed (Video Format Setting3)
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting3, FormatID,   0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting3, FormatNum,  0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting3, FormatSize, 0x00000001, 50, 3C, 2C, 24, 28, 1E, 16, 12, 14, 0F, 00, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed (Video Format Setting4)
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting4, FormatID,   0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting4, FormatNum,  0x00010001, 00000000
+HKR, %CAMERA_VIDEOFORMAT%\FullSpeed\Setting4, FormatSize, 0x00000001, 50, 3C, 2C, 24, 28, 1E, 16, 12, 14, 0F, 00, 00, 00, 00, 00, 00, 00, 00
+
+;*********************************************
+; Default VideoProcAmp setting
+;*********************************************
+; KSPROPERTY_VIDEOPROCAMP_BRIGHTNESS
+HKR, %CAMERA_VIDEOPROCAMP%\Brightness,    Enable, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\Brightness,    AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Brightness,    AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Brightness,    MinVal, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\Brightness,    MaxVal, 0x00010001, 00000100
+HKR, %CAMERA_VIDEOPROCAMP%\Brightness,    SDelta, 0x00010001, 00000010
+HKR, %CAMERA_VIDEOPROCAMP%\Brightness,    Defaul, 0x00010001, 00000050
+HKR, %CAMERA_VIDEOPROCAMP%\Brightness,    CurVal, 0x00010001, 00000050
+
+; KSPROPERTY_VIDEOPROCAMP_CONTRAST
+HKR, %CAMERA_VIDEOPROCAMP%\Contrast,      Enable, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\Contrast,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Contrast,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Contrast,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\Contrast,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_VIDEOPROCAMP%\Contrast,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\Contrast,      Defaul, 0x00010001, 00000005
+HKR, %CAMERA_VIDEOPROCAMP%\Contrast,      CurVal, 0x00010001, 00000005
+
+; KSPROPERTY_VIDEOPROCAMP_HUE
+HKR, %CAMERA_VIDEOPROCAMP%\Hue,           Enable, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\Hue,           AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Hue,           AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Hue,           MinVal, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\Hue,           MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_VIDEOPROCAMP%\Hue,           SDelta, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\Hue,           Defaul, 0x00010001, 00000005
+HKR, %CAMERA_VIDEOPROCAMP%\Hue,           CurVal, 0x00010001, 00000005
+
+; KSPROPERTY_VIDEOPROCAMP_SATURATION
+HKR, %CAMERA_VIDEOPROCAMP%\Saturation,    Enable, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\Saturation,    AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Saturation,    AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Saturation,    MinVal, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\Saturation,    MaxVal, 0x00010001, 00000100
+HKR, %CAMERA_VIDEOPROCAMP%\Saturation,    SDelta, 0x00010001, 00000010
+HKR, %CAMERA_VIDEOPROCAMP%\Saturation,    Defaul, 0x00010001, 00000050
+HKR, %CAMERA_VIDEOPROCAMP%\Saturation,    CurVal, 0x00010001, 00000050
+
+; KSPROPERTY_VIDEOPROCAMP_SHARPNESS
+HKR, %CAMERA_VIDEOPROCAMP%\Sharpness,     Enable, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\Sharpness,     AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Sharpness,     AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Sharpness,     MinVal, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\Sharpness,     MaxVal, 0x00010001, 00000100
+HKR, %CAMERA_VIDEOPROCAMP%\Sharpness,     SDelta, 0x00010001, 00000010
+HKR, %CAMERA_VIDEOPROCAMP%\Sharpness,     Defaul, 0x00010001, 00000050
+HKR, %CAMERA_VIDEOPROCAMP%\Sharpness,     CurVal, 0x00010001, 00000050
+
+; KSPROPERTY_VIDEOPROCAMP_GAMMA
+HKR, %CAMERA_VIDEOPROCAMP%\Gamma,         Enable, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\Gamma,         AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Gamma,         AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Gamma,         MinVal, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\Gamma,         MaxVal, 0x00010001, 00000020
+HKR, %CAMERA_VIDEOPROCAMP%\Gamma,         SDelta, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\Gamma,         Defaul, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\Gamma,         CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_VIDEOPROCAMP_COLORENABLE
+HKR, %CAMERA_VIDEOPROCAMP%\ColorEnable,   Enable, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\ColorEnable,   AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\ColorEnable,   AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\ColorEnable,   MinVal, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\ColorEnable,   MaxVal, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\ColorEnable,   SDelta, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\ColorEnable,   Defaul, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\ColorEnable,   CurVal, 0x00010001, 00000001
+
+; KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE
+HKR, %CAMERA_VIDEOPROCAMP%\WhiteBalance,  Enable, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\WhiteBalance,  AutoFg, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\WhiteBalance,  AutoCb, 0x00010001, 00000003
+HKR, %CAMERA_VIDEOPROCAMP%\WhiteBalance,  MinVal, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\WhiteBalance,  MaxVal, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\WhiteBalance,  SDelta, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\WhiteBalance,  Defaul, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\WhiteBalance,  CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_VIDEOPROCAMP_BACKLIGHT_COMPENSATION
+HKR, %CAMERA_VIDEOPROCAMP%\BackLightComp, Enable, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\BackLightComp, AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\BackLightComp, AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\BackLightComp, MinVal, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\BackLightComp, MaxVal, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\BackLightComp, SDelta, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\BackLightComp, Defaul, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\BackLightComp, CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_VIDEOPROCAMP_POWERLINE_FREQUENCY
+HKR, %CAMERA_VIDEOPROCAMP%\PowerLineFreq, Enable, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\PowerLineFreq, AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\PowerLineFreq, AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\PowerLineFreq, MinVal, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\PowerLineFreq, MaxVal, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\PowerLineFreq, SDelta, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\PowerLineFreq, Defaul, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\PowerLineFreq, CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_VIDEOPROCAMP_GAIN
+HKR, %CAMERA_VIDEOPROCAMP%\Gain, Enable, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\Gain, AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Gain, AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Gain, MinVal, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\Gain, MaxVal, 0x00010001, 00000002
+HKR, %CAMERA_VIDEOPROCAMP%\Gain, SDelta, 0x00010001, 00000001
+HKR, %CAMERA_VIDEOPROCAMP%\Gain, Defaul, 0x00010001, 00000000
+HKR, %CAMERA_VIDEOPROCAMP%\Gain, CurVal, 0x00010001, 00000000
+
+;*********************************************
+; Default CameraControl setting
+;*********************************************
+; KSPROPERTY_CAMERACONTROL_PAN
+HKR, %CAMERA_CAMERACONTRL%\Pan,           Enable, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Pan,           AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CAMERACONTRL%\Pan,           AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CAMERACONTRL%\Pan,           MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Pan,           MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CAMERACONTRL%\Pan,           SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CAMERACONTRL%\Pan,           Defaul, 0x00010001, 00000005
+HKR, %CAMERA_CAMERACONTRL%\Pan,           CurVal, 0x00010001, 00000005
+
+; KSPROPERTY_CAMERACONTROL_TILT
+HKR, %CAMERA_CAMERACONTRL%\Tilt,          Enable, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Tilt,          AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CAMERACONTRL%\Tilt,          AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CAMERACONTRL%\Tilt,          MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Tilt,          MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CAMERACONTRL%\Tilt,          SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CAMERACONTRL%\Tilt,          Defaul, 0x00010001, 00000005
+HKR, %CAMERA_CAMERACONTRL%\Tilt,          CurVal, 0x00010001, 00000005
+
+; KSPROPERTY_CAMERACONTROL_ROLL
+HKR, %CAMERA_CAMERACONTRL%\Roll,          Enable, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Roll,          AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CAMERACONTRL%\Roll,          AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CAMERACONTRL%\Roll,          MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Roll,          MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CAMERACONTRL%\Roll,          SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CAMERACONTRL%\Roll,          Defaul, 0x00010001, 00000005
+HKR, %CAMERA_CAMERACONTRL%\Roll,          CurVal, 0x00010001, 00000005
+
+; KSPROPERTY_CAMERACONTROL_ZOOM
+HKR, %CAMERA_CAMERACONTRL%\Zoom,          Enable, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Zoom,          AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CAMERACONTRL%\Zoom,          AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CAMERACONTRL%\Zoom,          MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Zoom,          MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CAMERACONTRL%\Zoom,          SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CAMERACONTRL%\Zoom,          Defaul, 0x00010001, 00000005
+HKR, %CAMERA_CAMERACONTRL%\Zoom,          CurVal, 0x00010001, 00000005
+
+; KSPROPERTY_CAMERACONTROL_EXPOSURE
+HKR, %CAMERA_CAMERACONTRL%\Exposure,      Enable, 0x00010001, 00000001
+HKR, %CAMERA_CAMERACONTRL%\Exposure,      AutoFg, 0x00010001, 00000001
+HKR, %CAMERA_CAMERACONTRL%\Exposure,      AutoCb, 0x00010001, 00000003
+HKR, %CAMERA_CAMERACONTRL%\Exposure,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Exposure,      MaxVal, 0x00010001, 00000020
+HKR, %CAMERA_CAMERACONTRL%\Exposure,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CAMERACONTRL%\Exposure,      Defaul, 0x00010001, 00000010
+HKR, %CAMERA_CAMERACONTRL%\Exposure,      CurVal, 0x00010001, 00000010
+
+; KSPROPERTY_CAMERACONTROL_IRIS
+HKR, %CAMERA_CAMERACONTRL%\Iris,          Enable, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Iris,          AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CAMERACONTRL%\Iris,          AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CAMERACONTRL%\Iris,          MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Iris,          MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CAMERACONTRL%\Iris,          SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CAMERACONTRL%\Iris,          Defaul, 0x00010001, 00000005
+HKR, %CAMERA_CAMERACONTRL%\Iris,          CurVal, 0x00010001, 00000005
+
+; KSPROPERTY_CAMERACONTROL_FOCUS
+HKR, %CAMERA_CAMERACONTRL%\Focus,         Enable, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Focus,         AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CAMERACONTRL%\Focus,         AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CAMERACONTRL%\Focus,         MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CAMERACONTRL%\Focus,         MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CAMERACONTRL%\Focus,         SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CAMERACONTRL%\Focus,         Defaul, 0x00010001, 00000005
+HKR, %CAMERA_CAMERACONTRL%\Focus,         CurVal, 0x00010001, 00000005
+
+;*********************************************
+; Default CustomDefine setting
+;*********************************************
+; KSPROPERTY_CUSTOMDEFINE_SETTING0 (Environment)
+HKR, %CAMERA_CUSTOMDEFINE%\Setting0,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting0,      AutoFg, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting0,      AutoCb, 0x00010001, 00000003
+HKR, %CAMERA_CUSTOMDEFINE%\Setting0,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting0,      MaxVal, 0x00010001, 00000003
+HKR, %CAMERA_CUSTOMDEFINE%\Setting0,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting0,      Defaul, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting0,      CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING1 (PowerLineFrequency)
+HKR, %CAMERA_CUSTOMDEFINE%\Setting1,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting1,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting1,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting1,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting1,      MaxVal, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting1,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting1,      Defaul, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting1,      CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING2 (Flip/Mirror/TabletPC)
+HKR, %CAMERA_CUSTOMDEFINE%\Setting2,      Enable, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting2,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting2,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting2,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting2,      MaxVal, 0x00010001, 00000015
+HKR, %CAMERA_CUSTOMDEFINE%\Setting2,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting2,      Defaul, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting2,      CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING3
+HKR, %CAMERA_CUSTOMDEFINE%\Setting3,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting3,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting3,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting3,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting3,      MaxVal, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting3,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting3,      Defaul, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting3,      CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING4 (Manual R gain)
+HKR, %CAMERA_CUSTOMDEFINE%\Setting4,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting4,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting4,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting4,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting4,      MaxVal, 0x00010001, 00000255
+HKR, %CAMERA_CUSTOMDEFINE%\Setting4,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting4,      Defaul, 0x00010001, 00000064
+HKR, %CAMERA_CUSTOMDEFINE%\Setting4,      CurVal, 0x00010001, 00000064
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING5 (Manual G gain)
+HKR, %CAMERA_CUSTOMDEFINE%\Setting5,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting5,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting5,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting5,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting5,      MaxVal, 0x00010001, 00000255
+HKR, %CAMERA_CUSTOMDEFINE%\Setting5,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting5,      Defaul, 0x00010001, 00000064
+HKR, %CAMERA_CUSTOMDEFINE%\Setting5,      CurVal, 0x00010001, 00000064
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING6 (Manual B gain)
+HKR, %CAMERA_CUSTOMDEFINE%\Setting6,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting6,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting6,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting6,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting6,      MaxVal, 0x00010001, 00000255
+HKR, %CAMERA_CUSTOMDEFINE%\Setting6,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting6,      Defaul, 0x00010001, 00000064
+HKR, %CAMERA_CUSTOMDEFINE%\Setting6,      CurVal, 0x00010001, 00000064
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING7 ()
+HKR, %CAMERA_CUSTOMDEFINE%\Setting7,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting7,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting7,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting7,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting7,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CUSTOMDEFINE%\Setting7,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting7,      Defaul, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting7,      CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING8 ()
+HKR, %CAMERA_CUSTOMDEFINE%\Setting8,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting8,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting8,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting8,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting8,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CUSTOMDEFINE%\Setting8,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting8,      Defaul, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting8,      CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING9 ()
+HKR, %CAMERA_CUSTOMDEFINE%\Setting9,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting9,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting9,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting9,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting9,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CUSTOMDEFINE%\Setting9,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting9,      Defaul, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting9,      CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING10 (Read/Write EEPROM)
+HKR, %CAMERA_CUSTOMDEFINE%\Setting10,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting10,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting10,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting10,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting10,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CUSTOMDEFINE%\Setting10,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting10,      Defaul, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting10,      CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING11 ()
+HKR, %CAMERA_CUSTOMDEFINE%\Setting11,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting11,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting11,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting11,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting11,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CUSTOMDEFINE%\Setting11,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting11,      Defaul, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting11,      CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING12 ()
+HKR, %CAMERA_CUSTOMDEFINE%\Setting12,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting12,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting12,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting12,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting12,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CUSTOMDEFINE%\Setting12,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting12,      Defaul, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting12,      CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING13
+HKR, %CAMERA_CUSTOMDEFINE%\Setting13,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting13,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting13,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting13,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting13,      MaxVal, 0x00010001, 00000003
+HKR, %CAMERA_CUSTOMDEFINE%\Setting13,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting13,      Defaul, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting13,      CurVal, 0x00010001, 00000000
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING14
+HKR, %CAMERA_CUSTOMDEFINE%\Setting14,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting14,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting14,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting14,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting14,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CUSTOMDEFINE%\Setting14,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting14,      Defaul, 0x00010001, 00000005
+HKR, %CAMERA_CUSTOMDEFINE%\Setting14,      CurVal, 0x00010001, 00000005
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING15
+HKR, %CAMERA_CUSTOMDEFINE%\Setting15,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting15,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting15,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting15,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting15,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CUSTOMDEFINE%\Setting15,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting15,      Defaul, 0x00010001, 00000005
+HKR, %CAMERA_CUSTOMDEFINE%\Setting15,      CurVal, 0x00010001, 00000005
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING16
+HKR, %CAMERA_CUSTOMDEFINE%\Setting16,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting16,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting16,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting16,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting16,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CUSTOMDEFINE%\Setting16,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting16,      Defaul, 0x00010001, 00000005
+HKR, %CAMERA_CUSTOMDEFINE%\Setting16,      CurVal, 0x00010001, 00000005
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING17
+HKR, %CAMERA_CUSTOMDEFINE%\Setting17,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting17,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting17,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting17,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting17,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CUSTOMDEFINE%\Setting17,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting17,      Defaul, 0x00010001, 00000005
+HKR, %CAMERA_CUSTOMDEFINE%\Setting17,      CurVal, 0x00010001, 00000005
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING18
+HKR, %CAMERA_CUSTOMDEFINE%\Setting18,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting18,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting18,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting18,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting18,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CUSTOMDEFINE%\Setting18,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting18,      Defaul, 0x00010001, 00000005
+HKR, %CAMERA_CUSTOMDEFINE%\Setting18,      CurVal, 0x00010001, 00000005
+
+; KSPROPERTY_CUSTOMDEFINE_SETTING19
+HKR, %CAMERA_CUSTOMDEFINE%\Setting19,      Enable, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting19,      AutoFg, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting19,      AutoCb, 0x00010001, 00000002
+HKR, %CAMERA_CUSTOMDEFINE%\Setting19,      MinVal, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting19,      MaxVal, 0x00010001, 00000010
+HKR, %CAMERA_CUSTOMDEFINE%\Setting19,      SDelta, 0x00010001, 00000001
+HKR, %CAMERA_CUSTOMDEFINE%\Setting19,      Defaul, 0x00010001, 00000000
+HKR, %CAMERA_CUSTOMDEFINE%\Setting19,      CurVal, 0x00010001, 00000000
+
+;*********************************************
+; Default MulFrameRate setting
+;*********************************************
+; High Speed (1280 * 960)
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting0, DimenX, 0x00010001, 00001280
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting0, DimenY, 0x00010001, 00000960
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting0, FrSetp, 0x00000001, 01, 00, 07, 0A, 00, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed (1024 * 768)
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting1, DimenX, 0x00010001, 00001024
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting1, DimenY, 0x00010001, 00000768
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting1, FrSetp, 0x00000001, 01, 00, 07, 0A, 00, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed ( 640 * 480)
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting2, DimenX, 0x00010001, 00000640
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting2, DimenY, 0x00010001, 00000480
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting2, FrSetp, 0x00000001, 03, 00, 1E, 0F, 0A, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed ( 352 * 288)
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting3, DimenX, 0x00010001, 00000352
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting3, DimenY, 0x00010001, 00000288
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting3, FrSetp, 0x00000001, 03, 00, 1E, 0F, 0A, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed ( 320 * 240)
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting4, DimenX, 0x00010001, 00000320
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting4, DimenY, 0x00010001, 00000240
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting4, FrSetp, 0x00000001, 03, 00, 1E, 0F, 0A, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed ( 176 * 144)
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting5, DimenX, 0x00010001, 00000176
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting5, DimenY, 0x00010001, 00000144
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting5, FrSetp, 0x00000001, 03, 00, 1E, 0F, 0A, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed ( 160 * 120)
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting6, DimenX, 0x00010001, 00000160
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting6, DimenY, 0x00010001, 00000120
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting6, FrSetp, 0x00000001, 03, 00, 1E, 0F, 0A, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed (Reserved)
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting7, DimenX, 0x00010001, 00000800
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting7, DimenY, 0x00010001, 00000600
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting7, FrSetp, 0x00000001, 03, 00, 1E, 0F, 0A, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed (Reserved)
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting8, DimenX, 0x00010001, 00001600
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting8, DimenY, 0x00010001, 00001200
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting8, FrSetp, 0x00000001, 01, 00, 07, 00, 00, 00, 00, 00, 00, 00, 00, 00
+
+; High Speed (Reserved)
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting9, DimenX, 0x00010001, 00000000
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting9, DimenY, 0x00010001, 00000000
+HKR, %CAMERA_MULFRAMERATE%\HighSpeed\Setting9, FrSetp, 0x00000001, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed (1280 * 960)
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting0, DimenX, 0x00010001, 00001280
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting0, DimenY, 0x00010001, 00000960
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting0, FrSetp, 0x00000001, 01, 00, 0F, 0A, 00, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed (1024 * 768)
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting1, DimenX, 0x00010001, 00001024
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting1, DimenY, 0x00010001, 00000768
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting1, FrSetp, 0x00000001, 01, 00, 0F, 0A, 00, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed ( 640 * 480)
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting2, DimenX, 0x00010001, 00000640
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting2, DimenY, 0x00010001, 00000480
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting2, FrSetp, 0x00000001, 02, 00, 0F, 0A, 00, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed ( 352 * 288)
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting3, DimenX, 0x00010001, 00000352
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting3, DimenY, 0x00010001, 00000288
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting3, FrSetp, 0x00000001, 03, 00, 1E, 0F, 0A, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed ( 320 * 240)
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting4, DimenX, 0x00010001, 00000320
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting4, DimenY, 0x00010001, 00000240
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting4, FrSetp, 0x00000001, 03, 00, 1E, 0F, 0A, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed ( 176 * 144)
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting5, DimenX, 0x00010001, 00000176
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting5, DimenY, 0x00010001, 00000144
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting5, FrSetp, 0x00000001, 03, 00, 1E, 0F, 0A, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed ( 160 * 120)
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting6, DimenX, 0x00010001, 00000160
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting6, DimenY, 0x00010001, 00000120
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting6, FrSetp, 0x00000001, 03, 00, 1E, 0F, 0A, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed (Reserved)
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting7, DimenX, 0x00010001, 00000800
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting7, DimenY, 0x00010001, 00000600
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting7, FrSetp, 0x00000001, 03, 00, 1E, 0F, 0A, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed (Reserved)
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting8, DimenX, 0x00010001, 00001600
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting8, DimenY, 0x00010001, 00001200
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting8, FrSetp, 0x00000001, 01, 00, 07, 00, 00, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed (Reserved)
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting9, DimenX, 0x00010001, 00000000
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting9, DimenY, 0x00010001, 00000000
+HKR, %CAMERA_MULFRAMERATE%\FullSpeed\Setting9, FrSetp, 0x00000001, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00
+
+;*********************************************
+; Default VideoCompres setting
+;*********************************************
+; High Speed
+HKR, %CAMERA_VIDEOCOMPRES%\HighSpeed, StepInfo, 0x00000001, 03, 00, 64, 32, 00, 00, 00, 00, 00, 00, 00, 00
+
+; Full Speed
+HKR, %CAMERA_VIDEOCOMPRES%\FullSpeed, StepInfo, 0x00000001, 02, 00, 64, 00, 00, 00, 00, 00, 00, 00, 00, 00
+
+;*********************************************
+; Debug environment setting
+;*********************************************
+
+[SensorRegSetting]
+
+[Strings]
+;----------------
+; Localizable
+;----------------
+VENDOR                 ="Alcor"
+Mfg   	               ="Alcor"
+DISK_NAME              ="WebCam driver installtion Disk..."
+
+ALiCam.DeviceDesc      ="AlcorSorting.v6"
+ALiCam1.DeviceDesc     ="AlcorSorting.v6"
+ALiCam2.DeviceDesc     ="AlcorSorting.v6"
+ALiCam3.DeviceDesc     ="AlcorSorting.v6"
+ALiCam4.DeviceDesc     ="AlcorSorting.v6"
+ALiCam5.DeviceDesc     ="AlcorSorting.v6"
+ALiCam6.DeviceDesc     ="AlcorSorting.v6"
+ALiCam7.DeviceDesc     ="ALiCam7.DeviceDesc"
+ALiCam8.DeviceDesc     ="ALiCam8.DeviceDesc"
+ALiCam9.DeviceDesc     ="ALiCam9.DeviceDesc"
+ALiCam10.DeviceDesc    ="ALiCam10.DeviceDesc"
+ALiCam11.DeviceDesc    ="ALiCam11.DeviceDesc"
+ALiCam12.DeviceDesc    ="ALiCam12.DeviceDesc"
+ALiCam13.DeviceDesc    ="ALiCam13.DeviceDesc"
+ALiCam14.DeviceDesc    ="ALiCam14.DeviceDesc"
+ALiCam15.DeviceDesc    ="ALiCam15.DeviceDesc"
+ALiCam16.DeviceDesc    ="ALiCam16.DeviceDesc"
+ALiCam17.DeviceDesc    ="ALiCam17.DeviceDesc"
+ALiCam18.DeviceDesc    ="ALiCam18.DeviceDesc"
+ALiCam19.DeviceDesc    ="ALiCam19.DeviceDesc"
+ALiCam.ExtensionDLL    ="S6000Vex.dll"
+
+;----------------
+; VID/PID
+;----------------
+ALiCam.DeviceId        ="VID_04CA&PID_7012"    ; AlcorSorting
+ALiCam.DeviceId1       ="VID_04CA&PID_7013"    ; AlcorSorting
+ALiCam.DeviceId2       ="VID_058F&PID_B201"    ; AlcorSorting
+ALiCam.DeviceId3       ="VID_058F&PID_B202"    ; AlcorSorting
+ALiCam.DeviceId4       ="VID_058F&PID_B203"    ; AlcorSorting
+ALiCam.DeviceId5       ="VID_058F&PID_7013"    ; AlcorSorting
+ALiCam.DeviceId6       ="VID_04F2&PID_B34C"    ; AlcorSorting
+ALiCam.DeviceId7       ="VID_04F2&PID_B35A"    ; AlcorSorting
+ALiCam.DeviceId8       ="VID_04F2&PID_B357"    ; AlcorSorting
+ALiCam.DeviceId9       ="VID_04F2&PID_B345"    ; AlcorSorting
+ALiCam.DeviceId10      ="VID_04F2&PID_B337"    ; AlcorSorting
+ALiCam.DeviceId11      ="VID_04F2&PID_B336"	   ; AlcorSorting
+ALiCam.DeviceId12      ="VID_04F2&PID_B340"    ; AlcorSorting
+ALiCam.DeviceId13      ="VID_04F2&PID_B354"    ; AlcorSorting
+ALiCam.DeviceId14      ="VID_04F2&PID_B348"    ; AlcorSorting
+
+ALiCam1.DeviceId       ="VID_04F2&PID_B349"    ; AlcorSorting
+ALiCam1.DeviceId1      ="VID_5986&PID_014D"    ; AlcorSorting
+ALiCam1.DeviceId2      ="VID_5986&PID_0400"    ; AlcorSorting
+ALiCam1.DeviceId3      ="VID_5986&PID_030C"    ; AlcorSorting
+ALiCam1.DeviceId4      ="VID_064E&PID_D285"    ; AlcorSorting
+ALiCam1.DeviceId5      ="VID_064E&PID_D286"    ; AlcorSorting
+ALiCam1.DeviceId6      ="VID_064E&PID_D287"    ; AlcorSorting
+ALiCam1.DeviceId7      ="VID_064E&PID_D251"    ; AlcorSorting
+ALiCam1.DeviceId8      ="VID_18E3&PID_5120"    ; AlcorSorting
+ALiCam1.DeviceId9      ="VID_18E3&PID_5231"    ; AlcorSorting
+ALiCam2.DeviceId       ="VID_05C8&PID_0343"    ; AlcorSorting
+ALiCam3.DeviceId       ="VID_058F&PID_3821"    ; AlcorSorting
+ALiCam3.DeviceId1      ="VID_04F2&PID_B1FF"    ; 1.3M WebCam
+ALiCam4.DeviceId       ="VID_04F2&PID_B1D0"    ; 1.3M Video WebCam
+ALiCam5.DeviceId       ="VID_04F2&PID_B14A"    ; Video WebCam
+ALiCam6.DeviceId       ="VID_058F&PID_B201"    ; HD WebCam
+ALiCam6.DeviceId1      ="VID_064E&PID_D251"    ; HD WebCam
+ALiCam6.DeviceId2      ="VID_04F2&PID_B336"    ; HD WebCam
+ALiCam6.DeviceId3      ="VID_04F2&PID_B337"    ; HD WebCam
+ALiCam6.DeviceId4      ="VID_058F&PID_B203"    ; HD WebCam
+
+
+;----------------
+; Registry Path
+;----------------
+CAMERA_VIDEOFORMAT     ="Settings\VideoFormat"
+CAMERA_VIDEOPROCAMP    ="Settings\VideoProcAmp"
+CAMERA_CAMERACONTRL    ="Settings\CameraContrl"
+CAMERA_CUSTOMDEFINE    ="Settings\CustomDefine"
+CAMERA_MULFRAMERATE    ="Settings\MulFrameRate"
+CAMERA_VIDEOCOMPRES    ="Settings\VideoCompres"
+CAMERA_ENV_REGISTRY    ="Software\WebCam\S6000"
+SENSOR_REG_INDEX       ="SensorSetting"
+
+;----------------
+; File Path
+;----------------
+CAMERA_FILEPATH_APP    ="WebCam\S6000"
+
+;----------------
+; GUID
+;----------------
+ProxyVidCap.CLSID      ="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_CAPTURE     ="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+InstallShiled.GUID     ="{FC9B811E-39BC-4813-9E29-B83CCF700010}"
+
+;----------------
+; Service Desc
+;----------------
+ALiCam.StartupName   = "S6000Mnt"
+ALiCam.ServiceName   = "S6000KNT"
+ALiCam.DevSrvDesc    = "S6000KNT_WebCam Driver"
+ALiCam.DriverVer     = "2.22.0.6"
+UninstVersion        = "0x0214000D" ;Version 2.22.0
+UninstMjVersion      = 2          ;MajorVersion 2
+UninstMnVersion      = 22        ;MinorVersion
+;ALiCam.LaunchApName  ="S6000LAp"

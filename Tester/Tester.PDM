@@ -1,0 +1,120 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\Package
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\DVBVideo.dll=
+C:\WINDOWS\system32\setupapi.dll=
+C:\WINDOWS\system32\hid.dll=
+C:\WINDOWS\system32\winscard.dll=
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\USBRESET.DLL=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 1|Files Added]
+
+[Package|Standard Setup Package 1|Files Removed]
+c:\windows\system32\hid.dll=
+c:\windows\system32\setupapi.dll=
+c:\windows\system32\winscard.dll=
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\Tester.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\CustomMP.dll=Yes
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\USBRESET.DLL=Yes
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\TestReader.dll=Yes
+C:\WINDOWS\system32\winscard.dll=No
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\AlcorEMV.dll=Yes
+C:\WINDOWS\system32\hid.dll=No
+C:\WINDOWS\system32\setupapi.dll=No
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\PCI-Dask.dll=Yes
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\DVBVideo.dll=Yes
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\DevLink.dll=Yes
+C:\WINDOWS\system32\MSCOMM32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\Tester.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\CustomMP.dll=$(AppPath)
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\USBRESET.DLL=$(WinSysPath)
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\TestReader.dll=$(AppPath)
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\AlcorEMV.dll=$(AppPath)
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\PCI-Dask.dll=$(AppPath)
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\DVBVideo.dll=$(WinSysPath)
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\DevLink.dll=$(AppPath)
+C:\WINDOWS\system32\MSCOMM32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\Tester.exe=No
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\CustomMP.dll=No
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\TestReader.dll=No
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\AlcorEMV.dll=No
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\PCI-Dask.dll=No
+C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\DevLink.dll=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=Tester
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=Tester
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|Tester]
+Icon1=Tester.exe
+Title1=Tester
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\Package
+ProjectFolder=C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester
+ServerSideCab=
+File1=C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\Package\setup.exe
+File2=C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\Package\Setup.Lst
+File3=C:\Documents and Settings\test\Desktop\New_host_PCI7248_2_AU6375AS\Tester\Package\Tester.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

@@ -1,0 +1,68 @@
+[COPYFILES_32]
+Advance\DLL\c6501p.dll>>>%WINDIR%\system32\c6501prop.dll
+Advance\DLL\C6501.cpl>>>%WINDIR%\system\C6501.cpl
+Advance\DLL\C6501rm.exe>>>%WINDIR%\system32\C6501rm.exe
+Advance\DLL\C6501rm.dll>>>%WINDIR%\system32\C6501rm.dll
+Advance\DLL\c6501a3d.dll>>>%WINDIR%\system\c6501a3d.dll
+Advance\DLL\c6501a3d.dll>>>%WINDIR%\system\a3d.dll -NODELETE
+CmiOemConfig.ini>>>%WINDIR%\system\Cm106.ini
+Advance\DLL\GdiPlus.dll>>>%WINDIR%\system32\GdiPlus.dll -NODELETE
+
+[COPYFILES_64]
+;Advance\DLL\c6501p.dll>>>%WINDIR%\system32\c6501prop.dll
+;Advance\DLL\cmpaput.dll>>>%WINDIR%\syswow64\cmpaput.dll
+;Advance\DLL\C650164.cpl>>>%WINDIR%\syswow64\C6501.cpl
+;Advance\DLL\C6501rm64.dll>>>%WINDIR%\syswow64\C6501rm.dll
+;Advance\DLL\C6501rm64.exe>>>%WINDIR%\syswow64\C6501rm.exe
+;Advance\DLL\c6501a3d.dll>>>%WINDIR%\system\a3d.dll -NODELETE
+;Advance\DLL\c6501a3d.dll>>>%WINDIR%\system\c6501a3d.dll
+CmiOemConfig.ini>>>%WINDIR%\system\Cm106.ini
+
+[POSTRUNAPP_INSTALL_32]
+%WINDIR%\system32\rundll32.exe %WINDIR%\system\C6501.cpl,CMICtrlWnd
+%WINDIR%\system32\regsvr32.exe /S %WINDIR%\system32\c6501prop.dll
+
+[POSTRUNAPP_INSTALL_64]
+%WINDIR%\syswow64\rundll32.exe %WINDIR%\syswow64\C6501.cpl,CMICtrlWnd
+;%WINDIR%\syswow64\regsvr32.exe /S %WINDIR%\system32\c6501prop.dll
+
+[ADDREG_32]
+;HKCR,CLSID\{39F2F765-47FA-43e9-8DFE-7097C3A61BFB},,0,"C-Media C6501 Property Componet"
+;HKCR,CLSID\{39F2F765-47FA-43e9-8DFE-7097C3A61BFB}\InProcServer32,,0,"%WINDIR%\System32\c6501prop.dll"
+;HKCR,CLSID\{39F2F765-47FA-43e9-8DFE-7097C3A61BFB}\ProgID,,0,"CMAudioPropertyCOM 8.2"
+;HKCR,CLSID\{39F2F765-47FA-43e9-8DFE-7097C3A61BFB}\VersionIndependentProgID,,0,"CMUSB6501PropertyCOM"
+;HKCR,CMAudioProperty,,0,"C-Media C6501 Property Componet"
+;HKCR,CMAudioProperty\CLSID,,0,{39F2F765-47FA-43e9-8DFE-7097C3A61BFB}
+;HKCR,CMAudioProperty\CurVer,,0,"C-Media C6501 Property Component"
+;HKCR,CMAudioProperty.7,,0,"C-Media C6501 Property Componet"
+;HKCR,CMAudioProperty.7\CLSID,,0,{39F2F765-47FA-43e9-8DFE-7097C3A61BFB}
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cpls",C6501cpl,,"%WINDIR%\System\c6501.cpl"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Run",C6501Sound,,"RunDll32 c6501.cpl,CMICtrlWnd"
+;HKLM,"Software\Microsoft\Windows\CurrentVersion\Uninstall\C-Media C6501 Like Sound Driver",DisplayName,,"C-Media CM6501 Like Sound Driver"
+;HKLM,"Software\Microsoft\Windows\CurrentVersion\Uninstall\C-Media C6501 Like Sound Driver",UninstallString,,"%WINDIR%\system32\c6501rm.exe"
+HKCR,Audio3D,,0,Audio3DObject -NODELETE
+HKCR,Audio3D\CLSID,,0,{D8F1EEE0-F634-11CF-8700-00A0245D918B} -NODELETE
+HKCR,CLSID\{D8F1EEE0-F634-11CF-8700-00A0245D918B},,0,Audio3DObject -NODELETE
+HKCR,CLSID\{D8F1EEE0-F634-11CF-8700-00A0245D918B}\InProcServer32,,0,c6501a3d.dll
+HKCR,CLSID\{D8F1EEE0-F634-11CF-8700-00A0245D918B}\InProcServer32,ThreadingModel,0,Apartment -NODELETE
+HKCU,"Software\Sensaura\Audio3D\Settings","SplashScreen",65537,0,0,0,0 -NODELETE
+
+[ADDREG_64]
+;HKCR,CLSID\{39F2F765-47FA-43e9-8DFE-7097C3A61BFB},,0,"C-Media C6501 Property Componet"
+;HKCR,CLSID\{39F2F765-47FA-43e9-8DFE-7097C3A61BFB}\InProcServer32,,0,"%WINDIR%\System32\c6501prop.dll"
+;HKCR,CLSID\{39F2F765-47FA-43e9-8DFE-7097C3A61BFB}\ProgID,,0,"CMAudioPropertyCOM 8.2"
+;HKCR,CLSID\{39F2F765-47FA-43e9-8DFE-7097C3A61BFB}\VersionIndependentProgID,,0,"CMUSB6501PropertyCOM"
+;HKCR,CMAudioProperty,,0,"C-Media C6501 Property Componet"
+;HKCR,CMAudioProperty\CLSID,,0,{39F2F765-47FA-43e9-8DFE-7097C3A61BFB}
+;HKCR,CMAudioProperty\CurVer,,0,"C-Media C6501 Property Component"
+;HKCR,CMAudioProperty.7,,0,"C-Media C6501 Property Componet"
+;HKCR,CMAudioProperty.7\CLSID,,0,{39F2F765-47FA-43e9-8DFE-7097C3A61BFB}
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Run",C6501Sound,,"%WINDIR%\syswow64\RunDll32.exe %WINDIR%\Syswow64\C6501.cpl,CMICtrlWnd"
+;HKLM,"Software\Microsoft\Windows\CurrentVersion\Uninstall\C-Media C6501 Like Sound Driver",DisplayName,,"C-Media CM6501 Like Sound Driver"
+;HKLM,"Software\Microsoft\Windows\CurrentVersion\Uninstall\C-Media C6501 Like Sound Driver",UninstallString,,"%WINDIR%\syswow64\c6501rm.exe"
+;HKCR,Audio3D,,0,Audio3DObject -NODELETE
+;HKCR,Audio3D\CLSID,,0,{D8F1EEE0-F634-11CF-8700-00A0245D918B} -NODELETE
+;HKCR,CLSID\{D8F1EEE0-F634-11CF-8700-00A0245D918B},,0,Audio3DObject -NODELETE
+;HKCR,CLSID\{D8F1EEE0-F634-11CF-8700-00A0245D918B}\InProcServer32,,0,c6501a3d.dll
+;HKCR,CLSID\{D8F1EEE0-F634-11CF-8700-00A0245D918B}\InProcServer32,ThreadingModel,0,Apartment -NODELETE
+;HKCU,"Software\Sensaura\Audio3D\Settings","SplashScreen",65537,0,0,0,0 -NODELETE

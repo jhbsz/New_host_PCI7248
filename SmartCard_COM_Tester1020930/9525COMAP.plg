@@ -1,0 +1,237 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 9525COMAP - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/9525COMAP.res" /d "NDEBUG" /d "_AFXDLL" "D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\9525COMAP.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Release/" /Fp"Release/9525COMAP.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\9525COMAP.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\9525COMAPDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\9525RS232Lib.cpp"
+"C:\Program Files\Microsoft Visual Studio\VC98\MFC\SRC\APPMODUL.CPP"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\AT24CDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\AT45D041Dlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\AT88SCcmdDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\AT88SCDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\font1.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\InphoneCmdDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\Label.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\labelcontrol1.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\LCM_KEYPAD_EEPROMDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\mscomm1.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\picture1.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\SLE4428Dlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\SLE4442CMDDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\SLE4442Dlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22A.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Release/" /Fp"Release/9525COMAP.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22B.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/SmartCard_COM_Mode_Tester.pdb" /machine:I386 /out:"Release/SmartCard_COM_Mode_Tester.exe" 
+.\Release\9525COMAP.obj
+.\Release\9525COMAPDlg.obj
+.\Release\9525RS232Lib.obj
+.\Release\APPMODUL.OBJ
+.\Release\AT24CDlg.obj
+.\Release\AT45D041Dlg.obj
+.\Release\AT88SCcmdDlg.obj
+.\Release\AT88SCDlg.obj
+.\Release\font1.obj
+.\Release\InphoneCmdDlg.obj
+.\Release\Label.obj
+.\Release\labelcontrol1.obj
+.\Release\LCM_KEYPAD_EEPROMDlg.obj
+.\Release\mscomm1.obj
+.\Release\picture1.obj
+.\Release\SLE4428Dlg.obj
+.\Release\SLE4442CMDDlg.obj
+.\Release\SLE4442Dlg.obj
+.\Release\StdAfx.obj
+.\Release\9525COMAP.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+9525COMAP.cpp
+9525COMAPDlg.cpp
+9525RS232Lib.cpp
+APPMODUL.CPP
+C:\Program Files\Microsoft Visual Studio\VC98\MFC\SRC\APPMODUL.CPP(54) : warning C4073: initializers put in library initialization area
+AT24CDlg.cpp
+AT45D041Dlg.cpp
+AT88SCcmdDlg.cpp
+AT88SCDlg.cpp
+font1.cpp
+InphoneCmdDlg.cpp
+Label.cpp
+labelcontrol1.cpp
+LCM_KEYPAD_EEPROMDlg.cpp
+mscomm1.cpp
+picture1.cpp
+SLE4428Dlg.cpp
+SLE4442CMDDlg.cpp
+SLE4442Dlg.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22E.tmp" with contents
+[
+/nologo /o"Release/9525COMAP.bsc" 
+.\Release\StdAfx.sbr
+.\Release\9525COMAP.sbr
+.\Release\9525COMAPDlg.sbr
+.\Release\9525RS232Lib.sbr
+.\Release\APPMODUL.SBR
+.\Release\AT24CDlg.sbr
+.\Release\AT45D041Dlg.sbr
+.\Release\AT88SCcmdDlg.sbr
+.\Release\AT88SCDlg.sbr
+.\Release\font1.sbr
+.\Release\InphoneCmdDlg.sbr
+.\Release\Label.sbr
+.\Release\labelcontrol1.sbr
+.\Release\LCM_KEYPAD_EEPROMDlg.sbr
+.\Release\mscomm1.sbr
+.\Release\picture1.sbr
+.\Release\SLE4428Dlg.sbr
+.\Release\SLE4442CMDDlg.sbr
+.\Release\SLE4442Dlg.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22E.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SmartCard_COM_Mode_Tester.exe - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: 9525COMAP - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/9525COMAP.res" /d "_DEBUG" /d "_AFXDLL" "D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\9525COMAP.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/9525COMAP.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\9525COMAP.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\9525COMAPDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\9525RS232Lib.cpp"
+"C:\Program Files\Microsoft Visual Studio\VC98\MFC\SRC\APPMODUL.CPP"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\AT24CDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\AT45D041Dlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\AT88SCcmdDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\AT88SCDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\font1.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\InphoneCmdDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\Label.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\labelcontrol1.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\LCM_KEYPAD_EEPROMDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\mscomm1.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\picture1.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\SLE4428Dlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\SLE4442CMDDlg.cpp"
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\SLE4442Dlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22F.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP230.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/9525COMAP.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\New_host_PCI7248_2_1020927\SmartCard_COM_Tester1020930\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP230.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP231.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/SmartCard_COM_Mode_Tester.pdb" /debug /machine:I386 /out:"Debug/SmartCard_COM_Mode_Tester.exe" /pdbtype:sept 
+.\Debug\9525COMAP.obj
+.\Debug\9525COMAPDlg.obj
+.\Debug\9525RS232Lib.obj
+.\Debug\APPMODUL.OBJ
+.\Debug\AT24CDlg.obj
+.\Debug\AT45D041Dlg.obj
+.\Debug\AT88SCcmdDlg.obj
+.\Debug\AT88SCDlg.obj
+.\Debug\font1.obj
+.\Debug\InphoneCmdDlg.obj
+.\Debug\Label.obj
+.\Debug\labelcontrol1.obj
+.\Debug\LCM_KEYPAD_EEPROMDlg.obj
+.\Debug\mscomm1.obj
+.\Debug\picture1.obj
+.\Debug\SLE4428Dlg.obj
+.\Debug\SLE4442CMDDlg.obj
+.\Debug\SLE4442Dlg.obj
+.\Debug\StdAfx.obj
+.\Debug\9525COMAP.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP231.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+9525COMAP.cpp
+9525COMAPDlg.cpp
+9525RS232Lib.cpp
+APPMODUL.CPP
+C:\Program Files\Microsoft Visual Studio\VC98\MFC\SRC\APPMODUL.CPP(54) : warning C4073: initializers put in library initialization area
+AT24CDlg.cpp
+AT45D041Dlg.cpp
+AT88SCcmdDlg.cpp
+AT88SCDlg.cpp
+font1.cpp
+InphoneCmdDlg.cpp
+Label.cpp
+labelcontrol1.cpp
+LCM_KEYPAD_EEPROMDlg.cpp
+mscomm1.cpp
+picture1.cpp
+SLE4428Dlg.cpp
+SLE4442CMDDlg.cpp
+SLE4442Dlg.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP233.tmp" with contents
+[
+/nologo /o"Debug/9525COMAP.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\9525COMAP.sbr
+.\Debug\9525COMAPDlg.sbr
+.\Debug\9525RS232Lib.sbr
+.\Debug\APPMODUL.SBR
+.\Debug\AT24CDlg.sbr
+.\Debug\AT45D041Dlg.sbr
+.\Debug\AT88SCcmdDlg.sbr
+.\Debug\AT88SCDlg.sbr
+.\Debug\font1.sbr
+.\Debug\InphoneCmdDlg.sbr
+.\Debug\Label.sbr
+.\Debug\labelcontrol1.sbr
+.\Debug\LCM_KEYPAD_EEPROMDlg.sbr
+.\Debug\mscomm1.sbr
+.\Debug\picture1.sbr
+.\Debug\SLE4428Dlg.sbr
+.\Debug\SLE4442CMDDlg.sbr
+.\Debug\SLE4442Dlg.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP233.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SmartCard_COM_Mode_Tester.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

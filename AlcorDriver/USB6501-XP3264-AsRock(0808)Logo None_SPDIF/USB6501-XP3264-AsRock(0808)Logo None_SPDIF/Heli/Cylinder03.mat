@@ -1,0 +1,27 @@
+mat
+version 3.00
+valid ambient diffuse specular shininess emission alpha
+
+matdef Bell // id 0
+ambient 0.650000 0.880000 0.190000
+diffuse 1.000000 1.000000 0.140000
+specular 0.950000 0.970000 0.900000
+shininess 84.000000
+emission 0.000000 0.000000 0.000000
+alpha 1.000000
+
+matdef wood // id 1
+ambient 0.640000 0.610000 0.180000
+diffuse 0.680000 0.380000 0.140000
+specular 0.790000 0.730000 0.400000
+shininess 9.000000
+emission 0.000000 0.000000 0.000000
+alpha 1.000000
+
+matdef base // id 2
+ambient 0.610000 0.000000 0.000000
+diffuse 1.000000 0.150000 0.180000
+specular 1.000000 1.000000 0.360000
+shininess 15.000000
+emission 0.000000 0.000000 0.000000
+alpha 1.000000

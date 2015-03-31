@@ -1,0 +1,119 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+[Package|Standard Setup Package 1|Card Demo Program for 9520EMV]
+Icon1=Demo9520.exe
+Title1=Card Demo Program for 9520EMV
+StartIn1=$(AppPath)
+Key1=Icon1
+
+
+[Package|Standard Setup Package 1|Card Demo Program for AP9520EMV]
+Icon1=Demo9520.exe
+Title1=Card Demo Program for AP9520EMV
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Software\AP\9520\SingleSlot\DemoAp\SourceCode\Package
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\WINNT\system32\winscard.dll=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 1|Files Added]
+
+[Package|Standard Setup Package 1|Files Removed]
+c:\winnt\system32\winscard.dll=
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\WINNT\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINNT\system32\winscard.dll=No
+C:\WINNT\system32\MSCOMCTL.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\Software\AP\9520\SingleSlot\DemoAp\SourceCode\Demo9520.exe=Yes
+D:\Software\AP\9520\SingleSlot\DemoAp\SourceCode\AlcorEMV.dll=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+D:\Joe\SmartCard\Tulip_Project\Application\DemoAp\WorkArea\Demo9520.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\winscard.dll=$(WinSysPath)
+D:\Joe\SmartCard\Tulip_Project\Application\DemoAp\WorkArea\AlcorSCD.dll=$(AppPath)
+C:\WINNT\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\Joe\SmartCard\Tulip_Project\Application\DemoAp\WorkArea\AlcorEMV.dll=$(AppPath)
+D:\9520AP\Demo9520.exe=$(AppPath)
+D:\9520AP\AlcorEMV.dll=$(AppPath)
+D:\Software\AP\9520\SingleSlot\DemoAp\SourceCode\Demo9520.exe=$(AppPath)
+D:\Software\AP\9520\SingleSlot\DemoAp\SourceCode\AlcorEMV.dll=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+D:\Joe\SmartCard\Tulip_Project\Application\DemoAp\WorkArea\Demo9520.exe=No
+D:\Joe\SmartCard\Tulip_Project\Application\DemoAp\WorkArea\AlcorSCD.dll=No
+D:\Joe\SmartCard\Tulip_Project\Application\DemoAp\WorkArea\AlcorEMV.dll=No
+D:\9520AP\Demo9520.exe=No
+D:\9520AP\AlcorEMV.dll=No
+D:\Software\AP\9520\SingleSlot\DemoAp\SourceCode\Demo9520.exe=No
+D:\Software\AP\9520\SingleSlot\DemoAp\SourceCode\AlcorEMV.dll=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=1.44 MB
+Title=Au9520 Smartcard Reader Demo Program
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=Alcor Micro
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|Alcor Micro]
+Icon1=Demo9520.exe
+Title1=Au9520 SmartCard Demo Program
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=D:\Software\AP\9520\SingleSlot\DemoAp\SourceCode\Package
+ProjectFolder=D:\Software\AP\9520\SingleSlot\DemoAp\SourceCode
+ServerSideCab=
+File1=D:\Software\AP\9520\SingleSlot\DemoAp\SourceCode\Package\setup.exe
+File2=D:\Software\AP\9520\SingleSlot\DemoAp\SourceCode\Package\Setup.Lst
+File3=D:\Software\AP\9520\SingleSlot\DemoAp\SourceCode\Package\Demo9520.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

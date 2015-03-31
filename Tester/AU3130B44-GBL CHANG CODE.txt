@@ -1,0 +1,132 @@
+********************dma2205 (2205dma.frm)***********************************************
+
+Public Sub ShowData(ByVal startidx As Long, ByVal acq_count As Long)
+.......
+'(5)=====================================================================2007.06.14 CHEYENNE CHANG ST
+
+If RecordMode = 10 Then  ' FOR au3130 2ND MODE
+     
+     For i = 0 To acq_count - 1
+         
+     '    n = (startidx + i + startPos) Mod count1
+        x = (i * w) / (acq_count)
+         
+        samp1 = MP3Data_9(i)
+    
+       
+        y1 = CInt((CSng(32767 - CLng(samp1)) / CSng(65535)) * h)
+   '
+        
+         If last_y <> -1 Then
+             picScreen.Line (last_x, last_y1)-(x, y1), &HFF00&
+             
+         End If
+        last_x = x
+      
+        last_y1 = y1
+    Next
+End If
+
+***************************Tester(TesterFrm.frm)************************************************
+Private Sub Form_Load()
+..............................
+
+'========= AU3130BLF20 1st mode  '(3)=====================2007.06.14 CHEYENNE CHANG
+ Open App.Path & "\MP3_CW1.txt" For Input As #3
+   For i = 0 To 99
+    
+        Input #3, tmp0
+
+          MP3Data_CW1(i) = CInt(CSng(tmp0))
+         
+   Next i
+Close #3
+
+*********************command1 click***********************************************************
+
+
+
+'(4)============================2007.06.14 CHEYENNE CHANG
+                               If ChipName = "AU3130CLF20" Then
+                                For i = 0 To 100
+                                   MP3Data_9(i) = MP3Data_CW1(i)
+                                   
+                                Next
+                            End If
+
+
+***************************д@пы  AU3130Test**************************************************
+
+   '(2)=================================================================2007.06.14 CHEYENNE CHANG ST
+    If ErrCount > 30 Or CoutinueCount > 30 Then
+    If ChipName = "AU3130CLF20" Then '=========== second mode
+       ErrCount = 0
+        CoutinueCount = 0
+       
+       For i = 0 To 99
+        Debug.Print MP3Data_9(i), gnBuffer(i)
+          If CSng(gnBuffer(i)) = 0 Then
+           gnBuffer(i) = 1
+           End If
+          
+        If CSng(MP3Data_9(i)) / CSng(gnBuffer(i)) < 0.7 Or CSng(MP3Data_9(i)) / CSng(gnBuffer(i)) > 1.3 Then
+         ErrCount = ErrCount + 1
+         If i = OldCount + 1 Then
+            CoutinueCount = CoutinueCount + 1
+          End If
+        End If
+        
+        OldCount = i
+       Next i
+        RecordMode = 10
+        dma2205.Show
+        dma2205.ShowData 0, 100
+        
+        Tester.Print "C44 48 pind mode ErrCount="; ErrCount, "64 pin mode CoutinueCount="; CoutinueCount
+       
+    End If
+ End If
+
+******************************д@пы  л┼зi**********************************************************
+..
+Public MP3Data_9(0 To 100) As Integer '=============2007.06.14 CHEYENNE CHANG
+..
+Public MP3Data_CW1(0 To 100) As Integer '=============2007.06.14 CHEYENNE CHANG
+
+
+
+********************************MP3_Rec_Click()*************************************************
+Private Sub MP3_Rec_Click()
+
+Print "begin record Mp3"
+Dim i As Integer
+
+               'ChipName = "AU3130CL" '======================= need change
+                ChipName = "AU3130BL" '(1)======================= 2007.06.14 CHEYENNE CHANG
+                'RecordMode = 9
+                 RecordMode = 10     '======================== 2007.06.14 CHEYENNE CHANG
+                If PCI7248InitFinish = 0 Then
+                  PCI7248Exist
+                End If
+
+.....
+
+                    'Open App.Path & "\MP3.txt" For Output As #4
+                     Open App.Path & "\MP3_CW1.txt" For Output As #4  '==========2007.06.14 CHEYENNE CHANG
+
+
+**************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+

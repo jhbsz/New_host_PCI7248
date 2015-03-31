@@ -1,0 +1,11 @@
+Bin: 
+86_D1_K9F.bin                      0x04      add support GPIO test (command 0x55)
+SSD_31_K9LBGU1M_RAM.bin    0xFA      for SSD_RAM
+SSD_HOSTfunc_RAM.bin         0xF4      add support GPIO test (command 0x55)
+J_F2_SSD_RAM.bin                 0xF3      add support GPIO test (command 0x55)
+ 
+MP:
+Modify ReMP error
+Add check GPIO
+"J_F2_SSD_RAM.bin"
+#define WM_FT_GPIO_FAIL    WM_USER + 0x760

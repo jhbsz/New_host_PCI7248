@@ -1,0 +1,73 @@
+:Base bithelp.hlp
+:Title BurnInTest
+1 Introduction and Overview=HID_OVERVIEW
+1 What's new=HID_VERSIONHISTORY
+1 Quick start guide=HID_QUICKSTART
+1 How to purchase BurnInTest=HID_ORDERING
+1 Interpreting the results
+2 Interpreting the results=HID_RESULTS
+2 Precautions for accurate measurement=HID_PRECAUTIONS
+1 Test Descriptions
+2 Overview=HID_TESTDESCRIPTIONS
+2 CPU - Maths test suite=HID_TESTS_MATHS
+2 RAM Testing=HID_TESTS_MEMORY
+2 2D graphics - video memory=HID_TESTS_VIDEOMEM
+2 2D graphics - graphics functions=HID_TESTS_GRAPHICS
+2 Monitor EMC testing=HID_TESTS_EMC
+2 Disk test suite=HID_TESTS_DISK
+2 CPU - MMX / SSE / 3DNow! test suite=HID_TESTS_MMX
+2 3D Graphics test suite=HID_TESTS_3DG
+2 Printer Test=HID_TESTS_PRINTER
+2 Serial port test=HID_TESTS_SERIALPORT
+2 Parallel port test=HID_TESTS_PARPORT
+2 USB port test=HID_TESTS_USB
+2 Network test=HID_TESTS_NETWORK
+2 CD ROM / DVD=HID_TESTS_CDROM
+2 Sound Card=HID_TESTS_SOUND
+2 Video play=HID_TESTS_VIDEO_PLAY
+2 Tape drive testing=HID_TESTS_TAPE
+1 Menu Options
+2 Menu Options=HID_MENUS
+1 Support and Copyright and FAQ
+2 Problems and FAQ=HID_FAQ
+2 Common Error messages=HID_COMMONERRORS
+2 Fault finding=HID_FAULT_FINDING
+2 System requirements=HID_SYSTEMREQ
+2 Contacting PassMark Software=HID_CONTACTS
+2 Copyright and License=HID_COPYRIGHT
+1 Test Setup, Preferences & Logging
+2 Detailed Error log=HID_DETAILED_LOG
+2 Test selection and duty cycles=HID_TESTSETUP
+2 Test preferences - Index=HID_PREFERENCES
+2 Test preferences - Disk=HID_PREFERENCES_DISK
+2 Test preferences - CD=HID_PREFERENCES_CD
+2 Test preferences - Logging=HID_PREFERENCES_LOGGING
+2 Test preferences - Error handling=HID_PREFERENCES_ERROR
+2 Test preferences - Network=HID_PREFERENCES_NETWORK
+2 Test preferences - Temperature=HID_PREFERENCES_TEMP
+2 Test preferences - Timer and test duration=HID_PREFERENCES_TIMER
+2 Test preferences - Tape=HID_PREFERENCES_TAPE
+2 Test preferences - Print=HID_PREFERENCES_PRINT
+2 Test preferences - Pre test=HID_PREFERENCES_PRETEST
+2 Test preferences - Sound=HID_PREFERENCES_SOUND
+2 Test preferences - Video play=HID_PREFERENCES_VIDEO_PLAY
+2 Test preferences - CPU affinity=HID_PREFERENCES_CPU
+2 Test preferences - Serial ports=HID_PREFERENCES_SERIAL
+2 Test preferences - Parallel port=HID_PREFERENCES_PARPORT
+2 Test preferences - USB ports=HID_PREFERENCES_USB
+2 Test preferences - 2D Graphics=HID_PREFERENCES_2D
+2 Test preferences - Maths=HID_PREFERENCES_MATHS
+2 Test preferences - RAM=HID_PREFERENCES_RAM
+1 Other useful information
+2 Setting the machine identity=HID_MACHINEID
+2 Temperature monitoring=HID_TEMPERATUREMON
+2 Maintaining multiple configuration=HID_MULTTESTCONFIG
+2 Serial loop back plugs=HID_LOOPBACK
+2 Parallel loop back plugs=HID_LOOPBACK_PAR
+2 USB Loopback plugs=HID_LOOPBACK_USB
+2 Starting BurnInTest from the command line=HID_COMMANDLINE
+2 Reboot / Restart Cycling=HID_REBOOT_CYCLE
+2 Setting the Lock Pages in Memory right=HID_ADD_LOCKRIGHTS
+2 What is S.M.A.R.T?=HID_SMART
+1 Scripting
+2 Writing scripts in BurnInTest=HID_SCRIPTING

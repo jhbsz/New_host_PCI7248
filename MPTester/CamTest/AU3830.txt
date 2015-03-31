@@ -1,0 +1,13 @@
+Public Const WM_USER = &H400
+
+Public Const WM_CAM_MP_START = WM_USER + &H100
+
+Public Const WM_CAM_MP_PASS = WM_USER + &H400
+
+Public Const WM_CAM_MP_UNKNOW_FAIL = WM_USER + &H410
+
+Public Const WM_CAM_MP_GPIO_FAIL = WM_USER + &H420
+
+Public Const WM_CAM_MP_READY = WM_USER + &H800
+
+ 

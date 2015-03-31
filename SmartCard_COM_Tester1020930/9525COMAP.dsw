@@ -1,0 +1,35 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "9525COMAP"=.\9525COMAP.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SecurityController/9525/Application/Serial interface/SourceCode", PHCCAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+    {648A5600-2C6E-101B-82B6-000000000014}
+    {978C9E23-D4B0-11CE-BF2D-00AA003F40D0}
+}}}
+
+###############################################################################
+

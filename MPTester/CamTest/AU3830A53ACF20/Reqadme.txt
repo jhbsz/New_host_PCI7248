@@ -1,0 +1,6 @@
+install:
+ALInstFtr -i allow 3830
+remove
+ALInstFtr -d allow 3830
+
+C:\WINDOWS\system32\drivers

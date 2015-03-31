@@ -1,0 +1,433 @@
+_______|_______________________________________________________________________
+35225__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+35226__| DATA0(0xC3) 
+_______| Data(
+__ 00: 55 53 42 43 68 DE 10 81 00 02 00 00 80 00 0A 93 
+__ 16: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0x880E) 
+_______|_______________________________________________________________________
+35227__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35249__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+35250__| DATA1(0xD2) 
+_______| Data(
+__ 000: 73 AA 55 43 68 DE 10 81 00 02 00 00 80 00 00 01 01 04 00 20 00 00 00 00 00 00 00 00 00 00 00 11 00 11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 048: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 096: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 144: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 192: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 240: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 288: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 336: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 384: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 432: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0x2BFC) 
+_______|_______________________________________________________________________
+35251__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35254__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+35255__| DATA0(0xC3) Data(55 53 42 53 68 DE 10 81 00 00 00 00 00) CRC16(0xA80E) 
+_______|_______________________________________________________________________
+35256__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35259__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+35260__| DATA1(0xD2) 
+_______| Data(
+__ 00: 55 53 42 43 68 DE 10 81 00 02 00 00 80 00 0A 75 
+__ 16: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0xDB5A) 
+_______|_______________________________________________________________________
+35261__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35322__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+35323__| DATA1(0xD2) 
+_______| Data(
+__ 000: 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 048: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 096: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 00 C0 C0 01 AF 05 FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 144: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 192: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 240: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 288: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 336: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 384: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 432: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 480: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF)
+_______| CRC16(0x8E38) 
+_______|_______________________________________________________________________
+35324__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35327__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+35328__| DATA0(0xC3) Data(55 53 42 53 68 DE 10 81 00 00 00 00 00) CRC16(0xA80E) 
+_______|_______________________________________________________________________
+35329__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35334__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+35335__| DATA0(0xC3) 
+_______| Data(
+__ 00: 55 53 42 43 68 DE 10 81 00 02 00 00 80 00 0A 9C 
+__ 16: 09 00 00 02 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0x26A2) 
+_______|_______________________________________________________________________
+35336__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35401__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+35402__| DATA1(0xD2) 
+_______| Data(
+__ 000: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 048: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 096: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 144: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 192: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 240: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 288: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 336: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 384: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 432: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 480: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF)
+_______| CRC16(0xFF0F) 
+_______|_______________________________________________________________________
+35403__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35406__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+35407__| DATA0(0xC3) Data(55 53 42 53 68 DE 10 81 00 00 00 00 00) CRC16(0xA80E) 
+_______|_______________________________________________________________________
+35408__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35409__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+35410__| DATA1(0xD2) 
+_______| Data(
+__ 00: 55 53 42 43 68 DE 10 81 00 02 00 00 00 00 0A 74 
+__ 16: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0xCC28) 
+_______|_______________________________________________________________________
+35411__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35444__| PING(0x2D) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+35445__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35446__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+35447__| DATA0(0xC3) 
+_______| Data(
+__ 000: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 048: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 096: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 144: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 192: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 240: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 288: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 336: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 384: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 432: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 480: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF)
+_______| CRC16(0xFF0F) 
+_______|_______________________________________________________________________
+35448__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35453__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+35454__| DATA1(0xD2) Data(55 53 42 53 68 DE 10 81 00 00 00 00 00) CRC16(0xA80E) 
+_______|_______________________________________________________________________
+35455__| ACK(0x4B) 
+_______|_______________________________________________________________________
+35458__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+35459__| DATA1(0xD2) 
+_______| Data(
+__ 00: 55 53 42 43 68 DE 10 81 00 02 00 00 80 00 0A 73 
+__ 16: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0x1A1F) 
+_______|_______________________________________________________________________
+35460__| ACK(0x4B) 
+_______|_______________________________________________________________________
+38575__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+38576__| DATA0(0xC3) 
+_______| Data(
+__ 000: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 048: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 096: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 144: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 192: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 240: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 288: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 336: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 384: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 432: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 480: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF)
+_______| CRC16(0xFF0F) 
+_______|_______________________________________________________________________
+38577__| ACK(0x4B) 
+_______|_______________________________________________________________________
+38580__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+38581__| DATA1(0xD2) Data(55 53 42 53 68 DE 10 81 00 00 00 00 00) CRC16(0xA80E) 
+_______|_______________________________________________________________________
+38582__| ACK(0x4B) 
+_______|_______________________________________________________________________
+38585__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+38586__| DATA0(0xC3) 
+_______| Data(
+__ 00: 55 53 42 43 68 DE 10 81 00 02 00 00 80 00 0A 9C 
+__ 16: 09 00 00 04 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0x36B2) 
+_______|_______________________________________________________________________
+38587__| ACK(0x4B) 
+_______|_______________________________________________________________________
+38635__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+38636__| DATA0(0xC3) 
+_______| Data(
+__ 000: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 048: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 096: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 144: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 192: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 240: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 288: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 336: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 384: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 432: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 480: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF)
+_______| CRC16(0xFF0F) 
+_______|_______________________________________________________________________
+38637__| ACK(0x4B) 
+_______|_______________________________________________________________________
+38640__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+38641__| DATA1(0xD2) Data(55 53 42 53 68 DE 10 81 00 00 00 00 00) CRC16(0xA80E) 
+_______|_______________________________________________________________________
+38642__| ACK(0x4B) 
+_______|_______________________________________________________________________
+38643__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+38644__| DATA1(0xD2) 
+_______| Data(
+__ 00: 55 53 42 43 68 DE 10 81 00 02 00 00 00 00 0A 7B 
+__ 16: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0x6E07) 
+_______|_______________________________________________________________________
+38645__| ACK(0x4B) 
+_______|_______________________________________________________________________
+38682__| PING(0x2D) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+38683__| ACK(0x4B) 
+_______|_______________________________________________________________________
+38684__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+38685__| DATA0(0xC3) 
+_______| Data(
+__ 000: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 048: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 096: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 144: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 192: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 240: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 288: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 336: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 384: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 432: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 480: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF)
+_______| CRC16(0xFF0F) 
+_______|_______________________________________________________________________
+38686__| ACK(0x4B) 
+_______|_______________________________________________________________________
+38695__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+38696__| DATA0(0xC3) Data(55 53 42 53 68 DE 10 81 00 00 00 00 00) CRC16(0xA80E) 
+_______|_______________________________________________________________________
+38697__| ACK(0x4B) 
+_______|_______________________________________________________________________
+38700__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+38701__| DATA1(0xD2) 
+_______| Data(
+__ 00: 55 53 42 43 68 DE 10 81 00 02 00 00 80 00 0A 7F 
+__ 16: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0xBABF) 
+_______|_______________________________________________________________________
+38702__| ACK(0x4B) 
+_______|_______________________________________________________________________
+41842__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+41843__| DATA1(0xD2) 
+_______| Data(
+__ 000: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 048: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 096: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 144: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 192: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 240: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 288: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 336: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 384: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 432: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 480: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF)
+_______| CRC16(0xFF0F) 
+_______|_______________________________________________________________________
+41844__| ACK(0x4B) 
+_______|_______________________________________________________________________
+41847__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+41848__| DATA0(0xC3) Data(55 53 42 53 68 DE 10 81 00 00 00 00 00) CRC16(0xA80E) 
+_______|_______________________________________________________________________
+41849__| ACK(0x4B) 
+_______|_______________________________________________________________________
+41855__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+41856__| DATA0(0xC3) 
+_______| Data(
+__ 00: 55 53 42 43 68 DE 10 81 00 02 00 00 00 00 0A 99 
+__ 16: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0x7D90) 
+_______|_______________________________________________________________________
+41857__| ACK(0x4B) 
+_______|_______________________________________________________________________
+41904__| PING(0x2D) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+41905__| ACK(0x4B) 
+_______|_______________________________________________________________________
+41906__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+41907__| DATA1(0xD2) 
+_______| Data(
+__ 000: 00 00 00 00 00 00 6E 06 00 00 00 6E 06 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 048: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 096: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 144: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 192: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 240: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 288: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 336: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 384: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 432: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0xC177) 
+_______|_______________________________________________________________________
+41908__| ACK(0x4B) 
+_______|_______________________________________________________________________
+41911__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+41912__| DATA1(0xD2) Data(55 53 42 53 68 DE 10 81 00 00 00 00 00) CRC16(0xA80E) 
+_______|_______________________________________________________________________
+41913__| ACK(0x4B) 
+_______|_______________________________________________________________________
+41916__| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+41917__| DATA0(0xC3) 
+_______| Data(
+__ 00: 55 53 42 43 68 DE 10 81 00 02 00 00 80 00 0A 96 
+__ 16: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0x4BC4) 
+_______|_______________________________________________________________________
+41918__| ACK(0x4B) 
+_______|_______________________________________________________________________
+44987__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+44988__| DATA0(0xC3) 
+_______| Data(
+__ 000: 01 73 00 00 00 00 00 00 00 F1 00 7D 00 00 F2 00 00 00 00 F3 AF 05 84 01 C0 F5 6E 06 00 00 00 00 F6 6E 06 00 00 00 04 00 00 00 00 00 00 00 00 00 
+__ 048: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 096: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 144: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 192: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 240: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 288: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 336: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 384: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 432: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+__ 480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0x0DB9) 
+_______|_______________________________________________________________________
+44989__| ACK(0x4B) 
+_______|_______________________________________________________________________
+44992__| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+44993__| DATA1(0xD2) Data(55 53 42 53 68 DE 10 81 00 00 00 00 00) CRC16(0xA80E) 
+_______|_______________________________________________________________________
+44994__| ACK(0x4B) 
+_______|_______________________________________________________________________
+446150_| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+446151_| DATA0(0xC3) 
+_______| Data(
+__ 00: 55 53 42 43 48 F2 1D 81 00 02 00 00 80 00 0A 9C 
+__ 16: 09 00 00 02 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0x2CCC) 
+_______|_______________________________________________________________________
+446152_| ACK(0x4B) 
+_______|_______________________________________________________________________
+446194_| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+446195_| DATA0(0xC3) 
+_______| Data(
+__ 000: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 048: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 096: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 144: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 192: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 240: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 288: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 336: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 384: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 432: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 480: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF)
+_______| CRC16(0xFF0F) 
+_______|_______________________________________________________________________
+446196_| ACK(0x4B) 
+_______|_______________________________________________________________________
+446199_| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+446200_| DATA1(0xD2) Data(55 53 42 53 48 F2 1D 81 00 00 00 00 00) CRC16(0x4A3C) 
+_______|_______________________________________________________________________
+446201_| ACK(0x4B) 
+_______|_______________________________________________________________________
+446204_| OUT(0x87) ADDR(1) ENDP(1) CRC5(0x1A) 
+_______|_______________________________________________________________________
+446205_| DATA1(0xD2) 
+_______| Data(
+__ 00: 55 53 42 43 68 78 0D 81 00 02 00 00 80 00 0A 75 
+__ 16: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00)
+_______| CRC16(0xCD58) 
+_______|_______________________________________________________________________
+446206_| ACK(0x4B) 
+_______|_______________________________________________________________________
+446285_| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+446286_| DATA0(0xC3) 
+_______| Data(
+__ 000: 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 048: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 096: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 00 C0 C0 01 AF 05 FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 144: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 192: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 240: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 288: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 336: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 384: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 432: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+__ 480: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF)
+_______| CRC16(0x8E38) 
+_______|_______________________________________________________________________
+446287_| ACK(0x4B) 
+_______|_______________________________________________________________________
+446290_| IN(0x96) ADDR(1) ENDP(2) CRC5(0x03) 
+_______|_______________________________________________________________________
+446291_| DATA1(0xD2) Data(55 53 42 53 68 78 0D 81 00 00 00 00 00) CRC16(0x4AC4) 
+_______|_______________________________________________________________________
+446292_| ACK(0x4B) 
+_______|_______________________________________________________________________

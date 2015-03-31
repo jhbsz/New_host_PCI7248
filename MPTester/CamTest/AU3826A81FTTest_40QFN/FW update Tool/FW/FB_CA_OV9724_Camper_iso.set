@@ -1,0 +1,504 @@
+
+;   Hex version        Set Version
+
+;CK setfile sample
+; original id sequence, this is internal default setting
+;00 01 03 04 05 59 06 07 08 09 0A 0B 0C 33 37 34
+;38 35 39 36 3A 02 03 04 05 59 06 07 08 6A 0A 0B
+;0C 33 3B 34 3C 35 3D 36 3E 3F 40 41 42 43 44 45
+;46 47 48 49 4A 4B 67 68 4C 4D 4E 4F 50 51 52 53
+;54 55 56 57 58 63 64 65 66 5B 5C 5D 5E 69 6B 6C
+;6D 6E 6F 70 71 72 73 74 75 76 77 78 79 7A 7B 7C
+;7D 7E 7F 80 81 82 83 84 AA 86 87 AB 89 8A 8B
+;------------------------------------------------
+;00 01 03 04 05 59 06 07 08 09 0A 0B 0C 33 37 34
+;38 35 39 36 3A 02 03 04 05 59 06 07 08 6A 0A 0B
+;0C 33 3B 34 3C 35 3D 36 3E 3F 40 41 42 43 44 45
+;46 47 48 49 4A 4B 67 68 4C 4D 4E 4F 50 51 52 53
+;54 55 56 57 58 63 64 65 66 5B 5C 5D 5E 69 6B 6C
+;6D 6E 6F 70 71 72 73 74 75 76 77 78 79 7A 7B 7C
+;7D 7E 7F 80 81 82 83 84 85 86 87 88 89 8A 8B 8C
+;8D
+
+
+
+[IdMap]
+;Replaced_ID    ; Original_ID
+;------------------------------------------------------------------------------
+;Device_Descriptor
+ 00             ; 00: DEV_DESC
+;High_Speed_Related_Descriptors
+ 01             ; 01: HIGH_CONFIG_DESC
+ 03             ; 03: IAD_DESC
+ 04             ; 04: INTF0_DESC
+ 05             ; 05: CS_VC_INTF_DESC
+ 5A             ; 5A: EXUNIT_DESC
+ 06             ; 06: VC_CAMERA_TERM_DESC
+ 07             ; 07: VC_PU_DESC
+ 08             ; 08: VC_OUT_TERM_DESC
+ 09             ; 09: HIGH_EP1_DESC
+ 0A             ; 0A: CS_VC_EP1_DESC
+ 0B ;9B         ; 0B: INTF1_ALT0_DECS
+ 0C             ; 0C: VS_AUTOMATIC_FMTGEN
+ 33 ;9C         ; 33: INTF1_ALT1_DECS
+ 37             ; 37: HIGH_EP2_ALT1_DESC
+ 34             ; 34: INTF1_ALT2_DECS
+ 38             ; 38: HIGH_EP2_ALT2_DESC
+ 35             ; 35: INTF1_ALT3_DECS
+ 39             ; 39: HIGH_EP2_ALT3_DESC
+ 36             ; 36: INTF1_ALT4_DECS
+ 3A             ; 3A: HIGH_EP2_ALT4_DESC
+;Full_Speed_Related_Descriptors
+ 02             ; 02: FULL_CONFIG_DESC
+ 03             ; 03: IAD_DESC
+ 04             ; 04: INTF0_DESC
+ 05             ; 05: CS_VC_INTF_DESC
+ 5A             ; 59: EXUNIT_DESC
+ 06             ; 06: VC_CAMERA_TERM_DESC
+ 07             ; 07: VC_PU_DESC
+ 08             ; 08: VC_OUT_TERM_DESC
+ 6B             ; 6B: FULL_EP1_DESC
+ 0A             ; 0A: CS_VC_EP1_DESC
+ 0B             ; 0B: INTF1_ALT0_DECS
+ 0C             ; 0C: VS_AUTOMATIC_FMTGEN
+ 33             ; 33: INTF1_ALT1_DECS
+ 3B             ; 3B: FULL_EP2_ALT1_DESC
+ 34             ; 34: INTF1_ALT2_DECS
+ 3C             ; 3C: FULL_EP2_ALT2_DESC
+ 35             ; 35: INTF1_ALT3_DECS
+ 3D             ; 3D: FULL_EP2_ALT3_DESC
+ 36             ; 36: INTF1_ALT4_DECS
+ 3E             ; 3E: FULL_EP2_ALT4_DESC
+;Other_Speed_Config_Descriptor
+ 3F             ; 3F: OTHERSP_CONF_DESC
+ 40             ; 40: OTHERSP_IAD_DESC
+ 41             ; 41: OTHERSP_INTF0_DESC
+ 42             ; 42: OTHERSP_CS_VC_INTF_DESC
+ 43             ; 43: OTHER_VC_CAM_TERM_DESC
+ 44             ; 44: OTHER_VC_OUT_TERM_DESC
+;String_Descriptors
+ 45             ; 45: GET_STRING0_DESC
+ 46             ; 46: GET_STRING1_DESC
+ 47             ; 47: GET_STRING2_DESC
+ 48             ; 48: GET_STRING3_DESC
+ 49             ; 49: GET_STRING4_DESC
+ 4A             ; 4A: GET_STRING5_DESC
+;Device_Qualifier_Descriptor
+ 4B             ; 4B: GET_DEVQUAL_DESC
+;Get_BOS
+ 4C             ; 4C :
+;High_Speed_2659_Table
+ 95             ; 68: GET_HIGH_AUTOMAIC_TAB
+;Full_Speed_2659_Table
+ 96             ; 69: GET_FULL_AUTOMAIC_TAB
+;Processing_Unit_Control
+ 4D             ; 4D: BRIGHTNESS_CTRL
+ 4E             ; 4E: CONTRAST_CTRL
+ 4F             ; 4F: HUE_CTRL
+ 50             ; 50: SATURATION_CTRL
+ 51             ; 51: SHARPNESS_CTRL
+ 52             ; 52: GAMMA_CTRL
+ 53             ; 53: WBTEMP_CTRL
+ 54             ; 54: GAIN_CTRL
+ 55             ; 55: BACKLIGHT_CTRL
+ 56             ; 56: PWLINE_CTRL
+ 57             ; 57: WBTEMPAUTO_CTRL
+ 58             ; 58: AETime
+;Gamma_Table
+ 59             ; 59: GAMMA_TAB
+;Snapshot_Low_Active
+ 64             ; 64: GET_SNAPACTIVE
+;External_2659_Table
+ 94             ; 65: GET_RES_TABLE
+;Backend_Init_Table
+ 66             ; 66: GET_BACKENDINIT
+;Setfile_Revision
+ 8E             ; 67: GET_SETTING_VERSION
+;Probe_Setting
+ 5C             ; 5C: GET_HSYUVProb
+ 5D             ; 5D: GET_HSMJProb
+ 5E             ; 5E: GET_FSYUVProb
+ 5F             ; 5F: GET_FSMJProb
+;External_Frame_Rate_Table
+ 97             ; 6A: GET_FRAMERATE_TABLE
+;Privacy_Control_Active
+ 6C             ; 6C: GET_PRIVACY_ACTIVE
+;New----------------------------------------------------------------------------
+ 6D             ; 6D: GET_NEW_SPI_TABLE
+ ;Audio_Interface_Related_Table
+ 6E             ; 6E: AU_IAD_DESC_MIC
+ 6F             ; 6F: AU_IF2_DESC
+ 70             ; 70: AU_HEADER_DESC_MIC
+ 71             ; 71: AC_DMIC_IT_DESC
+ 72             ; 72: AC_DMIC_FU_DESC
+ 73             ; 73: AC_DMIC_OT_DESC
+ 74             ; 74: AU_IF3_ALT0_DESC
+ 75             ; 75: AU_DMIC_GENER_DESC
+ 76             ; 76: GET_AU_VOLUMN_MIC
+ 77             ; 77: GET_AU_FORMAT
+ 78             ; 78: GET_MICARRAY
+ 79             ; 79: GET_AU_VOLGGAIN
+ 7A             ; 7A: GET_AU_COFREM_INDEX
+ 7B             ; 7B: GET_AU_IIRSET
+ 7C             ; 7C: GET_AU_FIRSET
+ 7D             ; 7D: GET_AU_DELAYTIME
+;New----------------------------------------------------------------------------
+ 8F             ; 7E: GET_SENSETTING_TAB01
+ 90             ; 7F: GET_SENSETTING_TAB02
+ 91             ; 80: GET_SENSETTING_TAB03
+ 92             ; 81: GET_SENSETTING_TAB04
+ 93             ; 82: GET_SENSETTING_TAB05
+ 83             ; 83: GET_SENSETTING_TAB06
+ 84             ; 84: GET_SENSETTING_TAB07
+ 85             ; 85: GET_SENSETTING_TAB08
+ 86             ; 86: GET_SENSETTING_TAB09
+ 87             ; 87: GET_SENSETTING_TAB0A
+ 88             ; 88: GET_RESERVED_1
+ 89             ; 89: GET_RESERVED_2
+ 8A             ; 8A: GET_RESERVED_3
+ 8B             ; 8B: GET_RESERVED_4
+ 8C             ; 8C: GET_RESERVED_5
+ 8D             ; 8D: GET_RESERVED_6
+
+[TriggerID]
+8E 97;the first one is begin trigger id, the second one last trigger id
+
+[FastBoot]
+01 ; 01 enable fast boot disable fast boot
+
+[ProSaveMethod]
+00	;00, 02 , 04
+
+
+;setting file version , replace 66 with 8C
+; OV9724-00xx
+[8E]
+4F 56 39 37 32 34 2D 30 30 30 33 00
+
+
+[8F]
+;---------------------------------------------------------;
+;Module_Misc_Table, replace 6C with 8D                    ;
+;---------------------------------------------------------;
+
+; ~~~~~~ Module_Misc_Table section 0 : backend reset section
+00 48
+    02 80 00
+	0B 50 62 ; SENSOR_I2C_MODE
+	0B 51 20 ; SENSOR_I2C_ID
+	0B 80 00 ;8F ; DynISPSwitch
+	02 F2 00 ;RAW denoise auto switch
+    A0 2B 02  00    ;bIspAeSwitch   ;b0 : xAeExposureChanged     ;b0 : xAwb_Execution
+              00    ;bIspAwbSwitch  ;b1 : xAePixelChanged        ;b1 : xAwb_LockMode_Execution
+                                    ;b2 : xAeLineChanged         ;b2 : xIspEnable_CoreCCM
+                                    ;b3 : xAeGainChanged         ;b3 : xIspEnable_ColorZone
+                                    ;b4 : xAeCLKChanged          ;b4 : xIspEnable_LockMode
+                                    ;b5 : xAeDropBadFrame        ;b5 : xIspEnable_Awb_Set
+                                    ;b6 : xIspEnable_Ae_OutDoor  ;b6 : xIspEnable_Lens
+                                    ;b7 : xIspEnable_Ae          ;b7 : xIspEnable_Awb;
+
+    0A 8B 02     ; DropBadFrameNum before JPEG_Enable ; For NR Table
+    0A 8C 02     ; DropBadFrameNum after  JPEG_Enable ; For Property Page
+
+	8B 52 03  01 ; 0x09FE  bWriteProtectGPIO
+			  FF ; 0x09FF  bSnapShotGPIO
+			  FF ; 0x0A00  bPrivacyCtrlGPIO
+
+	80 20 06  00 ; 0x0020  GPIO1_DATA
+			  00 ; 0x0021  GPIO2_DATA
+			  5F ;4F ; 0x0022  GPIO1_DIR
+			  00 ; 0x0023  GPIO2_DIR
+			  B0 ; 0x0024  GPIO1_PD
+			  FF ; 0x0025  GPIO2_PD
+
+    82 80 16    00
+                00
+                00
+                00
+                00
+                00
+                00
+                40
+                00
+                00
+                00
+                00
+                00
+                00
+                00
+                00
+
+	00 2A 00 ; clear pull down pin
+
+	; RGB Gamma setting
+	02 30 00 ; Gamma control
+
+ ;Lens shading parameters
+	02 10 00 ; Lens shading enable
+
+    0B 87 01 ; bTestType    0 : Parrel
+             ;              1 : Mipi
+
+; ~~~~~~ Module_Misc_Table section 1 : sensor reset/on
+00 15
+    ; set sensor on
+	05 60 00 ;internal LDO on
+	00 2A 00
+	7F FF 02
+	00 54 00
+	00 20 04
+	7F FF 02
+	00 20 0C
+
+; ~~~~~~ Module_Misc_Table section 2 : sensor suspend
+00 0F
+    00 20 0C
+    7F FF 02
+    05 60 4B ; 09 ;internal LDO off
+    7F FF 01
+    00 2A FF
+
+
+; ~~~~~~ Module_Misc_Table section 3 : power on suspend
+00 00
+
+
+[90]
+;---------------------------------------------------------;
+;OV_9726_Resolution_Table, replace 6D with 8E             ;
+;---------------------------------------------------------;
+; ~~~~~~ OV_9726_Resolution_Table section 0 : FS
+00 21
+10      ;Resolution Line Length
+;   output      resized size    S_res_YUV S_YUV B_YUV Nr_YUV    S_res_JPG S_JPG  B_JPG    Nr_JPG
+02 80  01 E0    04 2A  02 D0       02      00    00    00          02     00      00       00
+01 60  01 20    04 20  02 D0       02      00    00    00          02     00      00       00
+
+; ~~~~~~ OV_9726_Resolution_Table section 1 : HS
+00 71
+10
+;   output      resized size    S_res_YUV S_YUV B_YUV Nr_YUV    S_res_JPG S_JPG  B_JPG    Nr_JPG
+00 A0  00 78    03 C0  02 D0       02      00    00    01         02     00      00       01
+01 40  00 F0    03 C0  02 D0       02      00    00    01         02     00      00       01
+01 60  01 20    03 70  02 D0       02      00    03    01         02     00      03       01
+02 80  01 E0    03 C0  02 D0       02      00    02    00         02     00      02       00
+04 2A  03 20    04 2A  02 D0       02      00    00    02         02     00      00       02
+05 00  02 D0    05 00  02 D0       02      00    00    02         02     00      00       02
+05 00  03 20    05 00  02 D0       02      00    01    02         02     00      01       02
+
+; ~~~~~~ OV_9726_Resolution_Table section 2 : Sensor resolution
+00 F3          ;section length
+05 00    02 D8 ;sensor output size
+00             ;sensor common section
+  ;frame rate table
+  ;
+  ; Frame step settings:
+  ; frame step set 0 : min step
+  ; frame step set 1 : step section1
+  ; frame step set 2 : step section2
+  ; frame step set 3 : max step
+  ;
+  ; Gain settings
+  ; gain position 0 : min gain
+  ; gain position 1 : max gain for under 1 frame
+  ; gain position 2 : max gain for step under section 1
+  ; gain position 3 : max gain for step under section 2
+  ; gain position 4 : max gain for the last steps
+  ; gain position 5 : not used yet
+
+  ; FR    50Hz Step   Gain Settings          60Hz Step   Gain Settings
+    1E    00 00 02 07   00 11  18 2A  2F 00    08 08 0C 0D   00 11  18 2A  2F 00
+    19    00 00 04 07   00 11  18 2A  2F 00    08 0B 0C 0D   00 11  18 2A  2F 00
+    14    01 01 04 07   00 11  18 2A  2F 00    09 09 0B 0D   00 11  18 2A  2F 00
+    0F    02 02 04 07   00 11  18 2A  2F 00    0A 0A 0B 0D   00 11  18 2A  2F 00
+    0A    05 05 06 07   00 11  18 2A  2F 00    0C 0C 0C 0D   00 11  18 2A  2F 00
+    05    06 06 06 07   00 11  18 2A  2F 00    0C 0C 0C 0D   00 11  18 2A  2F 00
+
+	;hf   Pixel    Line   Exposure CLKDIV             FR
+	03    06 2B    00 00   00  DA    02     ;step  00 30
+	04    07 67    00 00   00  B6    02     ;step  01 25
+	05    09 40    00 00   00  91    02     ;step  02 20
+	07    06 7A    00 00   00  68    04     ;step  03 14
+	08    07 67    00 00   00  5B    04     ;step  04 12
+	0A    09 40    00 00   00  48    04     ;step  05 10
+	0B    05 17    00 00   00  42    08     ;step  06 09
+	0C    05 8D    00 00   00  3C    08     ;step  07 08
+
+	;hf   Pixel    Line   Exposure CLKDIV             FR
+	04    06 2B    00 00   00  B5    02     ;step  08 30
+	05    07 B6    00 00   00  91    02     ;step  09 24
+	06    09 40    00 00   00  78    02     ;step  0A 20
+	08    06 2B    00 00   00  5A    04     ;step  0B 15
+	0C    09 40    00 00   00  3C    04     ;step  0C 10
+	0F    05 C8    00 00   00  30    08     ;step  0D 08
+
+
+[91]
+;---------------------------------------------------------;
+;OV_9724_SensorCommon_Table, replace 6E with 8F           ;
+;---------------------------------------------------------;
+
+; ~~~~~~ OV_9726_SensorCommon_Table section 0 : FULL_RAW_30FPS DVP 1296x808
+00 54   ; section length
+
+01 03 01
+32 10 43
+36 06 75 ;v06
+37 05 41 ;v08
+36 01 34 ;v07
+36 07 94 ;v07
+36 08 20 ;v07
+03 40 02
+03 41 f8
+03 42 06
+03 43 28
+03 4c 05 ;add 10 active pixels
+03 4d 10 ;
+03 4e 02 ;add 8 active lines
+03 4f d8 ;
+02 02 02
+02 03 f0
+48 01 0f
+48 01 8f
+48 14 2b
+43 07 3a
+50 00 06
+50 01 73
+02 05 3f
+01 01 02 ;mirror flip
+01 00 01
+02 05 38
+;test_Pattern
+06 01 04
+06 02 00
+06 03 00
+06 04 03
+06 05 ff
+06 06 00
+06 07 80
+
+[92]
+;---------------------------------------------------------;
+; OV_9726_SensorSpecified_Table table, replace 6F with 90 ;
+;---------------------------------------------------------;
+00 00
+
+[93]
+;---------------------------------------------------------;
+;OV_9726_BackendSpecified_Table table, replace 70 with 91 ;
+;---------------------------------------------------------;
+; ~~~~~~ OV_9726_BackendSpecified_Table section 0
+00 14
+00 7E 3C
+00 72 04
+00 74 08
+00 7F 00
+80 54 02 00
+         10
+02 30 00
+
+; ~~~~~~ OV_9726_BackendSpecified_Table section 1
+00 11
+00 7E 3C
+00 72 04
+00 74 08
+00 7F 00
+80 54 02 00
+         10
+
+02 30 00
+; ~~~~~~ OV_9726_BackendSpecified_Table section 2 ;VGA bilinear
+00 1B
+00 72 04
+00 74 08
+80 54 02 00
+         10
+80 7A 06 C0 ;resize and bilinear
+         03
+         D0
+         02
+         3C
+         15
+80 6C 04 80 ;jpeg header
+         02
+         E0
+         01
+
+; ~~~~~~ OV_9726_BackendSpecified_Table section 3 ;CIF bilinear
+00 1B
+00 72 04
+00 74 08
+80 54 02 00
+         10
+80 7A 06 70 ;resize and bilinear
+         03
+         D0
+         02
+         3C
+         17
+80 6C 04 60 ;jpeg header
+         01
+         20
+         01
+
+
+
+[94]
+;---------------------------------------------------------;
+;Exteranl resolution table, replace 64 with 94            ;
+;---------------------------------------------------------;
+07  ;resolution count
+05 00   03 20   ;00 1280x800
+05 00   02 D0   ;01 1280x720
+04 2A   03 20   ;02 1066x800
+02 80 	01 E0	;03 640x480 3
+01 40   00 F0   ;04 320x240
+00 A0   00 78   ;05 160x120
+01 60   01 20   ;06 352x288 6
+
+
+
+[95]
+;---------------------------------------------------------;
+;high speed resolution table, replace 67 with 95          ;
+;---------------------------------------------------------;
+08	;YUY2_MJ
+01	;Format 1 Preview Count
+00	;Formt 1 Still Count
+01	;Format 2 Preview Count
+00	;Format 2 Still Count
+01
+01
+;01 03 04 05 06
+;01 03 04 05 06
+;01 03 04 05 06
+;01 03 04 05 06
+
+[96]
+;---------------------------------------------------------;
+;Full speed resolution table, replace 68 with 96          ;
+;---------------------------------------------------------;
+04	;YUY2_MJ
+02	;Format 1 Preview Count
+02	;Formt 1 Still Count
+00	;Format 2 Preview Count
+00	;Format 2 Still Count
+03 06
+03 06
+
+
+
+[97]
+;---------------------------------------------------------;
+;External frame rate table, replace 69 with 97            ;
+;---------------------------------------------------------;
+80 80 80 81 81 81 81 81 1E 1E 1E 1E 00 00 00 00 ;YUV
+81 81 81 81 81 81 81 81 1E 1E 1E 1E 1E 1E 1E 1E ;MJ
+
+41 4C 56 32                                     ;ALV2
+07 00 00 00 1E 00 04 1E
+07 00 00 00 1E 00 14 1E
+0A 05 00 00 00 00 ;80 -->1280x800, 1280x720
+1E 19 14 0F 0A 05 ;81 -->30fps
+18 00 00 00 00 00 ;82 -->800x500
+

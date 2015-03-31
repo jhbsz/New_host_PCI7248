@@ -1,0 +1,43 @@
+Please add PE.ini under the same folder of the FT AP.
+
+The content is as followed:
+
+  [READER] 
+
+  Enable=1 ;; 1 is enable 0 is disable
+
+  Bus Width=8; 4 is 4 bit mode, 8 is 8 bit mode
+
+  Bus Clock=7;; 0~7 for different clock value  
+
+  0 for 187K, 
+
+  1 for 750K, 
+
+  2 for 3Mhz,
+
+  3 for 6Mhz, 
+
+  4 for 12Mhz, 
+
+  5 for 16Mhz,
+
+  6 for 24MHz, 
+
+  7 for 48Mhz.
+
+ 
+
+  Some new messages are added :
+
+ 
+
+  #define WM_FT_PARAM_FAIL    WM_USER + 0x130
+
+  #define WM_FT_READER_FAIL    WM_USER + 0x140
+
+  #define WM_FT_BUSWIDTH_FAIL    WM_USER + 0x150
+
+  #define WM_FT_BUSCLK_FAIL    WM_USER + 0x160
+
+

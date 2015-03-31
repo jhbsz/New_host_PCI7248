@@ -1,0 +1,311 @@
+; WARNING !!!!
+; It is found that if machine has a vendor filter driver named "cdralw2k.sys "
+; will cause MP unstable. so please check PC if has this driver, if it does
+; Remove it.
+[CTL]
+Controller=25
+LED=0
+SCSIRev=8.01
+P/N=TS16GJF500
+TSIdNo=0
+ControllerDetail=29
+External_CTL=AU87100
+Power=200
+EnableBlink=0
+[FLASH]
+FlashBrand=Micron
+FlashType=MT29F64G08CBABA
+RWCycle=0
+6913RWCycle=3
+6919RWCycle=1
+FlashNum=1
+Attribute=0
+U3_Manual_SubID=0x01
+U3_Manual_CardType=1
+[VID/PID]
+VID=8564
+PID=1000
+DeviceVID=058f
+DevicePID=6387
+[USB MANUFACTURE STRING]
+USBMfStr=JetFlash
+[USB PRODUCT STRING]
+USBPdStr=Mass Storage Device
+[SCSI MANUFACTURE STRING]
+;SCSIMfStr=SCSIMF1
+SCSIMfStr=JetFlash
+SCSIMfStr2=SCSIMF2
+U3_SCSIMfStr1=JetU3
+U3_SCSIMfStr2=SCSIMF2
+U3_SCSIMfStr3=SCSIMF3
+U3_SCSIMfStr4=SCSIMF4
+CDSCSIMfStr=
+;CDSCSIMfStr=Generic
+[SCSI PRODUCT STRING]
+;SCSIPdStr=SCSIPD1
+SCSIPdStr=Transcend 16GB
+SCSIPdStr2=SCSIPD2
+U3_SCSIPdStr1=TranU3 16GB
+U3_SCSIPdStr2=SCSIPD2
+U3_SCSIPdStr3=SCSIPD3
+U3_SCSIPdStr4=SCSIPD4
+CDSCSIPdStr=
+;CDSCSIPdStr=AutoRun Disk
+[PARTITION STATUS]
+;Partition number( 1 or 2 )
+ParNum=1
+1st=1
+2nd=0
+ForceFAT32=1
+Eject=1
+MBREnabled=0
+[1M RESERVED]
+TMode=0
+[IMAGE FILES DIRECTORY]
+;input the directory of image files, it includes 2 files,loader image and reserve image
+Directory=C:\
+Loader=9384.img
+Reserve=Reverse.img
+Files=fubar
+IMGorISO=1
+ISOPath=C:\Documents and Settings\TeddyChin\桌面\ISO\LUXGENTVC.iso
+;input the size of user-use(2nd) reserve area (MB bytes).
+Size=0
+[REMOVABLE DISK]
+;Input to tell Device  Disable(0) or Enable(1) removable Disk 
+Enable=1
+NoRemove=0
+[LOADER DISK]
+;input to notice device  Disable(0) or Enable(1) loader disk
+Enable=0
+CDBoot=0
+Last Lun=0
+Private=0
+[GPI FUNCTION]
+;0 ---> hardware write-protect, 1 --> Loader disk enable/disable
+GPI=0
+[BAD BLOCK LIMIT]
+; 20,40,60, .....
+BadBlock=36
+BBinLLF=0
+[DYNAMIC BAD BLOCK]
+;Enable dynamic bad block will set the bad block limit to the max bad block number among the flashes in one MP procedure
+Extra=10
+Percentage=10
+Enable=2
+Percentage1=4
+Percentage2=4
+FixMax=478
+FixMin=478
+ManualSettingBB=0
+ManualBBNumber=500
+[COMPARE DISK]
+;Input 0(Disable) or 1(Enable) to tell MP do Compare Disk Function.(Compare 9384.img and reserve.img with Disk)
+Enable=0
+[DEFAULT FLASH SIZE]
+DFSz=0
+[SERIAL NUMBER]
+;if you need prefix three english character to identify your specific device, please edit SN value 
+Enable=1
+SN=
+FixSN=
+Prefix=
+Start=
+End=
+DLL=
+Digit=8
+[WRITE FILE TO FLASH]
+Enable=0
+Content=D:\USBPreload\2014 IDTK_展覽廠商資訊
+CompareWriteFileEnable=1
+OriginalWriteFileFolder=D:\USBPreload\2014 IDTK_展覽廠商資訊
+RAREnable=0
+RARPath=
+[AP DISK]
+Enable=1
+Size=
+Content=
+EnableLabel=0
+RODL=
+EnableROImage=0
+ROImage=
+CompareROEnable=0
+OriginalROFileFolder=
+Not Insert=0
+APwithAutorun=0
+PreloadDynAP=0
+Password=1234
+Hint=
+LoadAP=0
+APContent=C:\Documents and Settings\kerwinChiu\桌面\clr
+LoadSecure=0
+SecureContent=C:\Documents and Settings\kerwinChiu\桌面\NOR Flash Spec
+[VOLUME SERIAL]
+;Please use 8 alphanumerical characters A-F and 0-9 to compose volume serial string 
+Enable=0
+VS=
+VS2=
+[FORMAT STYLE]
+MPStyle=2
+SBBStyle=0
+LLFStyle=2
+DelayTime=3
+Erase=0
+SingleThread=0
+RWTestType=0
+RWTestPercent=100
+RWTestPattern=AB
+RWTestON=1
+FATC=1
+PatternType=1
+NO FORMAT=0
+[DOWNGRADE]
+Show=0
+Enable=0
+Multiple=1
+VSize=0
+[AUTO DETECT FLASH]
+Enable=1
+U3_Manual_CardType=1
+[DISK LABEL]
+Enable=1
+DL=Transcend
+DL2=
+[PRODUCT NOTE]
+Note=SN0104
+OldNote=SN0104
+[LLF]
+Enable=1
+[PRODUCT LINE]
+Location=2
+[WRITE PROTECT]
+Enable=0
+[ChipOnBoard]
+ChipOnBoard=0
+[DISK IMAGE]
+Enable=0
+Content=C:\Documents and Settings\TeddyChin\桌面\IMG\Disk_by_GoldenImage.img
+[OverCurrentOnBoard]
+OverCurrentOnBoard=0
+NewOverCurrentBoard=1
+BreakCurrent=0
+OvercurrentLevel=2
+[COMPUTER NAME]
+Name=B169100147
+[]
+Content=
+[Burnin]
+Enable=0
+Cycle=1
+Percentage=5
+Style=0
+Pattern=0
+[LLF STYLE]
+;1:do LLF burnin, 0:NOT do LLF burnin
+LLFBIEnable=0
+;test block per die
+TestBlkPerDie=64
+;total test blocks for discrete testing. Must be a multiple of 16.
+TotalDiscreteBlk=64
+;bad block increasin tolerance
+Threshold=1
+DiscretePercentEnable=0
+DiscretePercent=20
+[AUTHORITY]
+Authority=
+FirstArticleInspection=0
+FIRSTARTICLE=
+
+[Version]
+Customer=FT
+NewFlow=0
+ErrorDialog=0
+EnableLog=0
+mp version in patchini=v6.0.0.4
+mp version in mp=v6.0.0.4
+patch=SP:v14.03.13.00
+[HARD DISK]
+Enable=0
+[AUTOLAUNCH]
+Enable=0
+Decode=0
+[Check Mode]
+dont_chk_BCT=1
+[Speed OptimIze]
+Enable=1
+[Language]
+Select=CHT
+[Debug]
+FakeFlashID=0
+Internal=eLAINEsABRINA
+[CMD Mode]
+FilterMode=0
+UnLoadDriver=0
+[2ND RESERVED SIZE]
+Size=0
+[U3_Partition1]
+valid=1
+isHidden=0
+Mode=80
+FS_type=0
+DiskLabel=FTDisk
+VolumeSerial=
+ISO_Path=C:\Documents and Settings\TeddyChin\桌面\ISO\LUXGENTVC.iso
+ISO_Fixed=0
+Read_Only=0
+Password_Enable=0
+Password_type=1
+Size=1.00
+Password_Value=
+Preload_Enable=0
+Preload_Path=C:\Documents and Settings\TeddyChin\桌面\新人設定路徑須知
+[U3_Partition2]
+valid=0
+isHidden=0
+Mode=80
+FS_type=0
+DiskLabel=Teddy2
+VolumeSerial=
+ISO_Path=C:\Documents and Settings\TeddyChin\桌面\ISO\LUXGENTVC.iso
+ISO_Fixed=0
+Read_Only=0
+Password_Enable=0
+Password_type=1
+Size=0.00
+[U3_Partition3]
+valid=0
+isHidden=0
+Mode=80
+FS_type=0
+DiskLabel=Teddy3
+VolumeSerial=
+ISO_Path=
+ISO_Fixed=0
+Read_Only=0
+Password_Enable=0
+Password_type=0
+Size=0.00
+[U3_Partition4]
+valid=0
+isHidden=0
+Mode=80
+FS_type=0
+DiskLabel=Teddy4
+VolumeSerial=
+ISO_Path=
+ISO_Fixed=0
+Read_Only=0
+Password_Enable=0
+Password_type=0
+Size=0.00
+[SETPORT]
+Select=0
+[KingMax]
+BICHK=0
+ERASE_FW=0
+[U3_LED]
+LedBehavior=0
+Variables=1
+CountDef=3
+Config=0
+Blinking Frequency=1

@@ -1,0 +1,2 @@
+net stop ShellHWDetection
+6710MPTool.exe

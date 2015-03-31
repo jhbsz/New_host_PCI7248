@@ -1,0 +1,67 @@
+Attribute VB_Name = "AU3130"
+Option Explicit
+
+Declare Function BitBlt Lib "GDI32" (ByVal hDestDC As Long, ByVal X As Long, ByVal Y As Long, ByVal nWidth As Long, ByVal nHeight As Long, ByVal hSrcDC As Long, ByVal XSrc As Long, ByVal YSrc As Long, ByVal dwRop As Long) As Long
+
+Global Const SRCCOPY = &HCC0020 ' (DWORD) dest = source
+Global card As Integer
+Global card_number As Integer
+Global card_type As Integer
+Global ch_num(4) As Integer
+Global ch_range(4) As Integer
+Global ch_ref(4) As Integer
+
+Private Sub btnStart_Click()
+  Dim result As Long
+  Dim status As Byte
+  Dim i As Long, k As Long
+  Dim ReTrgCnt As Integer, MCnt As Integer, PostCnt As Integer
+  Dim TimerSrc As Integer
+  
+  PostCnt = 500 ' post trigger 500
+  dma_size = 2000 ' scan count 2000-- 80000
+  ch_cnt = 1
+  ch_num = 0  ' channel 0
+  ch_range = 4  ' BiPolar 1.25V
+  ch_ref = 1    ' Differentail
+  
+   
+  ' only set 1 channel
+  result = D2K_AI_CH_Config(card, ch_num, ch_range Or (ch_ref * 256))
+  
+  
+  result = D2K_AI_Config(card, 0, (CLng(cobTrigMode.ListIndex) * 8) Or CLng(cobTrigSrc.ListIndex) Or (CLng(cobTrigPol.ListIndex) * 4096), PostCnt, 0, 1, 1)
+  
+
+
+  result = D2K_AI_ContBufferSetup(card, gnBuffer(0), dma_size * ch_cnt, Id)
+  
+  'If cobTrigSrc.ListIndex = 1 Then
+      'result = D2K_AIO_Config(card, cobClkSrc.ListIndex, Above_High_Level Or CH0ATRIG, CLng(cobTrigLevel.Text), CLng(cobTrigLevel.Text))
+  'End If
+  result = D2K_AIO_Config(card, cobClkSrc.ListIndex, (CLng(cobTrigPol.ListIndex) * 256) Or CH0ATRIG, CLng(cobTrigLevel.Text), CLng(cobTrigL_Level.Text))
+
+  status = 0
+  'result = D2K_AI_ContScanChannels(card, ch_cnt - 1, Id, dma_size, gnClkDiv * ch_cnt, gnClkDiv, ASYNCH_OP)
+  result = D2K_AI_ContReadMultiChannels(card, ch_cnt, ch_num(0), Id, dma_size, gnClkDiv * ch_cnt, gnClkDiv, ASYNCH_OP)
+ 
+  k = 0
+  bStop = 0
+  While status = 0 And bStop = 0
+    result = D2K_AI_AsyncCheck(card, status, count1)
+    If cobTrigMode.ListIndex > 1 Then
+     If CLng(cobTrigSrc.ListIndex) = 0 Then
+        k = k + 1
+        If k = 5000 Then
+            bStop = 1
+        End If
+     End If
+    End If
+  Wend
+  result = D2K_AI_AsyncClear(card, startPos, count1)
+  txtXfer.Caption = "Total xfer: " & CStr(count1)
+  scrollView.Value = 0
+  scrollView.Max = Fix((count1 - 1) / DISP_COUNT)
+  ShowData 0, Min(count1, DISP_COUNT)
+  btnStart.Enabled = True
+End Sub

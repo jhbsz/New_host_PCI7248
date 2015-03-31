@@ -1,0 +1,85 @@
+[Version]
+Signature=$CHICAGO$
+Class=SmartCardReader
+ClassGuid={50DD5230-BA8A-11D1-BF5D-0000F805F530}
+Provider=%MFGNAME%
+CatalogFile=EMV2KPS2.cat
+DriverVer=02/12/2007,1.0.1.4
+
+[Manufacturer]
+%MFGNAME%=DeviceList
+
+[DestinationDirs]
+DefaultDestDir=10,System32\Drivers
+
+[SourceDisksFiles]
+emv2kps2.sys=1
+emv2ks2a.sys=1
+emv2ks2b.sys=1
+
+[SourceDisksNames]
+1=%INSTDISK%,,,
+
+[DeviceList]
+"Child A Device"=ChildAInstall,*Au9522C1
+"Child B Device"=ChildBInstall,*Au9522C2
+
+[ControlFlags]
+ExcludeFromSelect=*Au9522C1,*Au9522C2
+
+;------------------------------------------------------------------------------
+;  Windows 2000 Sections
+;------------------------------------------------------------------------------
+
+[DriverInstall.NT]
+CopyFiles=DriverCopyFiles
+
+[DriverCopyFiles]
+;emv2kps2.sys,,,2
+;emv2ks2a.sys,,,2
+;emv2ks2b.sys,,,2
+
+[DriverInstall.NT.Services]
+AddService=EMV2KCH2,2,DriverService
+
+[DriverService]
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%10%\system32\drivers\emv2kps2.sys
+
+;----
+
+[ChildAInstall.NT]
+
+[ChildAInstall.NT.Services]
+AddService=CHILDA,2,ChildAService
+
+[ChildAService]
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%10%\system32\drivers\emv2ks2a.sys
+
+;----
+
+[ChildBInstall.NT]
+
+[ChildBInstall.NT.Services]
+AddService=CHILDB,2,ChildBService
+
+[ChildBService]
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%10%\system32\drivers\emv2ks2b.sys
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+MFGNAME="EMVSCARD DS"
+INSTDISK="Software Installation Disc"
+DESCRIPTION="Multi-Slots Usb SmartCard Reader"
+

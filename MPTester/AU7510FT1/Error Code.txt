@@ -1,0 +1,22 @@
+Error Code
+#define WM_FT_USB_UNKNOW_FAIL    WM_USER + 0x050
+#define WM_FT_CHIP_UNKNOW_FAIL   WM_USER + 0x075
+#define WM_FT_RW_READY    	 WM_USER + 0x100
+ 
+#define WM_FT_SCAN_START   	 WM_USER + 0x200
+#define WM_FT_MP_START    	 WM_USER + 0x250
+#define WM_FT_RW_START    	 WM_USER + 0x300
+ 
+#define WM_FT_HOST_FAIL    	 WM_USER + 0x350
+#define WM_FT_SCAN_DONE    	 WM_USER + 0x400
+ 
+#define WM_FT_MP_FAIL     	 WM_USER + 0x450
+#define WM_FT_MP_DONE    	 WM_USER + 0x500
+ 
+#define WM_FT_WRITE_PROTECT_FAIL WM_USER + 0x550
+#define WM_FT_RW_CE_FAIL   	 WM_USER + 0x600
+#define WM_FT_RW_ROM_FAIL   	 WM_USER + 0x650
+#define WM_FT_RW_RAM_FAIL   	 WM_USER + 0x700
+#define WM_FT_SATA_FAIL    	 WM_USER + 0x750
+ 
+#define WM_FT_PASS     		 WM_USER + 0x800

@@ -1,0 +1,58 @@
+20100601 	James/Obie
+SSD_FT V1.0.0.1-B8
+1.Add check SDRAM
+2.Modify button can not enable issue
+
+For 7510 & 7511
+SSD_31_K9LBGU1M_RAM.bin	        0xFB
+SSD_RAM.bin			0xF6
+----------------------------------------------------------------------
+
+20100527	James/Obie
+
+SSD_FT V1.0.0.1-B7
+1.No check DRAM
+2.Modify check IdentifySector ((Buf[261] != 0x66)||(Buf[262] != 0x55))
+3.Modify HostGPItoDevice()
+
+External and M31:
+Release for A43 FT(NO DRAM test)
+M31 : v0xFA   For J_F5,  A43(7510)
+EX_ROM : v0xF5
+-----------------------------------------------------------
+
+20100422	James/Obie
+
+SSD FT MP v1.0.0.1-B6
+a.Add 7511 check SDRAM
+b.ExROM "J_F4_SSD_RAM"
+
+SSD_31_K9LBGU1M_RAM.bin:0xFB//for J F4(add sdram test)
+J_F4_SSD_RAM.bin       :0xF4;//sdram test(W/R Buffer)
+Add SDRAM Test
+
+
+-----------------------------------------------------------
+20100322	James/Obie
+
+86_D1_K9F.bin           0x04      add support GPIO test (command 0x55)
+SSD_31_K9LBGU1M_RAM.bin 0xFA      for SSD_RAM
+SSD_HOSTfunc_RAM.bin    0xF4      add support GPIO test (command 0x55)
+J_F2_SSD_RAM.bin        0xF3      add support GPIO test (command 0x55)
+
+MP
+Modify ReMP error
+Add check GPIO
+"J_F2_SSD_RAM.bin"
+#define WM_FT_GPIO_FAIL    WM_USER + 0x760
+
+-----------------------------------------------------------
+20090522	James
+1.Check RAM change to SATA 1
+--------------------------------------------------------
+20090511	James
+1.Modify message error code
+2.Modify FT check flow to reduce power on/off times
+3.Add check DPRAM
+4.Add OnDeviecChange auto scan
+5.Add check write protect

@@ -1,0 +1,5 @@
+1. copy allow.sys to C:\winodws\system32\drivers
+2. install filter driver
+	ALInstFtr -i allow 3873
+3. remove filter driver
+	ALInstFtr -d allow 3873

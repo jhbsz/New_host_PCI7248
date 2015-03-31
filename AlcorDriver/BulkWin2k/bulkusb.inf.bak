@@ -1,0 +1,130 @@
+; Installation inf for the Alcor Micro Corp. Bulk I/O Device(s)
+;
+; (c) Copyright 2004 Alcor Micro Corp.
+;
+
+[Version]
+Signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+provider=%MfgName%
+DriverVer=08/01/2004,1.0.0.0
+
+[SourceDisksNames]
+1="Alcor Micro BulkUsb Driver Installation Disk",,,
+
+[SourceDisksFiles]
+BULKUSB.sys = 1
+BULKUSB.inf = 1
+
+[Manufacturer]
+%MfgName%=DeviceList
+
+[DeviceList]
+%USB\VID_058f&PID_3133.DeviceDesc%=BULKUSB.Dev, USB\VID_058f&PID_3133
+%USB\VID_058F&PID_1234.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_1234
+%USB\VID_058F&PID_6331.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6331
+%USB\VID_058F&PID_6377.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6377
+%USB\VID_058F&PID_6332.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6332
+%USB\VID_058F&PID_6362.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6362
+%USB\VID_058F&PID_6363.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6363
+%USB\VID_058F&PID_6366.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6366
+%USB\VID_058F&PID_6367.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6367
+%USB\VID_058F&PID_6369.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6369
+%USB\VID_058F&PID_6384.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6384
+%USB\VID_058F&PID_6389.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6389
+%USB\VID_058F&PID_6390.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6390
+%USB\VID_058F&PID_6391.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6391
+%USB\VID_058F&PID_9360.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_9360
+%USB\VID_058F&PID_9362.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_9362
+%USB\VID_058F&PID_9368.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_9368
+%USB\VID_058F&PID_9380.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_9380
+%USB\VID_058F&PID_9384.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_9384
+%USB\VID_18E3&PID_9101.DeviceDesc%=BULKUSB.Dev, USB\VID_18E3&PID_9101
+%USB\VID_18E3&PID_9102.DeviceDesc%=BULKUSB.Dev, USB\VID_18E3&PID_9102
+%USB\VID_18E3&PID_3130.DeviceDesc%=BULKUSB.Dev, USB\VID_18E3&PID_3130
+%USB\VID_058F&PID_6385.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6385
+%USB\VID_058F&PID_6387.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6387
+%USB\VID_058F&PID_9330.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_9330
+%USB\VID_058F&PID_9369.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_9369
+%USB\VID_1005&PID_b113.DeviceDesc%=BULKUSB.Dev, USB\VID_1005&PID_b113
+%USB\VID_058F&PID_6334.DeviceDesc%=BULKUSB.Dev, USB\VID_058F&PID_6334
+%USB\VID_1758&PID_2004.DeviceDesc%=BULKUSB.Dev, USB\VID_1758&PID_2004
+%USB\VID_1984&PID_8751.DeviceDesc%=BULKUSB.Dev, USB\VID_1984&PID_8751
+%USB\VID_045E&PID_0040.DeviceDesc%=BULKUSB.Dev, USB\VID_045E&PID_0040
+%USB\VID_18E3&PID_9105.DeviceDesc%=BULKUSB.Dev, USB\VID_18E3&PID_9105
+[DestinationDirs]
+BULKUSB.Files.Ext = 10,System32\Drivers
+BULKUSB.Files.Inf = 10,INF
+
+[BULKUSB.Dev]
+;CopyFiles=BULKUSB.Files.Ext, BULKUSB.Files.Inf
+AddReg=BULKUSB.AddReg
+
+[BULKUSB.Dev.NT]
+;CopyFiles=BULKUSB.Files.Ext, BULKUSB.Files.Inf
+AddReg=BULKUSB.AddReg
+
+[BULKUSB.Dev.NT.Services]
+Addservice = BULKUSB, 0x00000002, BULKUSB.AddService
+
+[BULKUSB.AddService]
+DisplayName    = %BULKUSB.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\BULKUSB.sys
+LoadOrderGroup = Base
+
+[BULKUSB.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,BULKUSB.sys
+HKLM,"System\Currentcontrolset\Services\BulkUsb\Parameters","MaximumTransferSize",0x10001,4096
+HKLM,"System\Currentcontrolset\Services\BulkUsb\Parameters","DebugLevel",0x10001,2
+HKLM,"System\Currentcontrolset\services\BulkUsb\Parameters","BulkUsbEnable",0x10001,1
+
+[BULKUSB.Files.Ext]
+BULKUSB.sys
+
+[BULKUSB.Files.Inf]
+BulkUsb.Inf
+
+
+;---------------------------------------------------------------;
+
+[Strings]
+MfgName="Alcor Micro Corp."
+USB\VID_058F&PID_1234.DeviceDesc="Alcor Micro PID_1234"
+USB\VID_058F&PID_6331.DeviceDesc="Alcor Micro PID_6331"
+USB\VID_058F&PID_6332.DeviceDesc="Alcor Micro PID_6332"
+USB\VID_058F&PID_6362.DeviceDesc="Alcor Micro PID_6362"
+USB\VID_058F&PID_6363.DeviceDesc="Alcor Micro PID_6363"
+USB\VID_058F&PID_6366.DeviceDesc="Alcor Micro PID_6366"
+USB\VID_058F&PID_6377.DeviceDesc="Alcor Micro PID_6377"
+USB\VID_058F&PID_6367.DeviceDesc="Alcor Micro PID_6367"
+USB\VID_058F&PID_6369.DeviceDesc="Alcor Micro PID_6369"
+USB\VID_058F&PID_6384.DeviceDesc="Alcor Micro PID_6384"
+USB\VID_058F&PID_6389.DeviceDesc="Alcor Micro PID_6389"
+USB\VID_058F&PID_6390.DeviceDesc="Alcor Micro PID_6390"
+USB\VID_058F&PID_6391.DeviceDesc="Alcor Micro PID_6391"
+USB\VID_058F&PID_9360.DeviceDesc="Alcor Micro PID_9360"
+USB\VID_058F&PID_9362.DeviceDesc="Alcor Micro PID_9362"
+USB\VID_058F&PID_9368.DeviceDesc="Alcor Micro PID_9368"
+USB\VID_058F&PID_9380.DeviceDesc="Alcor Micro PID_9380"
+USB\VID_058F&PID_9384.DeviceDesc="Alcor Micro PID_9384"
+USB\VID_18E3&PID_9101.DeviceDesc="Alcor Micro PID_9101"
+USB\VID_18E3&PID_9102.DeviceDesc="Alcor Micro PID_9102"
+USB\VID_18E3&PID_3130.DeviceDesc="Alcor Micro PID_3130"
+USB\VID_058F&PID_6385.DeviceDesc="Alcor Micro PID_6385"
+USB\VID_058F&PID_6387.DeviceDesc="Alcor Micro PID_6387"
+USB\VID_058F&PID_9330.DeviceDesc="Alcor Micro PID_9330"
+USB\VID_058F&PID_9369.DeviceDesc="Alcor Micro PID_9369"
+USB\VID_1005&PID_b113.DeviceDesc="Alcor Micro PID_b113"
+USB\VID_058F&PID_6334.DeviceDesc="Alcor Micro PID_6334"
+USB\VID_1758&PID_2004.DeviceDesc="Alcor Micro PID_1758"
+USB\VID_045E&PID_0040.DeviceDesc="Alcor Micro PID_045E"
+USB\VID_058F&PID_9105.DeviceDesc="Alcor Micro PID_9105"
+USB\VID_1984&PID_8751.DeviceDesc="Alcor Micro PID_8751"
+USB\VID_058f&PID_3133.DeviceDesc="Alcor Micro PID_3133"
+BULKUSB.SvcDesc="Alcor Micro BulkUsb test driver"
+

@@ -1,0 +1,734 @@
+
+;   Hex version        Set Version
+
+;CK setfile sample
+; original id sequence, this is internal default setting
+;00 01 03 04 05 59 06 07 08 09 0A 0B 0C 33 37 34
+;38 35 39 36 3A 02 03 04 05 59 06 07 08 6A 0A 0B
+;0C 33 3B 34 3C 35 3D 36 3E 3F 40 41 42 43 44 45
+;46 47 48 49 4A 4B 67 68 4C 4D 4E 4F 50 51 52 53
+;54 55 56 57 58 63 64 65 66 5B 5C 5D 5E 69 6B 6C
+;6D 6E 6F 70 71 72 73 74 75
+
+[IdMap]
+ 8F 01 03 04 05 59 8C 8D 08 09 0A 0B 0C 33 37 34 ;0x0F
+ 38 35 39 36 3A 02 03 04 05 59 8C 8D 08 6A 0A 0B ;0x1F
+ 0C 33 3B 34 3C 35 3D 36 3E 3F 40 41 42 43 44 45 ;0x2F
+ 91 8B 48 8B 4A 4B 7F 80 82 83 84 85 86 87 88 92 ;0x3F
+ 89 8A 56 8E 58 63 7E 65 76 5B 5C 5D 5E 81 6B 77 ;0x4F
+ 78 79 7A 7B 7C 7D 94 74 93
+
+[TriggerID]
+76 94;the first one is begin trigger id, the second one last trigger id
+
+[FastBoot]
+01 ; 01 enable fast boot ; 00 disable fast boot
+
+[ProSaveMethod]
+04	;00, 02 , 04
+
+
+;setting file version , replace 66 with 76
+; OV9726-00xx
+[76]
+46 54 2D 32 30 31 32 30 36 31 33 00
+
+
+[77]
+;---------------------------------------------------------;
+;Module_Misc_Table, replace 6C with 77                    ;
+;---------------------------------------------------------;
+
+; ~~~~~~ Module_Misc_Table section 0 : backend reset section
+;01 1E
+	01 24	;Allen modify 20120607 for PHY test
+	0B 1A 62 ; SENSOR_I2C_MODE
+	0B 1B 20 ; SENSOR_I2C_ID
+	02 01 E4 ; ISP_RAWSEL
+	02 A0 00 ; ISP_COLORCORCTRL
+	02 D1 E0 ; REG_ISP_TESTMODE
+	0B 80 00 ; ISP_DynamicControlSwitch
+
+	89 FE 03  01 ; 0x09FE  bWriteProtectGPIO
+			  FF ; 0x09FF  bSnapShotGPIO
+			  FF ; 0x0A00  bPrivacyCtrlGPIO
+
+	80 20 06  01 ; 0x0020  GPIO1_DATA
+			  00 ; 0x0021  GPIO2_DATA
+			  7F ;4F ; 0x0022  GPIO1_DIR
+			  00 ; 0x0023  GPIO2_DIR
+			  E0 ; 0x0024  GPIO1_PD
+			  FF ; 0x0025  GPIO2_PD
+
+
+
+	8B 90 05  C0 ; 0x0B90  AWB_BRLimit
+			  20 ; 0x0B91  AWB_RBLimit
+			  1D ; 0x0B92  AWB_G adjust range low
+			  24 ; 0x0B93  AWB_G adjust range high
+			  02 ; 0x0B94  AWB range
+
+	; AWB settings
+	0B 81 5B     ; set color temperature initial value
+	82 90 04  30 ; set AWB initial value
+	          20
+	          38
+              09 ; AWBCon, AWB status with rgb gain applied
+	8B A0 4E
+
+51	EB	04	E9	48	0E	09	BD  7A	1E	20	50	29
+51	EB	04	E9	48	0E	09	BD  7A	1F	20	4C	2C
+50  F8  F8  E0  70  F0  F8  F0  58	20  20  45	33
+50  F8  F8  E0  70  F0  F8  F0  58	34  20  3A	5B
+55	07	E4	E2	6F	F1	FA	EA  5C	38	20	2E	85
+48  07  F1  E2  65  FB  FA  EA  5C	3D  20  23	AD
+
+	00 2A 00 ; clear pull down pin
+
+	; RGB Gamma setting
+	02 30 00 ; Gamma control
+	82 42 30
+
+
+10 20 30 3e 4c 58 64 6f 84 95 a1 ad c3 d9 ed f6
+10 20 30 3e 4c 58 64 6f 84 95 a1 ad c3 d9 ed f6
+10 20 30 3e 4c 58 64 6f 84 95 a1 ad c3 d9 ed f6
+
+
+	; AEC parameters
+	8A 80 07 78 ; target low
+	         80 ; target high
+	         10 ; affect local dark minimum value in high contrast situation
+	         0C ; affect the converge speed when under exposure. value 0x10 cause the fastest converge speed
+	         EF ; affect local bright maximun part in high contrast situation
+	         20 ; affect the converge speed when over exposure. value 0x10 cause the slowest converge speed
+	         88 ; stable delay ;28
+	0B 60 00    ; extra digital gain
+
+	8A 90 04 00 ; clear bCDFrame
+	         00 ; clear bStableCnt
+             01 ; half wave number
+	         00 ; half mode
+        02 FF 01 ;ISP verC on
+        02 9C CF
+        02 9D 60
+        02 9E 34
+        02 93 09
+        02 80 00;compare AP
+        02 81 00
+
+
+        05 62 0E ;internal LDO
+        05 63 06
+				05 64 63 ;05 64 64 ;Allen modify 20120607 for PHY test
+				05 2A 12 ;Allen modify 20120607 for PHY test
+				05 2B 0E ;Allen modify 20120607 for PHY test
+
+ ;Lens shading parameters
+	82 10 20 00 ; Lens shading enable
+	;R    GR      GB      B gain
+ 77	00	60	00	60	00	55	00 ;2nd
+ 00	80	00	80	00	80	00	80 ;4th
+ 00	80	00	80	00	80	00	80 ;constanr
+ ;dither decent resolution center X  Y point
+   ;229   22A    22B       22C  22D  22E 22F
+   50	    10	   50  	     80	  02	 90	  01
+
+ 	82 e4 09 30 ; RGB center indepent mode off
+ 	        ;R center X  Y point   B center X  Y point
+ 	         80	  02	 90	  01      80	 02	 90	  01
+
+; ~~~~~~ Module_Misc_Table section 1 : sensor reset/on
+00 21
+	; set sensor on
+;	05 60 04 ;use outer low power
+	00 2A 00
+	7F FF 02
+	00 54 00
+	00 20 09
+	7F FF 05
+	00 20 0D
+	7F FF 05
+	00 20 01
+	7F FF 05
+	00 20 05
+;	00 20 03
+	7F FF 05
+
+; ~~~~~~ Module_Misc_Table section 2 : sensor suspend
+;00 03
+;	7F FF 02
+  00 0F
+	00 20 0D
+	7F FF 02
+	05 60 00 ;internal LDO on
+	7F FF 01
+	00 2A FF
+
+
+; ~~~~~~ Module_Misc_Table section 3 : power on suspend
+00 00
+
+
+[78]
+;---------------------------------------------------------;
+;OV_9726_Resolution_Table, replace 6D with 78             ;
+;---------------------------------------------------------;
+; ~~~~~~ OV_9726_Resolution_Table section 0 : FS
+00 20
+;   output      resized size    S_res_YUV S_YUV B_YUV Nr_YUV    S_res_JPG S_JPG  B_JPG    Nr_JPG
+02 80  01 E0    04 2A  03 20       02      00    02    00          02     00      02       00
+01 60  01 20    04 20  03 20       02      00    03    01          02     00      03       01
+
+; ~~~~~~ OV_9726_Resolution_Table section 1 : HS
+00 70
+;   output      resized size    S_res_YUV S_YUV B_YUV Nr_YUV    S_res_JPG S_JPG  B_JPG    Nr_JPG
+00 A0  00 78    04 2A  03 20       02      00    01    01          02     00      01       01
+01 40  00 F0    04 2A  03 20       02      00    01    01          02     00      01       01
+01 60  01 20    03 C0  02 D0       02      00    03    01          02     00      03       01
+02 80  01 E0    04 2A  03 20       02      00    02    00          02     00      02       00
+04 2A  03 20    04 2A  03 20       02      00    01    02          02     00      01       02
+05 00  02 D0    05 00  02 D0       02      00    00    02          02     00      00       02
+05 00  03 20    05 00  03 20       02      00    01    02          02     00      01       02
+
+
+
+; ~~~~~~ OV_9726_Resolution_Table section 2 : Sensor resolution
+00 F3          ;section length
+05 10    03 28 ;sensor output size
+00             ;sensor common section
+  ;frame rate table
+  ;
+  ; Frame step settings:
+  ; frame step set 0 : min step
+  ; frame step set 1 : step section1
+  ; frame step set 2 : step section2
+  ; frame step set 3 : max step
+  ;
+  ; Gain settings
+  ; gain position 0 : min gain
+  ; gain position 1 : max gain for under 1 frame
+  ; gain position 2 : max gain for step under section 1
+  ; gain position 3 : max gain for step under section 2
+  ; gain position 4 : max gain for the last steps
+  ; gain position 5 : not used yet
+
+  ; FR    50Hz Step   Gain Settings          60Hz Step   Gain Settings
+    1E    00 00 02 07   00 11  33 3D  32 00    08 0B 0C 0D   00 11  33 3D  32 00
+    19    00 00 04 07   00 11  33 3D  32 00    08 08 0B 0D   00 11  33 3D  32 00
+    14    01 01 04 07   00 11  33 3D  32 00    09 09 0B 0D   00 11  33 3D  32 00
+    0F    02 02 04 07   00 11  33 3D  32 00    0A 0A 0B 0D   00 11  33 3D  32 00
+    0A    05 05 06 07   00 11  33 3D  32 00    0C 0C 0C 0D   00 11  33 3D  32 00
+    05    06 06 06 07   00 11  33 3D  32 00    0C 0C 0C 0D   00 11  33 3D  32 00
+
+	;hf   Pixel    Line   Exposure CLKDIV
+	03    06 8C    00 00   00  FA    02     ;step  00
+	04    07 DC    00 00   00  D0    02     ;step  01
+	05    09 D2    00 00   00  A6    02     ;step  02
+	07    0D C0    00 00   00  77    02     ;step  03
+	08    0F B8    00 00   00  68    02     ;step  04
+	0A    09 D2    00 00   00  53    04     ;step  05
+	0B    0A CE    00 00   00  4B    04     ;step  06
+	0C    0B CA    00 00   00  45    04     ;step  07
+
+	;hf   Pixel    Line   Exposure CLKDIV
+	04    06 8C    00 00   00  D0    02     ;step  08
+	05    08 30    00 00   00  A7    02     ;step  09
+	06    09 D2    00 00   00  8B    02     ;step  0A
+	08    0D 18    00 00   00  68    02     ;step  0B
+	0C    09 D2    00 00   00  45    04     ;step  0C
+	0F    0C 48    00 00   00  37    04     ;step  0D
+
+
+[79]
+;---------------------------------------------------------;
+;OV_9726_SensorCommon_Table, replace 6E with 79           ;
+;---------------------------------------------------------;
+
+; ~~~~~~ OV_9726_SensorCommon_Table section 0 : FULL_RAW_30FPS DVP 1296x808
+00 F9    ; section length
+
+;@@ FULL_RAW_30FPS DVP 1296x808
+01 03 01
+30 01 00
+30 26 00
+30 27 00
+30 02 e8
+30 04 03
+30 05 ff
+37 03 42
+37 04 10
+37 05 45
+36 03 aa
+36 32 2f
+36 20 66
+36 21 c0
+03 40 03
+03 41 48
+03 42 06
+03 43 80
+02 02 03
+02 03 43
+38 33 04
+38 35 02
+47 02 04
+47 04 00
+47 06 08
+50 52 01
+38 19 6e
+38 17 94
+3a 18 00
+3a 19 60;7f
+40 4e 7e
+36 31 52
+36 33 50
+36 30 d2
+36 04 08
+36 01 40
+36 02 14
+36 10 a0
+36 12 20
+03 4c 05
+03 4d 10
+03 4e 03
+03 4f 28
+03 40 03
+03 41 48
+03 42 06
+03 43 80
+02 02 03
+02 03 43
+03 03 02
+01 01 01;02;01 flip mirror
+37 07 14
+36 22 9f
+50 47 61;63
+40 02 45
+50 00 86;86 bit7 lenc on/off
+34 06 01;00
+50 01 00;01
+35 03 17;10
+40 05 18
+40 09 06;
+01 00 01
+3a 05 10;
+3a 0f 58;64
+3a 10 48;54
+3a 11 c2
+3a 1b 64
+3a 1e 54
+3a 1a 05
+
+;LENC
+58 04 26 ;R 25
+58 05 04
+58 07 07
+58 0C 39 ;G 38
+58 0D 05
+58 14 38 ;B 3A
+58 15 05
+58 00 02
+58 01 B0
+58 08 02
+58 09 B0
+58 10 02
+58 11 B0
+; test pattern
+06 01 04
+
+[7A]
+;---------------------------------------------------------;
+; OV_9726_SensorSpecified_Table table, replace 6F with 7A ;
+;---------------------------------------------------------;
+00 00
+
+[7B]
+;---------------------------------------------------------;
+;OV_9726_BackendSpecified_Table table, replace 70 with 7B ;
+;---------------------------------------------------------;
+; ~~~~~~ OV_9726_BackendSpecified_Table section 0
+00 0B
+00 7E 10
+00 7F 00
+80 54 02 04
+         10
+
+; ~~~~~~ OV_9726_BackendSpecified_Table section 1
+00 0E
+00 7E 10
+00 74 08
+00 7F 00
+80 54 02 04
+         10
+
+; ~~~~~~ OV_9726_BackendSpecified_Table section 2 ;VGA bilinear
+00 1B
+00 74 08
+00 7E 10
+80 54 02 04
+         10
+80 7A 06 2A ;resize and bilinear
+         04
+         20
+         03
+         00
+         1B
+80 6C 04 80 ;jpeg header
+         02
+         E0
+         01
+
+; ~~~~~~ OV_9726_BackendSpecified_Table section 3 ;CIF bilinear
+00 18
+;00 74 08
+00 7E 10
+80 54 02 04
+         10
+80 7A 06 70 ;resize and bilinear
+         03
+         D0
+         02
+         00
+         17
+80 6C 04 60 ;jpeg header
+         01
+         20
+         01
+
+[7C]
+;---------------------------------------------------------;
+;OV_9726_Gain_table , replace 71 with 7C                  ;
+;---------------------------------------------------------;
+00 40 ;section length
+00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  ;1x ~ (1+15/16)x
+10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F  ;2x ~ 2*(1+15/16)x
+30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F  ;4x ~ 4*(1+15/16)x
+70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F  ;8x ~ 8*(1+15/16)x
+
+
+[7D]
+;---------------------------------------------------------;
+;NoiseReduction_Table table, replace 72 with 7D           ;
+;---------------------------------------------------------;
+
+; ~~~~~~ NoiseReduction_Table section 0 : VGA NR
+01 96
+	;NrLevel 280   281  282  283  284  285  286  287  288  289  28A  28B  28C  28D  28E  28F  UVDe BLC YOffset 22A 6A 6B 27F 29F 2FA 2FB 2BC MJTrunc
+    00      72   FF   10   13   45   17   49   48   C8   17   C3   03   03   00   A8   13    00    44   03   10  00 00 FF  00  00  00  00  80
+    16      72   FF   10   13   45   16   4c   48   C8   16   C3   03   03   00   A8   13    00    44   03   10  00 00 FF  00  00  00  00  80
+    1D      72   FF   10   13   45   16   52   48   C8   16   C3   03   03   00   A8   13    00    44   03   0F  00 00 FF  00  00  00  00  80
+    25      70   FF   10   13   45   15   54   48   C8   15   C3   05   06   00   A8   13    00    43   03   0E  00 00 FF  00  00  00  00  80
+    38      70   FF   10   13   47   15   56   48   C8   15   C3   80   08   00   A8   15    00    43   03   0D  00 00 FF  00  00  00  00  80;MTF
+    49      70   FF   10   13   47   15   58   48   C8   15   C3   80   08   00   A9   15    00    43   03   0B  00 00 FF  00  00  00  00  80
+    5C      70   FF   10   13   48   13   58   48   C8   13   C3   80   43   00   A9   15    00    42   04   09  00 00 FF  00  00  00  00  84
+    6C      80   FF   10   13   48   13   5C   48   C8   13   C3   80   43   01   AA   18    02    42   05   07  00 00 FF  00  00  00  00  84;200LUX
+    82      80   FF   10   13   48   13   5C   48   C8   13   C3   80   43   01   AB   18    03    42   05   05  00 00 FF  00  00  00  00  84
+    9B      80   FF   10   13   48   13   5C   48   C8   13   C3   80   45   01   AC   18    05    42   05   03  00 00 FF  00  00  00  00  84
+    B3      80   FF   10   23   4a   12   5D   48   C8   12   C3   80   45   01   AC   18    06    42   05   01  00 00 FF  00  00  00  00  84;50LUX
+    EA      80   00   10   23   4a   12   5D   48   C8   12   C3   80   45   01   AD   19    07    42   05   00  00 00 FF  00  00  00  00  84
+    D1      80   00   10   23   4a   10   5E   48   C8   10   C3   80   48   01   AD   1A    08    42   05   00  00 00 FF  00  00  00  00  84
+    FF      80   00   10   23   50   10   5f   48   C8   10   C3   80   48   01   AD   1c    09    42   05   00  00 00 FF  00  00  00  00  84
+
+
+01 96 ;CIF 1
+	;NrLevel 280  281  282  283  284  285  286  287  288  289  28A  28B  28C  28D  28E  28F  UVde BLC YOffset  22A 6A 6B 27F 29F 2FA 2FB 2BC MJTrunc
+    00      72   FF   10   13   43   15   45   48   C8   15   C3   80   03   01   83   13    00    44   03   10  00 00 FF  00  00  00  00   80
+    16      72   FF   10   13   43   15   45   48   C8   15   C3   80   03   01   83   13    00    44   03   10  00 00 FF  00  00  00  00   80
+    1D      72   FF   10   13   43   15   45   48   C8   15   C3   80   03   01   83   13    00    44   03   0F  00 00 FF  00  00  00  00   80
+    25      70   FF   10   13   45   15   45   48   C8   15   C3   80   06   01   83   13    00    43   03   0E  00 00 FF  00  00  00  00   80
+    38      70   FF   10   13   45   15   46   48   C8   15   C3   80   08   01   83   15    00    43   03   0D  00 00 FF  00  00  00  00   80;MTF
+    49      70   FF   10   13   45   15   48   48   C8   15   C3   80   08   01   83   15    00    43   03   0B  00 00 FF  00  00  00  00   80
+    5C      70   FF   10   13   47   13   52   48   C8   13   C3   80   43   01   83   15    00    42   04   09  00 00 FF  00  00  00  00   84
+    6C      70   FF   10   13   48   13   53   48   C8   13   C3   80   43   01   83   18    02    42   05   07  00 00 FF  00  00  00  00   84;200LUX
+    82      70   FF   10   13   48   13   55   48   C8   13   C3   80   43   01   83   18    03    42   05   05  00 00 FF  00  00  00  00   84
+    9B      70   FF   10   13   48   13   56   48   C8   13   C3   80   45   01   AD   18    05    42   05   03  00 00 FF  00  00  00  00   84
+    B3      80   FF   10   23   4a   12   57   48   C8   12   C3   80   45   01   AD   18    06    42   05   01  00 00 FF  00  00  00  00   84;50LUX
+    EA      80   00   10   23   4a   12   58   48   C8   12   C3   80   45   00   AD   19    07    42   05   00  00 00 FF  00  00  00  00   84
+    D1      80   00   10   23   4a   10   59   48   C8   10   C3   80   48   01   AD   1A    08    42   05   00  00 00 FF  00  00  00  00   84
+    FF      80   00   10   23   50   10   5f   48   C8   10   C3   80   48   01   AD   1c    09    42   05   00  00 00 FF  00  00  00  00   84
+
+; ~~~~~~ NoiseReduction_Table section 2 : HD NR
+01 96
+	;NrLevel 280   281  282  283  284  285  286  287  288  289  28A  28B  28C  28D  28E  28F  UVDe BLC YOffset 22A 6A 6B 27F 29F 2FA 2FB 2BC MJTrunc
+    00      00   FF   10   13   45   1C   49   48   C8   1C   C3   03   03   00   A8   13    00    44   03   10  0F 00 FF  00  00  00  00  80
+    16      72   FF   10   13   45   1B   4C   48   C8   1B   C3   03   03   00   A8   13    00    44   03   10  0F 00 FF  00  00  00  00  80
+    1D      72   FF   10   13   45   1B   52   48   C8   1B   C3   03   03   00   A8   13    00    44   03   0F  0F 00 FF  00  00  00  00  80
+    25      70   FF   10   13   45   1A   54   48   C8   1A   C3   05   06   00   A8   13    00    43   03   0E  0F 00 FF  00  00  00  00  80
+    38      70   FF   10   13   47   1A   56   48   C8   1A   C3   80   08   00   A8   15    00    43   03   0D  0F 00 FF  00  00  00  00  80;MTF
+    49      70   FF   10   13   47   18   58   48   C8   18   C3   80   08   00   A9   15    02    43   03   0B  0F 00 FF  00  00  00  00  80
+    5C      70   FF   10   13   48   18   58   48   C8   18   C3   80   08   00   A9   15    03    42   04   09  0F 00 FF  00  00  00  00  84
+    6C      80   FF   10   13   48   15   5C   48   C8   15   C3   80   43   01   AA   18    05    42   05   07  0F 00 FF  00  00  00  00  84;200LUX
+    82      80   FF   10   13   48   15   5C   48   C8   15   C3   80   43   01   AB   18    06    42   05   05  0F 01 FF  00  00  00  00  84
+    9B      80   FF   10   13   48   13   5C   48   C8   13   C3   80   45   01   AB   18    07    42   05   03  0F 02 FF  00  00  00  00  84
+    B3      80   FF   10   23   4a   12   5D   48   C8   12   C3   80   45   01   AC   18    08    42   05   01  0F 03 FF  00  00  00  00  84;50LUX
+    EA      80   00   10   23   4a   12   5D   48   C8   12   C3   80   45   01   AC   19    09    42   05   00  0F 04 FF  00  00  00  00  84
+    D1      80   00   10   23   4a   10   5E   48   C8   10   C3   80   48   01   AD   1A    0A    42   05   00  0F 05 FF  00  00  00  00  84
+    FF      80   00   10   23   50   10   5f   48   C8   10   C3   80   48   01   AD   1c    0B    42   05   00  0F 06 FF  00  00  00  00  84
+
+[7E]
+;---------------------------------------------------------;
+;Exteranl resolution table, replace 64 with 7E            ;
+;---------------------------------------------------------;
+07  ;resolution count
+05 00   03 20   ;00 1280x800
+05 00   02 D0   ;01 1280x720
+04 2A   03 20   ;02 1066x800
+02 80 	01 E0	  ;03 640x480 3
+01 40   00 F0   ;04 320x240
+00 A0   00 78   ;05 160x120
+01 60   01 20   ;06 352x288 6
+
+
+
+
+[7F]
+;---------------------------------------------------------;
+;high speed resolution table, replace 67 with 7F          ;
+;---------------------------------------------------------;
+04	;MJ only, 02 YUY2_MJ
+04	;Format 1 Preview Count
+04	;Formt 1 Still Count
+04	;Format 2 Preview Count
+00	;Format 2 Still Count
+01 00 03 06
+01 00 03 06
+01 00 03 06
+01 00 03 06
+
+[80]
+;---------------------------------------------------------;
+;Full speed resolution table, replace 68 with 80          ;
+;---------------------------------------------------------;
+04	;YUY2_MJ
+02	;Format 1 Preview Count
+02	;Formt 1 Still Count
+00	;Format 2 Preview Count
+00	;Format 2 Still Count
+03 06
+
+
+
+[81]
+;---------------------------------------------------------;
+;External frame rate table, replace 69 with 81            ;
+;---------------------------------------------------------;
+80 80 80 81 81 81 81 81 1E 1E 1E 1E 00 00 00 00 ;YUV
+81 81 81 81 81 81 81 81 1E 1E 1E 1E 1E 1E 1E 1E ;MJ
+41 4C 56 32                                     ;ALV2
+06 00 00 00 00 00 04
+06 00 00 00 00 00 14
+0A 00 00 00 00 00 ;80 -->1280x800, 1280x720
+1E 00 00 00 00 00 ;81 -->30fps
+18 00 00 00 00 00 ;82 -->800x500
+
+
+[82]
+;---------------------------------------------------------;
+;BrightnessCtrl , replace 4C with 82                      ;
+;---------------------------------------------------------;
+03
+FF 81
+00 80
+00 01
+00 00
+
+[83]
+;---------------------------------------------------------;
+;ContrastCtrl , replace 4D with 83                        ;
+;---------------------------------------------------------;
+03
+00 00
+00 1E
+00 01
+00 0F
+
+[84]
+;---------------------------------------------------------;
+;HueCtrl , replace 4E with 84                             ;
+;---------------------------------------------------------;
+03
+FF 4C
+00 B4
+00 01
+00 00
+
+[85]
+;---------------------------------------------------------;
+;SaturationCtrl , replace 4F with 85                      ;
+;---------------------------------------------------------;
+03
+00 00
+00 7F
+00 01
+00 20
+
+[86]
+;---------------------------------------------------------;
+;Sharpness_Table,replace 50 with 86                       ;
+;---------------------------------------------------------;
+03
+00 00
+00 3C
+00 01
+00 0A
+
+[87]
+;---------------------------------------------------------;
+;GammaCtrl , replace 51 with 87                           ;
+;---------------------------------------------------------;
+03
+00 14
+00 FA
+00 01
+00 64
+
+[88]
+;---------------------------------------------------------;
+;WBTempCtrl , replace 52 with 88                          ;
+;---------------------------------------------------------;
+0B
+09 C4
+1B 58
+00 01
+17 70
+
+[89]
+;---------------------------------------------------------;
+;Backlight_Table,replace 54 with 89                       ;
+;---------------------------------------------------------;
+03
+00 00
+00 02
+00 01
+00 00
+
+[8A]
+;---------------------------------------------------------;
+;PwrLineCtrl , replace 55 with 8A                         ;
+;---------------------------------------------------------;
+03
+00 01
+00 02
+00 01
+00 02
+
+[8B]
+;GET_STRING2_DESC, replace 0x47 0x49 with 0x8B
+2A ; length
+03 ; DESC_STRING
+55 00 53 00 42 00 32 00 2E 00 30 00 20 00 55 00 56 00 43 00 20 00 31 00 4D 00 20 00 57 00 65 00
+62 00 43 00 61 00 6D 00
+
+
+; Camera terminal descriptor ,replace 0x06 with 0x8C
+[8C]
+12
+24
+02
+01
+01 02
+00
+00
+00 00
+00 00
+00 00
+03
+00 00 00
+
+; Processing Unit Desc,manual AWB disable, replace 0x07 with 0x8D
+[8D]
+0B ;sizeof(USB_PROCESSING_UNIT_DESC
+24 ;DESC_CS_INTERFACE
+05 ;VC_PROCESSING_UNIT
+02 ;PU_ID
+01 ;CT_ID
+00 00 ;MAX_MULTIPLIER,
+02
+7F 17 ;0x7F15
+00
+
+;low lght compensation default, replace 0x57 with 0x8E
+[8E]
+09
+08
+01
+0b
+00 00 00 4E
+00 00 04 E2
+00 00 00 01
+00 00 01 38
+
+[8F]
+;Devdes , replace 00 with 8F
+12	;sizeof(USB_ST_DEVICE_DESC),	            //0x12
+01	;DESC_DEVICE,                            //0x01
+00 02	;USB_SPECIFICATION,	                    //0x0002
+EF	;DEVICE_CLASS,                           //0xEF
+02	;DEVICE_SUB_CLASS,                       //0x02
+01	;DEVICE_PROTOCOL,                        //0x01
+40	;EP_CONTROL_LENGTH,                      //0x40
+8F 05	;D3 13	;VENDOR_ID,                              //0x8F05
+21 38	;34 51	;PRODUCT_ID,                             //0x3138
+15 01	;RELEASE_NUMBER,                         //0x0100
+01	;MAN_INDEX,                              //0x01
+02	;PROD_INDEX,                             //0x02
+00	;SN_INDEX,			                    //0x00
+01	;NB_CONFIGURATION                        //0x01
+
+
+;GET_STRING3_DESC, replace 0x48 with 0x90 , Not in Use
+[90]
+;;3C ; length
+;;03 ; DESC_STRING
+;;48 00 46 00 31 00 30 00 31 00 36 00 2D 00 41 00 38 00 32 00 31 00 2D 00 4F 00 56 00 30 00 31 00
+;;2D 00 56 00 48 00 2D 00 52 00 30 00 31 00 2E 00 30 00 30 00 2E 00 30 00 30 00
+
+
+;GET_STRING1_DESC, replace 0x46 with 0x91
+[91]
+2A ; length
+03 ; DESC_STRING
+55 00 53 00 42 00 32 00 2E 00 30 00 20 00 55 00 56 00 43 00 20 00 31 00 4D 00 20 00 57 00 65 00
+62 00 43 00 61 00 6D 00
+
+
+[92]
+;---------------------------------------------------------;
+;GainCtrl , replace 53 with 92                            ;
+;---------------------------------------------------------;
+03
+00 00
+00 0A
+00 01
+00 00
+
+[93]
+;---------------------------------------------------------;
+;New Spi Table , replace 75 with 93                            ;
+;---------------------------------------------------------;
+; Version v0A.11.12.22.00
+F8 F8
+31 C7 52 20 9F EF 30 11 01 00 64 1F 06 80 00 FF E0 ; ;WINBON W25X10BV
+31 C7 52 20 9F C2 22 10 01 08 64 1F 06 80 00 FF E0 ; ;MXIC MX 25L5121E
+31 C7 D7 20 9F 7F 9D 2F 01 04 64 0F 06 40 00 7F E0 ; ;PMC Pm25LD256
+31 C7 52 20 9F C8 40 10 01 00 64 1F 06 80 00 FF E0 ; ;QP 25Q512
+2C C7 52 20 90 BF 48 00 09 00 64 1F 06 80 00 FF E0 ; ;PCT25VF512A
+;
+31 C7 D8 20 9F C2 20 10 01 01 64 01 06 80 00 8F E0 ; ;AMIC A25L512 30
+31 C7 52 20 9F C2 20 10 01 00 64 1E 06 81 00 FF E0 ; ;MXIC MX 25L512C (0x52) equal to chip erase
+31 C7 52 20 9F BF 25 01 01 00 64 1F 06 80 00 FF E0 ; ;SST 25WF512 1.8V Word
+31 C7 D8 00 9F 1C 31 10 01 00 64 1F 06 80 00 FF E0 ; ;EON EN25F05
+31 C7 D8 20 9F 7F 9D 20 01 00 64 1E 06 81 00 FF E0 ; ;PMC Pm25LD512C
+;
+24 62 52 20 15 1F 65 00 01 00 64 1F 06 80 00 FF E0 ; ;ATMEL
+31 60 D8 20 9F 8C 32 11 01 00 64 1F 06 80 00 FF E0 ; ;ESMT 25L32P
+31 60 D8 20 9F 8C 30 10 01 00 64 1F 06 80 00 FF E0 ; ;ESMT 25L05PA
+24 C7 D8 D7 AB 9D 7B 00 01 00 64 1F 06 80 00 FF E0 ; ;PMC Pm25LV512(A)
+FF FF
+
+[94]
+;--------------------------------------
+;--------CRC ROM/RAM TABLE ------------
+;--------------------------------------
+04 EF	;wCRCTable_ROM
+E2 3A ;wCRCTable_RAM

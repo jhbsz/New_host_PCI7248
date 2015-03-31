@@ -1,0 +1,81 @@
+[Version]
+Signature="$WINDOWs NT$"
+Class=Multifunction
+ClassGuid={4d36e971-e325-11ce-bfc1-08002be10318}
+provider=%MFGNAME%
+CatalogFile=EMV2KPS2.cat
+DriverVer=02/12/2007,1.0.1.4
+
+[ControlFlags]
+Excludefromselect=USB\VID_058F&PID_9522
+ 
+
+
+[Manufacturer]
+%MFGNAME%=DeviceList
+
+[DestinationDirs]
+DriverCopyFiles = 10,System32\Drivers
+SMCLIB.CopyFiles = 10,System32\Drivers
+DefaultDestDir = 10,System32\Drivers
+
+[SourceDisksFiles]
+EMV2KPS2.sys=1
+EMV2KS2A.sys=1
+EMV2KS2B.sys=1
+EMV2KLS2.sys=1
+
+[SourceDisksNames]
+1=%INSTDISK%,,,
+
+[DeviceList]
+%USB\VID_058F&PID_9522.DeviceDesc%=DriverInstall,USB\VID_058F&PID_9522
+ 
+ 
+
+;------------------------------------------------------------------------------
+;  Windows 2000 / WINDOWS XP Installation
+;------------------------------------------------------------------------------
+
+[DriverInstall.NT]
+CopyFiles=DriverCopyFiles
+
+[DriverCopyFiles]
+EMV2KPS2.sys,,,2
+EMV2KS2A.sys,,,2
+EMV2KS2B.sys,,,2
+EMV2KLS2.sys,,,2
+
+[DriverInstall.NT.Services]
+Addservice =EMV2KDS, 2, DriverService,EventLogging
+
+[DriverService]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\EMV2KPS2.sys
+
+[EventLogging]
+AddReg=EventLogAddReg
+
+[EventLogAddReg]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\system32\drivers\EMV2KPS2.sys"
+HKR,,TypesSupported,0x00010001,7
+
+[DriverInstall.nt.hw]
+AddReg=DriverHwAddReg
+
+[DriverHwAddReg]
+HKLM, System\CurrentControlSet\Services\SCardSvr,Start,0x00010001,2
+;HKR,,Parameters,,"MaximumTransferSize",0x10001,4096
+;HKR,,Parameters,,"DebugLevel",0x10001,2
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+MFGNAME="EMVSCARD DS"
+USB\VID_058F&PID_9522.DeviceDesc="Multi-Slots USB SmartCard Reader"
+USB\VID_058F&PID_9520.DeviceDesc="USB SmartCard Reader"
+INSTDISK="Installation Disc for Multi-Slots USB SmartCard Reader"

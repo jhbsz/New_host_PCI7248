@@ -1,0 +1,847 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\9525COMAP.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\9525COMAP.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About 9525COMAP"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "9525COMAP ver1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MY9525COMAP_DIALOG DIALOGEX 0, 0, 423, 451
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "9540COMAP"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "Button1",IDC_BUTTON1,366,430,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Activate Card",IDC_BUTTON_Power_on,7,430,64,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Power off",IDC_BUTTON_power_off,77,430,50,14,NOT 
+                    WS_VISIBLE
+    CONTROL         "T0",IDC_Slot0_RADIO_T0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,133,104,24,10
+    CONTROL         "T1",IDC_Slot0_RADIO_T1,"Button",BS_AUTORADIOBUTTON,157,
+                    104,24,10
+    PUSHBUTTON      "Send APDU",IDC_BUTTON_Slot0_Xfr,61,131,50,14
+    EDITTEXT        IDC_Slot0_BlockData,133,115,268,13,ES_AUTOHSCROLL
+    CTEXT           "Slot0",IDC_STATIC,21,61,26,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_Slot0_ATR,41,76,204,12,ES_AUTOHSCROLL
+    LTEXT           "ATR",IDC_STATIC,25,76,13,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,21,73,386,154
+    EDITTEXT        IDC_Slot0_CardType,71,106,29,14,ES_AUTOHSCROLL
+    LTEXT           "T0/T1 Type",IDC_STATIC,27,108,41,8
+    CONTROL         "T0",IDC_Slot1_RADIO_T0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,132,279,24,10
+    CONTROL         "T1",IDC_Slot1_RADIO_T1,"Button",BS_AUTORADIOBUTTON,156,
+                    279,24,10
+    PUSHBUTTON      "Send APDU",IDC_BUTTON_Slot1_Xfr,60,299,50,14
+    EDITTEXT        IDC_Slot1_BlockData,134,293,267,13,ES_AUTOHSCROLL
+    CTEXT           "Slot1",IDC_STATIC,22,235,26,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_Slot1_ATR,42,251,206,14,ES_AUTOHSCROLL
+    LTEXT           "ATR",IDC_STATIC,26,251,13,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,22,249,385,144
+    EDITTEXT        IDC_Slot1_CardType,70,277,25,14,ES_AUTOHSCROLL
+    LTEXT           "T0/T1 Type",IDC_STATIC,26,279,41,8
+    LTEXT           "COM",IDC_STATIC,7,7,13,8
+    COMBOBOX        IDC_COMBO_COM,21,7,48,68,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "BaudRate",IDC_STATIC,82,7,34,10
+    COMBOBOX        IDC_COMBO_BaudRate,115,7,48,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Product:",IDC_STATIC,24,35,31,8
+    LTEXT           "Manufacturer:",IDC_STATIC,163,35,53,8
+    CTEXT           "Product String",IDC_PID,60,35,96,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "Manufacturer String",IDC_VID,219,35,96,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    PUSHBUTTON      "Get Reader Info",IDC_BUTTON_Connect,14,18,8,17
+    EDITTEXT        IDC_Slot0_Response_Data,133,131,268,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Slot1_Response_Data,134,309,268,14,ES_AUTOHSCROLL
+    LTEXT           "Asynchronous Card",IDC_STATIC,177,95,69,8
+    LTEXT           "Synchronous Card",IDC_STATIC,180,325,65,8
+    COMBOBOX        IDC_COMBO_Slot0CardType,327,73,79,96,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Choose Card Type",IDC_STATIC,261,75,65,8
+    COMBOBOX        IDC_COMBO_Slot1CardType,328,249,79,96,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Choose Card Type",IDC_STATIC,261,251,65,8
+    LTEXT           "Send",IDC_STATIC,115,117,17,8
+    LTEXT           "Get",IDC_STATIC,115,134,13,8
+    LTEXT           "=======================================",IDC_STATIC,23,
+                    95,152,8
+    LTEXT           "=======================================",IDC_STATIC,249,
+                    96,157,8
+    LTEXT           "Synchronous Card",IDC_STATIC,181,149,65,8
+    LTEXT           "=======================================",IDC_STATIC,24,
+                    149,155,8
+    LTEXT           "=======================================",IDC_STATIC,249,
+                    149,157,8
+    LTEXT           "Asynchronous Card",IDC_STATIC,176,269,69,8
+    LTEXT           "=======================================",IDC_STATIC,23,
+                    269,152,8
+    LTEXT           "=======================================",IDC_STATIC,248,
+                    269,157,8
+    LTEXT           "Send",IDC_STATIC,113,295,17,8
+    LTEXT           "Get",IDC_STATIC,112,313,13,8
+    LTEXT           "=======================================",IDC_STATIC,23,
+                    325,154,8
+    LTEXT           "=======================================",IDC_STATIC,250,
+                    325,155,8
+    PUSHBUTTON      "AT45D041",IDC_BUTTONSlot0AT45D041,191,164,50,14
+    PUSHBUTTON      "SLE4418/28",IDC_BUTTONSlot0SLE4428,83,164,50,14
+    PUSHBUTTON      "SLE4432/42",IDC_BUTTONSlot0SLE4442,137,164,50,14
+    PUSHBUTTON      "AT45D041",IDC_BUTTONSlot1AT45D041,184,339,50,14
+    PUSHBUTTON      "SLE4418/28",IDC_BUTTONSlot1SLE4428,76,339,50,14
+    PUSHBUTTON      "SLE4432/42",IDC_BUTTONSlot1SLE4442,130,339,50,14
+    PUSHBUTTON      "Demo of Lcm, Keypad and EEPROM",
+                    IDC_BUTTON_LCM_KEYPAD_EEPROM,22,397,385,23
+    LTEXT           "PID:",IDC_STATIC,25,22,17,8
+    LTEXT           "VID:",IDC_STATIC,162,22,17,8
+    LTEXT           "Serial Number:",IDC_STATIC,181,7,57,8
+    LTEXT           "0000",IDC_PID_Num,58,22,28,9,SS_SUNKEN
+    LTEXT           "0000",IDC_VID_Num,219,21,28,9,SS_SUNKEN
+    LTEXT           "0000",IDC_SerialNum,241,7,20,10,SS_SUNKEN
+    LTEXT           "Release number:",IDC_STATIC,271,7,61,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "00000000",IDC_ReleaseNum,335,7,33,8,SS_SUNKEN | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "AT88SC",IDC_BUTTONSlot0AT88SC,245,164,50,14
+    PUSHBUTTON      "AT88SC",IDC_BUTTONSlot1AT88SC,237,339,50,14
+    PUSHBUTTON      "Inphone",IDC_BUTTONSlot0Inphone,300,164,50,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Inphone",IDC_BUTTONSlot1Inphone,291,339,50,14,NOT 
+                    WS_VISIBLE
+    LTEXT           "EEPROM Card",IDC_STATIC,192,183,45,8
+    LTEXT           "=============================================",
+                    IDC_STATIC,24,183,164,8
+    LTEXT           "============================================",
+                    IDC_STATIC,237,183,167,8
+    PUSHBUTTON      "AT24C",IDC_BUTTONSlot0EEPROMCardEdit,187,201,50,14
+    LTEXT           "EEPROM Card",IDC_STATIC,192,357,45,8
+    LTEXT           "=============================================",
+                    IDC_STATIC,24,357,167,8
+    LTEXT           "============================================",
+                    IDC_STATIC,238,357,166,8
+    PUSHBUTTON      "AT24C",IDC_BUTTONSlot1EEPROMCardEdit,187,369,50,14
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,22,38,19,19
+    CONTROL         "",IDC_TestLabel,"{978C9E23-D4B0-11CE-BF2D-00AA003F40D0}",
+                    0x0,118,50,186,13
+    PUSHBUTTON      "Begin Test",IDC_BeginTest,322,29,73,20
+    PUSHBUTTON      "Exit",IDC_EXit,323,49,72,18
+    CONTROL         "",IDC_NewChip,"{978C9E23-D4B0-11CE-BF2D-00AA003F40D0}",
+                    0x0,66,53,49,13
+END
+
+IDD_SLE4428 DIALOG DISCARDABLE  0, 0, 310, 337
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SLE4418/28"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Command",IDC_STATIC,41,7,34,8
+    LTEXT           "Addr",IDC_STATIC,139,7,16,8
+    LTEXT           "Data",IDC_STATIC,198,7,16,8
+    LTEXT           "ReplyLen(Max 1024)",IDC_STATIC,235,7,68,8
+    PUSHBUTTON      "Write and Erase with PB",IDC_BUTTONWriteAndEraseWithPB,
+                    7,17,103,14
+    PUSHBUTTON      "Write and Erase without PB",
+                    IDC_BUTTONWriteAndEraseWithoutPB,7,35,103,14
+    PUSHBUTTON      "Write PB and data comparison",
+                    IDC_BUTTONWritePBAndDataComparison,7,53,103,14
+    PUSHBUTTON      "Read 9 Bits",IDC_BUTTONRead9Bits,7,71,103,14
+    PUSHBUTTON      "Read 8 Bits",IDC_BUTTONRead8Bits,7,89,103,14
+    EDITTEXT        IDC_WriteEraseWithPBAddr,128,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WriteEraseWithoutPBAddr,128,35,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WritePBdataComparisonAddr,128,53,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_Read9BitsAddr,128,71,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Read8BitsAddr,128,89,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WriteEraseWithPBData,186,17,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WriteEraseWithoutPBData,186,35,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WritePBdataComparisonData,186,53,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_Read9BitsData,186,71,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_Read8BitsData,186,89,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_WriteEraseWithPBReplyLen,246,17,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_WriteEraseWithoutPBReplyLen,246,35,40,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_WritePBdataComparisonReplyLen,246,53,40,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_Read9BitsReplyLen,246,71,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Read8BitsReplyLen,246,89,40,14,ES_AUTOHSCROLL
+    LTEXT           "PSC1",IDC_STATIC,135,131,19,8
+    GROUPBOX        "SLE4428 Only",IDC_STATIC,7,115,296,114
+    EDITTEXT        IDC_PSC1,155,128,40,14,ES_AUTOHSCROLL
+    LTEXT           "PSC2",IDC_STATIC,215,131,19,8
+    EDITTEXT        IDC_PSC2,237,128,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Verify PSC and Erase Error Count",
+                    IDC_BUTTONVerifyPSCAndEraseErrorCount,7,128,110,14
+    PUSHBUTTON      "Write Error Counter",IDC_BUTTONWriteErrorCounter,7,149,
+                    110,14
+    PUSHBUTTON      "Verify 1st PSC",IDC_BUTTONVerify1stPSC,7,169,110,14
+    PUSHBUTTON      "Verify 2nd PSC",IDC_BUTTONVerify2ndPSC,7,188,110,14
+    EDITTEXT        IDC_WriteErrorCounterAddr,128,149,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_WriteErrorCounterData,186,149,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WriteErrorCounterReplyLen,246,149,40,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_Verify1stPSCAddr,128,169,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_Verify1stPSCData,186,169,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Verify1stPSCReplyLen,246,169,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_Verify2ndPSCAddr,128,188,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_Verify2ndPSCData,186,188,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Verify2ndPSCReplyLen,246,188,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Card Response",IDC_STATIC,7,239,51,8
+    EDITTEXT        IDC_CardResponse,7,252,296,78,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    PUSHBUTTON      "Erase Error Count",IDC_BUTTONEraseErrorCount,7,209,110,
+                    14
+    EDITTEXT        IDC_EraseErrorCountAddr,128,208,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EraseErrorCountData,186,208,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EraseErrorCountReplyLen,246,208,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+END
+
+IDD_SLE4442 DIALOG DISCARDABLE  0, 0, 294, 288
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SLE4442"
+FONT 10, "System"
+BEGIN
+    LTEXT           "PIN Number",IDC_STATIC,72,9,40,8
+    EDITTEXT        IDC_PinNumber1,115,7,18,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Verify",IDC_Verify,226,7,50,14
+    LTEXT           "Command",IDC_STATIC,28,27,34,8
+    LTEXT           "Addr",IDC_STATIC,116,27,16,8
+    LTEXT           "Data",IDC_STATIC,169,27,16,8
+    LTEXT           "Reply length",IDC_STATIC,213,27,42,8
+    PUSHBUTTON      "Read Main Memory",IDC_BUTTONReadMainMemory,7,38,88,14
+    PUSHBUTTON      "Update Main Memory",IDC_BUTTONUpdateMainMemory,7,56,88,
+                    14
+    PUSHBUTTON      "Read Protection Memory",IDC_BUTTONReadProtectionMemory,
+                    7,73,88,14
+    PUSHBUTTON      "Write Protection Memory",
+                    IDC_BUTTONWriteProtectionMemory,7,91,88,14
+    EDITTEXT        IDC_ReadMainMemoryAddr,107,38,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UpdateMainMemoryAddr,107,56,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ReadProtectionMemoryAddr,107,73,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_WriteProtectionMemoryAddr,107,91,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_ReadMainMemoryData,160,38,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_UpdateMainMemoryData,160,56,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ReadProtectionMemoryData,160,73,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_WriteProtectionMemoryData,160,91,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_ReadMainMemoryReplyLen,215,38,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UpdateMainMemoryReplyLen,215,56,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_ReadProtectionMemoryReplyLen,215,73,40,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_WriteProtectionMemoryReplyLen,215,91,40,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "SLE4442 only",IDC_STATIC,7,116,280,64
+    PUSHBUTTON      "Read Security Memory",IDC_BUTTONReadSecurityMemory,7,
+                    127,88,14
+    PUSHBUTTON      "Update Security Memory",IDC_BUTTONUpdateSecurityMemory,
+                    7,144,88,14
+    PUSHBUTTON      "Compare Verification Data",
+                    IDC_BUTTONCompareVerificationData,7,161,88,14
+    LTEXT           "Card Response",IDC_STATIC,7,183,51,8
+    EDITTEXT        IDC_CardResponse,7,195,280,86,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_ReadSecurityMemoryAddr,107,127,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_ReadSecurityMemoryData,160,127,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_ReadSecurityMemoryReplyLen,215,127,40,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_UpdateSecurityMemoryAddr,107,144,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_UpdateSecurityMemoryData,160,144,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_UpdateSecurityMemoryReplyLen,215,144,40,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_CompareVerificationDataAddr,107,161,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_CompareVerificationDataData,160,161,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_CompareVerificationDataReplyLen,215,161,40,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_PinNumber2,140,7,18,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PinNumber3,165,7,18,14,ES_AUTOHSCROLL
+END
+
+IDD_AT45D041 DIALOG DISCARDABLE  0, 0, 357, 301
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AT45D041"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Command",IDC_STATIC,67,7,34,8
+    PUSHBUTTON      "Main Memory Page Read",IDC_BUTTONMainMemoryPageRead,7,
+                    17,164,14
+    PUSHBUTTON      "Buffer1 Read",IDC_BUTTONBuffer1Read,7,31,164,14
+    PUSHBUTTON      "Get Status Register",IDC_BUTTONGetStatusRegister,7,255,
+                    164,14
+    PUSHBUTTON      "Auto Page Rewrite through Buffer1",
+                    IDC_BUTTONAutoPageProgramthroughBuffer1,7,227,164,14
+    PUSHBUTTON      "Memory Page Program through Buffer2",
+                    IDC_BUTTONMemoryPageProgramthroughBuffer2,7,213,164,14
+    PUSHBUTTON      "Auto Page Rewrite through Buffer2",
+                    IDC_BUTTONAutoPageProgramthroughBuffer2,7,241,164,14
+    PUSHBUTTON      "Buffer2 Read",IDC_BUTTONBuffer2Read,7,45,164,14
+    PUSHBUTTON      "Main Memory Page to Buffer1 Xfr",
+                    IDC_BUTTONMainMemoryPagetoBuffer1Xfr,7,59,164,14
+    PUSHBUTTON      "Main Memory Page to Buffer2 Xfr",
+                    IDC_BUTTONMainMemoryPagetoBuffer2Xfr,7,73,164,14
+    PUSHBUTTON      "Main Memory Page to Buffer1 Compare",
+                    IDC_BUTTONMainMemoryPagetoBuffer1Compare,7,87,164,14
+    PUSHBUTTON      "Main Memory Page to Buffer2 Compare",
+                    IDC_BUTTONMainMemoryPagetoBuffer2Compare,7,101,164,14
+    PUSHBUTTON      "Buffer1 Write",IDC_BUTTONBuffer1Write,7,115,164,14
+    PUSHBUTTON      "Buffer2 Write",IDC_BUTTONBuffer2Write,7,129,164,14
+    PUSHBUTTON      "Buffer1 to Memory Page Program with Erase",
+                    IDC_BUTTONBuffer1toMemoryPageProgramwithErase,7,143,164,
+                    14
+    PUSHBUTTON      "Buffer2 to Memory Page Program with Erase",
+                    IDC_BUTTONBuffer2toMemoryPageProgramwithErase,7,157,164,
+                    14
+    PUSHBUTTON      "Buffer1 to Memory Page Program without Erase",
+                    IDC_BUTTONBuffer1toMemoryPageProgramwithoutErase,7,171,
+                    164,14
+    PUSHBUTTON      "Buffer2 to Memory Page Program without Erase",
+                    IDC_BUTTONBuffer2toMemoryPageProgramwithoutErase,7,185,
+                    164,14
+    PUSHBUTTON      "Memory Page Program through Buffer1",
+                    IDC_BUTTONMemoryPageProgramthroughBuffer1,7,199,164,14
+    LTEXT           "Page Number",IDC_STATIC,197,19,45,8
+    LTEXT           "Address in Buffer or Memory",IDC_STATIC,197,32,94,8
+    LTEXT           "Data length to read (Max 264)",IDC_STATIC,197,45,97,8
+    EDITTEXT        IDC_PageNum,310,14,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AddressInBufferOrMemory,310,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DataLengthToRead,310,42,40,14,ES_AUTOHSCROLL
+    LTEXT           "Data to Write",IDC_STATIC,199,77,44,8
+    EDITTEXT        IDC_DataToWrite,199,88,151,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Test Read Speed",IDC_BUTTONTestReadSpeed,197,255,61,14
+    LTEXT           "Data from the Card",IDC_STATIC,197,132,62,8
+    EDITTEXT        IDC_DataFromCard,198,143,152,89,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    LTEXT           "0",IDC_STATIC_00,272,258,55,8
+END
+
+IDD_LCM_KEYPAD_EEPROM DIALOGEX 0, 0, 316, 336
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lcm, Keypad, Eeprom"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Help",IDC_HELP1,229,7,22,15
+    PUSHBUTTON      "About",IDC_ABOUT,259,7,21,16
+    PUSHBUTTON      "Close",IDC_CLOSE,287,7,22,16
+    GROUPBOX        "Update Eeprom",IDC_STATIC,20,23,289,108
+    GROUPBOX        "LCM",IDC_STATIC,20,134,289,126
+    LTEXT           "USB VID",IDC_STATIC,27,39,29,8
+    LTEXT           "VID String",IDC_STATIC,27,62,33,8
+    LTEXT           "PID String",IDC_STATIC,27,82,34,8
+    LTEXT           "Serial Number",IDC_STATIC,27,106,48,8
+    LTEXT           "USB PID",IDC_STATIC,161,40,29,8
+    EDITTEXT        IDC_VID,74,35,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PID,194,35,40,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VID_STRING,85,60,120,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PID_STRING,85,81,120,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SN,85,112,121,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Support",IDC_CHECK_SUPPORT_SN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,85,102,41,10
+    PUSHBUTTON      "Open File",IDC_OPEN_FILE,253,41,50,14
+    PUSHBUTTON      "Save File",IDC_SAVE_FILE,253,72,50,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "Write Eeprom",IDC_WRITE_EEPROM,253,103,50,14
+    COMBOBOX        IDC_LCM_SELECT,27,149,57,75,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Set Row",IDC_SET_POS_X,27,173,28,8
+    LTEXT           "Set Column",IDC_SET_POS_Y,27,194,38,8
+    LTEXT           "Set Length",IDC_SET_POS_X2,27,215,36,8
+    LTEXT           "Set High",IDC_SET_POS_Y2,27,237,29,8
+    EDITTEXT        IDC_DISPLAY_POS_X,68,169,40,14,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISPLAY_POS_Y,68,191,40,14,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISPLAY_LENGTH,68,213,40,14,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISPLAY_HIGH,68,235,40,14,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "0",IDC_RANGE_X,110,173,29,8
+    LTEXT           "0",IDC_RANGE_Y,110,192,30,8
+    CONTROL         "",IDC_KEYPAD_VALUE,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_BORDER | WS_GROUP,114,147,116,13
+    EDITTEXT        IDC_DISPLAY_STRING,142,171,87,78,ES_MULTILINE | 
+                    ES_UPPERCASE | ES_AUTOHSCROLL | WS_VSCROLL,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Test Keypad",IDC_TEST_LCM_KEYPAD,252,149,50,14
+    PUSHBUTTON      "Display Graph",IDC_DISPLAY_GRAPH,252,172,50,14
+    PUSHBUTTON      "Display Text",IDC_DISPLAY_TEXT,252,195,50,14
+    PUSHBUTTON      "Display Clear",IDC_DISPLAY_Clear,252,218,50,14
+    PUSHBUTTON      "Set Backlight",IDC_BACKLIGHT_CHANGE,252,240,50,14
+    GROUPBOX        "Update FW",AFX_ID_PREVIEW_CLOSE,20,263,289,40
+    PUSHBUTTON      "Update FW",IDC_UPDATE_FW,130,279,50,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,
+                    97,306,120,16
+    LTEXT           "",IDC_STATUS,46,280,59,8,SS_SUNKEN
+    LTEXT           "",IDC_RESULT,202,279,69,8,SS_SUNKEN
+END
+
+IDD_AT88SC DIALOG DISCARDABLE  0, 0, 260, 246
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AT88SC"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Command",IDC_STATIC,34,10,34,8
+    LTEXT           "Address",IDC_STATIC,101,10,28,8
+    LTEXT           "Data",IDC_STATIC,156,10,16,8
+    LTEXT           "Reply Length",IDC_STATIC,205,10,44,8
+    PUSHBUTTON      "Write User Zone",IDC_BUTTONWriteUserZone,7,21,87,14
+    PUSHBUTTON      "Read User Zone",IDC_BUTTONReadUserZone,7,37,87,14
+    PUSHBUTTON      "Write Configuration Zone",
+                    IDC_BUTTONWriteConfigurationZone,7,53,87,14
+    PUSHBUTTON      "Read Configuration Zone",
+                    IDC_BUTTONReadConfigurationZone,7,69,87,14
+    PUSHBUTTON      "Set User Zone Address",IDC_BUTTONSetUserZoneAddress,7,
+                    85,87,14
+    EDITTEXT        IDC_WriteUserZoneAddr,105,21,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ReadUserZoneAddr,105,37,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WriteConfigurationZoneAddr,105,53,21,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_ReadConfigurationZoneAddr,105,69,21,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_SetUserZoneAddressAddr,105,85,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WriteUserZoneData,137,21,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ReadUserZoneData,137,37,55,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_WriteConfigurationZoneData,137,53,55,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_ReadConfigurationZoneData,137,69,55,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_SetUserZoneAddressData,137,85,55,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_WriteUserZoneReplyLen,205,21,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_ReadUserZoneReplyLen,205,37,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WriteConfigurationZoneReplyLen,205,53,40,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_ReadConfigurationZoneReplyLen,205,69,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_SetUserZoneAddressReplyLen,205,85,40,14,
+                    ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Command",IDC_STATIC,27,113,34,8
+    LTEXT           "R/W",IDC_STATIC,106,113,15,8
+    LTEXT           "Zone",IDC_STATIC,151,113,18,8
+    LTEXT           "Password",IDC_STATIC,203,113,33,8
+    PUSHBUTTON      "Verify Password",IDC_BUTTONVerifyPassword,7,124,75,14
+    EDITTEXT        IDC_Password1,194,124,16,14,ES_AUTOHSCROLL
+    LTEXT           "Card Response",IDC_STATIC,7,153,51,8
+    COMBOBOX        IDC_COMBO_R_W,98,125,38,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ZONE,143,125,38,94,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_Password2,212,124,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Password3,230,124,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CardResponse,7,166,246,73,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+END
+
+IDD_AT24C DIALOG DISCARDABLE  0, 0, 187, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AT24C"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Address",IDC_STATIC,7,13,28,8
+    LTEXT           "PageSize",IDC_STATIC,7,30,32,8
+    LTEXT           "Address",IDC_STATIC,7,47,28,8
+    LTEXT           "Length",IDC_STATIC,7,63,23,8
+    EDITTEXT        IDC_WriteAddress,59,11,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PageSize,59,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ReadAddress,59,45,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ReadLength,59,61,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Write",IDC_ButtonWrite,129,13,50,14
+    PUSHBUTTON      "Read",IDC_ButtonRead,129,45,50,14
+    PUSHBUTTON      "Stress Test",IDC_ButtonStress,129,61,50,14,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "Edit TextBox",IDC_STATIC,7,86,43,8
+    EDITTEXT        IDC_AccessData,7,96,173,12,ES_AUTOHSCROLL
+    LTEXT           "Data inside the EEPROM",IDC_STATIC,7,114,82,8
+    EDITTEXT        IDC_EEPROMdata,7,123,173,64,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+END
+
+IDD_SLE4442_CMD DIALOG DISCARDABLE  0, 0, 240, 188
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SLE4442 Vender COMMAND"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "SLE4442_CARD_COMMAND",IDC_BUTTON_SLE4442_CARD_COMMAND,7,
+                    7,104,14
+    PUSHBUTTON      "SLE4442_CARD_BREAK",IDC_BUTTON_SLE4442_CARD_BREAK,7,167,
+                    87,14
+    LTEXT           "Command 1",IDC_STATIC,7,78,40,8
+    LTEXT           "Response",IDC_STATIC,7,133,34,8
+    EDITTEXT        IDC_EDIT_Command1,69,76,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Response,58,132,175,14,ES_AUTOHSCROLL
+    LTEXT           "Read Data Length",IDC_STATIC,7,27,59,8
+    EDITTEXT        IDC_EDIT_ReadDataLength,69,25,40,14,ES_AUTOHSCROLL
+    LTEXT           "Protect bit flag",IDC_STATIC,7,44,48,8
+    EDITTEXT        IDC_EDIT_ProtectBitFlag,69,42,20,14,ES_AUTOHSCROLL
+    LTEXT           "Clock Number flag",IDC_STATIC,8,61,60,8
+    EDITTEXT        IDC_EDIT_ClockNumberFlag,69,59,20,14,ES_AUTOHSCROLL
+    LTEXT           "Command 2",IDC_STATIC,7,95,40,8
+    EDITTEXT        IDC_EDIT_Command2,69,93,20,14,ES_AUTOHSCROLL
+    LTEXT           "Command 3",IDC_STATIC,7,112,40,8
+    EDITTEXT        IDC_EDIT_Command3,69,110,20,14,ES_AUTOHSCROLL
+    LTEXT           "(2 BYTES)",IDC_STATIC,113,27,34,8
+END
+
+IDD_AT88SC_CMD DIALOG DISCARDABLE  0, 0, 251, 184
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AT88SC COMMAND"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "SMC COMMAND",IDC_BUTTON_SMC_COMMAND,7,7,85,14
+    LTEXT           "Read Data Length",IDC_STATIC,7,34,59,8
+    EDITTEXT        IDC_EDIT_ReadDataLength,73,32,30,14,ES_AUTOHSCROLL
+    LTEXT           "Send Data",IDC_STATIC,7,86,35,8
+    EDITTEXT        IDC_EDIT_SendData,51,84,193,14,ES_AUTOHSCROLL
+    LTEXT           "Get Data",IDC_STATIC,7,108,29,8
+    EDITTEXT        IDC_EDIT_GetData,51,106,193,14,ES_AUTOHSCROLL
+    LTEXT           "(2 HEX BYTES)",IDC_STATIC,108,35,50,8
+END
+
+IDD_Inphone_CMD DIALOG DISCARDABLE  0, 0, 329, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Inphone Card vender COMMAND"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "INPHONE_CARD_RESET",IDC_BUTTON_INPHONE_CARD_RESET,7,18,
+                    140,14
+    PUSHBUTTON      "INPHONE_CARD_Read",IDC_BUTTON_INPHONE_CARD_Read,7,48,
+                    140,14
+    PUSHBUTTON      "INPHONE_CARD_PROG",IDC_BUTTON_INPHONE_CARD_PROG,7,66,
+                    140,14
+    PUSHBUTTON      "INPHONE_CARD_MOVE_ADDRESS",
+                    IDC_BUTTON_INPHONE_CARD_MOVE_ADDRESS,7,84,140,14
+    PUSHBUTTON      "INPHONE_CARD_AUTHENTICATION_KEY1",
+                    IDC_BUTTONINPHONE_CARD_AUTHENTICATION_KEY1,7,103,140,14
+    PUSHBUTTON      "INPHONE_CARD_AUTHENTICATION_KEY2",
+                    IDC_BUTTON_INPHONE_CARD_AUTHENTICATION_KEY2,7,122,140,14
+    LTEXT           "Card Response",IDC_STATIC,7,145,51,8
+    EDITTEXT        IDC_EDIT_CardResponse,7,155,315,14,ES_AUTOHSCROLL
+    LTEXT           "Length (2 Hex Bytes)",IDC_STATIC,159,37,69,8
+    EDITTEXT        IDC_EDIT_INPHONE_CARD_Read,171,48,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPHONE_CARD_PROG,171,66,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPHONE_CARD_MOVE_ADDRESS,171,84,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPHONE_CARD_AUTHENTICATION_KEY1,171,104,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INPHONE_CARD_AUTHENTICATION_KEY2,171,123,40,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "Send Data",IDC_STATIC,227,106,35,8
+    LTEXT           "Send Data",IDC_STATIC,227,123,35,8
+    EDITTEXT        IDC_EDIT_Key1_SendData,264,104,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Key2_SendData,264,122,54,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "9525COMAP Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "9525COMAP\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "9525COMAP.EXE\0"
+            VALUE "ProductName", "9525COMAP 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MY9525COMAP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 416
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 444
+    END
+
+    IDD_SLE4428, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 330
+    END
+
+    IDD_SLE4442, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_AT45D041, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 294
+    END
+
+    IDD_LCM_KEYPAD_EEPROM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 329
+    END
+
+    IDD_AT88SC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_AT24C, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_SLE4442_CMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_AT88SC_CMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_Inphone_CMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MY9525COMAP_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_TestLabel, 0x376, 80, 0
+0x0000, 0x0000, 0x0200, 0x0024, 0x002b, 0x0000, 0x0000, 0x0000, 0xe9ec, 
+0x00d8, 0x000a, 0x8000, 0x6554, 0x7473, 0x4c20, 0x6261, 0x6c65, 0xe001, 
+0x2673, 0x0000, 0x02b0, 0x0000, 0x0200, 0x0020, 0x00f7, 0x0000, 0x0006, 
+0x8000, 0x0001, 0x4000, 0x00f0, 0x0000, 0x2288, 0x0003, 0x02bc, 0x0000, 
+0x7953, 0x7473, 0x6d65, 0x0000, 
+    IDC_NewChip, 0x376, 72, 0
+0x0000, 0x0000, 0x0200, 0x0020, 0x002b, 0x0000, 0x0000, 0x0000, 0xe9ec, 
+0x00d8, 0x0008, 0x8000, 0x654e, 0x2077, 0x6843, 0x7069, 0x0a21, 0x0000, 
+0x02b0, 0x0000, 0x0200, 0x001c, 0x00b7, 0x0000, 0x0006, 0x8000, 0x0001, 
+0x4000, 0x00f0, 0x0000, 0x2288, 0x02bc, 0x7953, 0x7473, 0x6d65, 0x7069, 
+
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 9525COMAP(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\9525COMAP.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

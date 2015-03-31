@@ -1,0 +1,99 @@
+; Jujo.inf
+; version 1.12c
+; Copyright (c) 2002-2003 Jujo
+
+[Version]
+Signature="$WINDOWs NT$"
+Class=SmartCardReader
+ClassGuid={50DD5230-BA8A-11D1-BF5D-0000F805F530}
+provider=%MFGNAME%
+CatalogFile=Jujo.cat
+DriverVer=10/11/2001,1.0.1.2
+
+[ControlFlags]
+Excludefromselect=USB\VID_6A75&PID_8008
+Excludefromselect=USB\VID_058f&PID_9510
+
+[Manufacturer]
+%MFGNAME%=DeviceList
+
+[DestinationDirs]
+DriverCopyFiles = 10,System32\Drivers
+SMCLIB.CopyFiles = 10,System32\Drivers
+DefaultDestDir = 10,System32\Drivers
+
+[SourceDisksFiles]
+;Jujo.sys=1
+;Jujo.cat=1
+;Jujo.inf=1
+;smclib.sys=1
+
+[SourceDisksNames]
+1=%INSTDISK%,,,
+
+[DeviceList]
+%USB\VID_6A75&PID_8008.DeviceDesc%=DriverInstall,USB\VID_6A75&PID_8008
+%USB\VID_6A75&PID_8008.DeviceDesc%=DriverInstall,USB\VID_058f&PID_9510
+
+
+;------------------------------------------------------------------------------
+;  Windows 2000 / WINDOWS XP Installation
+;------------------------------------------------------------------------------
+
+[DriverInstall.NT]
+CopyFiles=DriverCopyFiles
+
+[DriverCopyFiles]
+;Jujo.sys,,,2
+
+[DriverInstall.NT.Services]
+Addservice = Jujo, 2, DriverService,EventLogging
+
+[DriverService]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\Jujoxp.sys
+
+[EventLogging]
+AddReg=EventLogAddReg
+
+[EventLogAddReg]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\system32\drivers\Jujoxp.sys"
+HKR,,TypesSupported,0x00010001,7
+
+[DriverInstall.nt.hw]
+AddReg=DriverHwAddReg
+
+[DriverHwAddReg]
+;HKR,,Parameters,,"MaximumTransferSize",0x10001,4096
+;HKR,,Parameters,,"DebugLevel",0x10001,2
+
+;------------------------------------------------------------------------------
+;  Windows 98 Installation
+;------------------------------------------------------------------------------
+[DriverInstall]
+AddReg=DriverAddReg,SMCLIB.AddReg
+CopyFiles=DriverCopyFiles,SMCLIB.CopyFiles
+
+[SMCLIB.CopyFiles]
+smclib.sys
+
+[DriverAddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,Jujoxp.sys
+
+[DriverInstall.hw]
+AddReg=DriverHwAddReg
+
+[SMCLIB.AddReg]
+HKR,,DevLoader,,*NTKERN
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+MFGNAME="Jujo Electronics Co., Ltd"
+USB\VID_6A75&PID_8008.DeviceDesc="Jujo Electronics Smart Card Reader"
+INSTDISK="Installation Disc for Jujo Usb Reader"

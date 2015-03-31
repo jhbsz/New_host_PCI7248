@@ -1,0 +1,134 @@
+;
+; GenerDVB.INF  -- This file contains installation information for GenerDVB,
+;                
+;               
+;                 Copyright (c) 2005 
+;
+;
+
+[Version]
+signature="$CHICAGO$"
+Class=Media
+ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
+CatalogFile=GenerDVB.cat
+DriverVer=09/01/2005,1.3.7
+Provider=%DeviceMfg%
+
+[ControlFlags]
+;ExcludeFromSelect=*
+
+[Manufacturer]
+%DeviceMfg%=DeviceList
+
+[DestinationDirs]
+GenerDVB.CopyDrivers=10,system32\drivers
+DefaultDestDirs=10,system32\drivers
+
+[SourceDiskNames]
+1="Install disk",disk1
+
+
+[DeviceList]
+%GenerDVB.DeviceDesc%=GenerDVB.Device,USB\VID_058F&PID_6610
+
+[GenerDVB.Device]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration
+AddReg=     GenerDVB.AddReg
+CopyFiles=  GenerDVB.CopyDrivers
+KnownFiles= GenerDVB.KnownFiles
+
+[GenerDVB.Device.NT]
+Include=    ks.inf, kscaptur.inf, ksfilter.inf
+Needs=      KS.Registration,KSCAPTUR.Registration.NT
+AddReg=     GenerDVB.AddReg
+CopyFiles=  GenerDVB.CopyDrivers
+
+[GenerDVB.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,GenerDVB.sys
+HKR,,PageOutWhenUnopened,3,01
+HKR,,DontSuspendIfStreamsAreRunning,3,01
+
+[GenerDVB.CopyDrivers]
+GenerDVB.sys
+AlTunner.sys
+;stream.sys
+
+[GenerDVB.KnownFiles]
+GenerDVB.sys=safe
+
+[GenerDVB.Device.Interfaces]
+AddInterface={65e8773d-8f56-11d0-a3b9-00a0c9223196},"GLOBAL",VideoCapture,
+AddInterface={6994AD05-93EF-11D0-A3CC-00A0C9223196},"GLOBAL",VideoCapture,
+AddInterface={a799a800-a46d-11d0-a18c-00a02401dcd4},"GLOBAL",VideoTvTuner,
+
+[GenerDVB.Device.NT.Interfaces]
+AddInterface={65e8773d-8f56-11d0-a3b9-00a0c9223196},"GLOBAL",VideoCapture,
+AddInterface={6994AD05-93EF-11D0-A3CC-00A0C9223196},"GLOBAL",VideoCapture,
+AddInterface={a799a800-a46d-11d0-a18c-00a02401dcd4},"GLOBAL",VideoTvTuner,
+
+[VideoCapture]
+AddReg=VideoCapture.AddReg
+
+[VideoTvTuner]
+AddReg=VideoTvTuner.AddReg
+
+
+
+[VideoCapture.AddReg]
+HKR,,CLSID,,{17CCA71B-ECD7-11D0-B908-00A0C9223196}
+HKR,,FriendlyName,,%GenerDVB.Capture%
+; IAMVideoCompression installed as static interface on both output pins
+HKR,PinFactory\0\Interfaces\{C6E13343-30AC-11d0-A18C-00A0C9118956},,,{C6E13343-30AC-11d0-A18C-00A0C9118956}
+HKR,PinFactory\1\Interfaces\{C6E13343-30AC-11d0-A18C-00A0C9118956},,,{C6E13343-30AC-11d0-A18C-00A0C9118956}
+
+
+[VideoTvTuner.AddReg]
+HKR,,CLSID,,{266EEE40-6C63-11cf-8A03-00AA006ECB65}
+HKR,,FriendlyName,,%GenerDVB.TvTuner%
+    
+
+[GenerDVB.Device.NT.Services]
+AddService = GENERDVB,0x00000003,GenerDVB.ServiceInstall
+
+[GenerDVB.ServiceInstall]
+DisplayName   = %GenerDVB.DeviceDesc%
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\GenerDVB.sys
+
+[SourceDisksFiles]
+GenerDVB.sys = 1
+
+[SourceDisksNames]
+1=%INSTDISK%,,,
+
+;---------------------------------------------------------------
+;                S t r i n g s
+;---------------------------------------------------------------
+
+[Strings]
+
+;----------------
+; Non-Localizable
+;----------------
+
+SERVICE_KERNEL_DRIVER=1
+SERVICE_AUTO_START=2
+SERVICE_ERROR_NORMAL=1
+SERVICE_DEMAND_START=3
+INSTDISK="Installation Disc for USB DVB-T Driver"
+
+
+;----------------
+; Localizable
+;----------------
+
+DeviceMfg=           "GenericDVBT"
+GenerDVB.DeviceDesc= "USB DVB-T TV"
+GenerDVB.Capture=    "USB Digital TV Capture"
+GenerDVB.TvTuner=    "USB DVB-T TV Tuner"
+
+

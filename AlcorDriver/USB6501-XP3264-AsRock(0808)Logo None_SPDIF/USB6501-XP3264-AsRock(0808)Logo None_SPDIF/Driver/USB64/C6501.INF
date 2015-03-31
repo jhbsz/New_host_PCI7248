@@ -1,0 +1,303 @@
+; Copyright 1999-2006, C-Media Inc.
+
+[Version]
+Signature="$CHICAGO$"
+Class=MEDIA
+ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
+provider=%ProviderName%
+LayoutFile=layout.inf, layout1.inf, layout2.inf
+DriverVer=09/13/2006,5.12.08.1606
+CatalogFile=c6501.cat
+
+[SourceDisksNames]
+1=%DiskDescription%,,,
+
+[SourceDisksFiles]
+c6501.sys=1
+c6501p.dll=1
+c6501a3d.dll=1
+c6501.cpl=1
+c6501rm.exe=1
+c6501rm.dll=1
+c650164.sys=1
+c650164.cpl=1
+c6501rm64.exe=1
+c6501rm64.dll=1
+cmPaput.dll=1
+
+[Manufacturer]
+%MfgName%=C-Media,NTamd64
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[C-Media]
+;;;USB Product
+%CMIUSB.DeviceDesc%=USB6501,	USB\VID_0D8C&PID_0201&MI_00
+
+[C-Media.NTamd64]
+%CMIUSB.DeviceDesc%=USB6501X64,	USB\VID_0D8C&PID_0201&MI_00
+
+[UDA.Interface.Wave]
+AddReg=UDA.I.Wave.AddReg
+
+[UDA.I.Wave.AddReg]
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,FriendlyName,,%C6501.Wave.szPname%
+
+[UDA.Interface.Topology]
+AddReg=UDA.I.Topo.AddReg
+
+[UDA.I.Topo.AddReg]
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,FriendlyName,,%C6501.Topology.szPname%
+
+[C6501.DelReg]
+HKR,Settings
+
+[C6501.AddReg]
+HKR,,SetupPreferredAudioDevices,3,01,00,00,00
+HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
+HKR,,Driver,,c6501.sys
+HKR,,NTMPDriver,,"c6501.sys,sbemul.sys"
+HKR,Drivers,SubClasses,,"wave,midi,mixer"
+HKR,Drivers\wave\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\midi\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\mixer\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\wave\wdmaud.drv,Description,,%C6501.DeviceDesc%
+HKR,Drivers\midi\wdmaud.drv, Description,,%C6501.DeviceDesc%
+HKR,Drivers\mixer\wdmaud.drv,Description,,%C6501.DeviceDesc%
+
+[C6501Prop.AddReg]
+HKCR,CLSID\%CMAudioProperty_CLSID%,,0,%CMAudioProperty_FriendlyName%
+HKCR,CLSID\%CMAudioProperty_CLSID%\InProcServer32,,0,"%10%\System32\c6501p.dll"
+HKCR,CLSID\%CMAudioProperty_CLSID%\ProgID,,0,%CMAudioProperty_ProgID%
+HKCR,CLSID\%CMAudioProperty_CLSID%\VersionIndependentProgID,,0,%CMAudioProperty_VersionIndependentProgID%
+HKCR,CMAudioProperty,,0,%CMAudioProperty_FriendlyName%
+HKCR,CMAudioProperty\CLSID,,0,%CMAudioProperty_CLSID%
+HKCR,CMAudioProperty\CurVer,,0,%CMAudioProperty_ProgID%
+HKCR,CMAudioProperty.7,,0,%CMAudioProperty_FriendlyName%
+HKCR,CMAudioProperty.7\CLSID,,0,%CMAudioProperty_CLSID%
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cpls",C6501cpl,,"%10%\System\c6501.cpl"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Run",C6501Sound,,"RunDll32 c6501.cpl,CMICtrlWnd"
+HKLM,%UninstallPath%,DisplayName,,%DiskDescription%
+HKLM,%UninstallPath%,UninstallString,,"%10%\system32\c6501rm.exe"
+
+[C6501Prop64.AddReg]
+HKCR,CLSID\%CMAudioProperty_CLSID%,,0,%CMAudioProperty_FriendlyName%
+HKCR,CLSID\%CMAudioProperty_CLSID%\InProcServer32,,0,"%10%\System32\c6501p.dll"
+HKCR,CLSID\%CMAudioProperty_CLSID%\ProgID,,0,%CMAudioProperty_ProgID%
+HKCR,CLSID\%CMAudioProperty_CLSID%\VersionIndependentProgID,,0,%CMAudioProperty_VersionIndependentProgID%
+HKCR,CMAudioProperty,,0,%CMAudioProperty_FriendlyName%
+HKCR,CMAudioProperty\CLSID,,0,%CMAudioProperty_CLSID%
+HKCR,CMAudioProperty\CurVer,,0,%CMAudioProperty_ProgID%
+HKCR,CMAudioProperty.7,,0,%CMAudioProperty_FriendlyName%
+HKCR,CMAudioProperty.7\CLSID,,0,%CMAudioProperty_CLSID%
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Run",C6501Sound,,"%10%\syswow64\RunDll32.exe %10%\Syswow64\C6501.cpl,CMICtrlWnd"
+HKLM,%UninstallPath%,DisplayName,,%DiskDescription%
+HKLM,%UninstallPath%,UninstallString,,"%10%\syswow64\c6501rm.exe"
+
+[Audio3D.AddReg]
+HKCR,Audio3D,,0,Audio3DObject
+HKCR,Audio3D\CLSID,,0,%Audio3D_CLSID%
+HKCR,CLSID\%Audio3D_CLSID%,,0,Audio3DObject
+HKCR,CLSID\%Audio3D_CLSID%\InProcServer32,,0,c6501a3d.dll
+HKCR,CLSID\%Audio3D_CLSID%\InProcServer32,ThreadingModel,0,Apartment
+HKCU,"Software\Sensaura\Audio3D\Settings","SplashScreen",65537,0,0,0,0
+
+[UDA_NAMES.AddReg]
+HKLM,%MediaCategories%\%UDAGUID.PhoneVolume%,Name,,%UDANode.PhoneVolume%
+HKLM,%MediaCategories%\%UDAGUID.PhoneVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.PhoneMute%,Name,,%UDANode.PhoneMute%
+HKLM,%MediaCategories%\%UDAGUID.PhoneMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.MonoOutSelect%,Name,,%UDANode.MonoOutSelect%
+HKLM,%MediaCategories%\%UDAGUID.MonoOutSelect%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.Spdif%,Name,,%UDANode.Spdif%
+HKLM,%MediaCategories%\%UDAGUID.Spdif%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.Video%,Name,,%UDANode.Video%
+HKLM,%MediaCategories%\%UDAGUID.Video%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.StereoMix%,Name,,%UDANode.StereoMix%
+HKLM,%MediaCategories%\%UDAGUID.StereoMix%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.Aux%,Name,,%UDANode.Aux%
+HKLM,%MediaCategories%\%UDAGUID.Aux%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.AuxPhone%,Name,,%UDANode.AuxPhone%
+HKLM,%MediaCategories%\%UDAGUID.AuxPhone%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.AuxTV%,Name,,%UDANode.AuxTV%
+HKLM,%MediaCategories%\%UDAGUID.AuxTV%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.AuxTVIn%,Name,,%UDANode.AuxTVIn%
+HKLM,%MediaCategories%\%UDAGUID.AuxTVIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.MonoIn%,Name,,%UDANode.MonoIn%
+HKLM,%MediaCategories%\%UDAGUID.MonoIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.PcBeep%,Name,,%UDANode.PcBeep%
+HKLM,%MediaCategories%\%UDAGUID.PcBeep%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.SpdifValid%,Name,,%UDANode.SpdifValid%
+HKLM,%MediaCategories%\%UDAGUID.SpdifValid%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.WaveRecord%,Name,,%UDANode.WaveRecord%
+HKLM,%MediaCategories%\%UDAGUID.WaveRecord%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.LineIn1%,Name,,%UDANode.LineIn1%
+HKLM,%MediaCategories%\%UDAGUID.LineIn1%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%UDAGUID.LineIn2%,Name,,%UDANode.LineIn2%
+HKLM,%MediaCategories%\%UDAGUID.LineIn2%,Display,1,00,00,00,00
+
+[DestinationDirs]
+C6501.CopyList     	= 10,system32\drivers
+C6501Prop.CopyList 	= 10,system32
+C3D.CopyList       	= 10,system
+Audio3D.CopyList   	= 11
+C650164.CopyList     	= 10,system32\drivers
+C6501Prop64.CopyList 	= 10,system32
+C3D64.CopyList       	= 10,syswow64
+Audio3D64.CopyList   	= 11
+DefaultDestDir     	= 11
+
+[C6501.CopyList]
+c6501.sys
+
+[C6501Prop.CopyList]
+c6501p.dll
+c6501rm.dll
+c6501rm.exe
+
+[C3D.CopyList]
+c6501.cpl
+
+[Audio3D.CopyList]
+a3d.dll,c6501a3d.dll,,0x00000010
+c6501a3d.dll
+
+[C650164.CopyList]
+c6501.sys,c650164.sys,,0x00000004
+
+[C6501Prop64.CopyList]
+c6501p.dll
+
+[C3D64.CopyList]
+cmpaput.dll
+c6501.cpl,c650164.cpl,,0x00000004
+c6501rm.dll,c6501rm64.dll,,0x00000004
+c6501rm.exe,c6501rm64.exe,,0x00000004
+
+[Audio3D64.CopyList]
+a3d.dll,c6501a3d.dll,,0x00000010
+c6501a3d.dll
+;;================= Windows NT ====================
+
+;;============================================================================
+;; 6501
+;;============================================================================
+[USB6501.NTX86]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration,WDMAUDIO.Registration
+CopyFiles=C6501.CopyList, C6501Prop.CopyList, C3D.CopyList, Audio3D.CopyList
+DelReg=C6501.DelReg
+AddReg=C6501.AddReg, C6501Prop.AddReg, Audio3D.AddReg, UDA_NAMES.AddReg
+
+[USB6501.NTX86.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,UDA.Interface.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave%,UDA.Interface.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave%,UDA.Interface.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topology%,UDA.Interface.Topology
+
+[USB6501.NTX86.Services]
+AddService = c65013264, 0x00000002, C6501_Service_Inst
+
+[C6501_Service_Inst]
+DisplayName   = %C6501.SvcDesc%
+ServiceType   = 1                  ; SERVICE_KERNEL_DRIVER
+StartType     = 3                  ; SERVICE_DEMAND_START
+ErrorControl  = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary = %10%\system32\drivers\c6501.sys
+
+[USB6501X64]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration,WDMAUDIO.Registration
+CopyFiles=C650164.CopyList, C6501Prop64.CopyList, C3D64.CopyList, Audio3D64.CopyList
+DelReg=C6501.DelReg
+AddReg=C6501.AddReg, C6501Prop64.AddReg, Audio3D.AddReg, UDA_NAMES.AddReg
+
+[USB6501X64.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,UDA.Interface.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave%,UDA.Interface.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave%,UDA.Interface.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topology%,UDA.Interface.Topology
+
+[USB6501X64.Services]
+AddService = c65013264, 0x00000002, C6501X64_Service_Inst
+
+[C6501X64_Service_Inst]
+DisplayName   = %C6501.SvcDesc%
+ServiceType   = 1                  ; SERVICE_KERNEL_DRIVER
+StartType     = 3                  ; SERVICE_DEMAND_START
+ErrorControl  = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary = %10%\system32\drivers\c6501.sys
+
+[USB6501X64.NTAMD64.HW.AddReg]
+HKR,,DeviceType,0x10001,0x0000001D
+HKR,,Security,,"D:P(A;;GA;;;SY)(A;;GRGWGX;;;BA)(A;;GRGWGX;;;WD)(A;;GRGWGX;;;RC)"
+
+[Strings]
+ProviderName="C-Media Inc."
+MfgName="C-Media"
+DiskDescription="C-Media CM6501 Like Sound Driver"
+C6501.DeviceDesc="C-Media CM6501 Like WDM Sound Device"
+C6501.Wave.szPname="C-Media CM6501 Like Sound Device"
+C6501.Topology.szPname="C-Media CM6501 Like Mixer Device"
+C6501.SvcDesc = "C-Media CM6501 Like Sound UDAX Interface"
+
+CMIUSB.DeviceDesc="C-Media CM6501 Like Sound Device"
+
+MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
+UninstallPath="Software\Microsoft\Windows\CurrentVersion\Uninstall\C-Media C6501 Like Sound Driver"
+
+Proxy.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
+KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_TOPOLOGY="{DDA54A40-1E4C-11D1-A050-405705C10000}"
+KSNAME_Wave="AA_Wave"
+KSNAME_Topology="AA_Topology"
+
+CMAudioProperty_CLSID="{39F2F765-47FA-43e9-8DFE-7097C3A61BFB}"
+CMAudioProperty_FriendlyName="C-Media C6501 Property Component"
+CMAudioProperty_ProgID="CMAudioPropertyCOM 8.2"
+CMAudioProperty_VersionIndependentProgID="CMUSB6501PropertyCOM"
+
+;; Nodes (non-localizeable)
+UDAGUID.PhoneVolume     ="{0A8C1A87-42B0-11D2-95D2-00C04FB925D3}"
+UDAGUID.PhoneMute       ="{0A8C1A88-42B0-11D2-95D2-00C04FB925D3}"
+UDAGUID.MonoOutSelect   ="{0A8C1AA9-42B0-11D2-95D2-00C04FB925D3}"
+UDAGUID.Spdif           ="{5AEA5794-AA8A-4aaf-AB8B-4854C97B5D90}"
+UDAGUID.Video           ="{32E06BEE-BD20-48b8-9552-E5240EAF05BC}"
+UDAGUID.StereoMix       ="{3EC8502B-5D89-4d2d-A78A-FF45CA18A3B7}"
+UDAGUID.Aux             ="{AF24C5CC-A32D-479f-9FFB-BFD00E135BA9}"
+UDAGUID.AuxPhone        ="{1A607E05-8C29-43B0-8E60-FB24D266EAE8}"
+UDAGUID.AuxTV           ="{03F29A9B-45E6-48BF-A8DC-D8FDDE4A2FA0}"
+UDAGUID.AuxTVIn         ="{7D7B8C3E-79EF-4109-99B5-C3A603E90C66}"
+UDAGUID.MonoIn          ="{51C53816-3407-4BA0-8B4D-B4FCADC65A54}"
+UDAGUID.PcBeep          ="{697e35a2-97c8-42d1-a138-2de6a64a8bc3}"
+UDAGUID.SpdifValid      ="{D0DF1519-7207-4135-9EFD-934061113FFA}"
+UDAGUID.WaveRecord      ="{209A9FAC-0A88-4ec9-AEF4-84C01BD5477F}"
+UDAGUID.LineIn1         ="{3a8fe731-da60-4bd7-ad6f-7e16e40c8a84}"
+UDAGUID.LineIn2         ="{3b5c45cb-2e4c-4a64-8bf3-5f648ce235d6}"
+UDAGUID.InputMonitor    ="{E23E291E-1B5B-4657-B046-0190383ABCA1}"
+
+;; Nodes (localizeable)
+UDANode.PhoneVolume     ="Phone Volume"
+UDANode.PhoneMute       ="Phone Mute"
+UDANode.MonoOutSelect   ="Mono Out Select"
+UDANode.Spdif           ="SPDIF In"
+UDANode.Video           ="TV Tuner Audio"
+UDANode.StereoMix       ="Stereo Mix"
+UDANode.Aux             ="Aux"
+UDANode.AuxPhone        ="Aux/Phone"
+UDANode.AuxTV           ="Aux/TV"
+UDANode.AuxTVIn         ="Aux/TV in"
+UDANode.MonoIn          ="Mono In"
+UDANode.PcBeep          ="PC Beep"
+UDANode.SpdifValid      ="Validity Check"
+UDANode.WaveRecord      ="Wave"
+UDANode.LineIn1         ="Front Line-In"
+UDANode.LineIn2         ="Front Line-In 2"
+UDANode.InputMonitor    ="Monitoring"
+
+Audio3D_CLSID="{D8F1EEE0-F634-11CF-8700-00A0245D918B}"

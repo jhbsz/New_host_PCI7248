@@ -1,0 +1,87 @@
+Error Code 	Definition
+-----------------------------------------------------------------------------------
+
+0x0E		RESET_ERROR
+0x1E		TOO_MANY_BAD_BLOCK        
+0x2E		CIS_ERROR
+0x3E		RW_ERROR
+0x4E		MBR_ERROR
+0xAE		CHECK_BOOT_ERROR
+0xBE		READ_CAPACITY_ERROR   
+0xCE		GET_FLASH_ID_ERROR
+0xDE		UNKWONW_FLASH_ERROR
+0xFE		CHANNEL_MODE_ERROR
+0x01FE		SET_CHANNEL_MODE_ERROR
+0x02FE		SUPPORT_CHANNEL_ERROR
+0x03FE		MISS_DAT_ERROR
+0x04FE		GET_BLOCK0_ERROR
+0x05FE		GET_RENBLOCK0_ERROR
+0x06FE		ERASE_CMD_ERROR
+0x07FE		ERASE_BLOCK0_ERROR
+0x08FE		MISS_BIN_ERROR
+0x09FE		WRITE_SCRIPT_ERROR
+0x0AFE		READ_SCRIPT_ERROR
+0x0BFE		READ_BINARY_FILE_ERROR
+0x0CFE		WRITE_BINARY_ERROR
+0x0DFE		READ_BINARY_ERROR
+0x0EFE		WRITE_FW_ERROR
+0x0FFE		READ_BLK_ADDRESS_ERROR
+0x1FFE		COMPARE_BLK_ADDRESS_ERROR
+0x2FFE		COMPARE_SCRIPT_ERROR
+0x3FFE		READ_FLASHCODE_ERROR
+0x4FFE		COMPARE_FLASHCODE_ERROR
+0x5FFE		LOAD_FWCODE_ERROR
+0x6FFE		INITIAL_FW_ERROR
+0x7FFE		BINARY_CORRUPT_ERROR
+0x8FFE		CHECK_DUALDIE_ERROR
+0x9FFE		WRONG_FLASH_ERROR
+0xAFFE		WRONG_MINIMUM_BADBLOCK
+0xBFFE		INITIAL_SIZE_ERROR        
+0xE0		MODE_ERROR
+0xE1		DEFAULT_SIZE_ERROR
+0xE2		PASSWORD_ERROR
+0xE3		PASSWORD_1M_ERROR
+0xE4		FLASH_SIZE_ERROR
+0xE5		BOOT_SECTOR_ERROR
+0xE6		FAT_ERROR
+0xE7		ROOT_SECTOR_ERROR
+0xE8		WRITE_LOADER_ERROR
+0xE9		WRITE_RESERVE_ERROR
+0xEA		LOADER_SIZE_ERROR
+0xEB		CHECK_CONFIG_ERROR
+0xEC		CHECK_LOADER_ERROR
+0xED		CHECK_RESERVE_ERROR                                
+0xEE		WRITE_FILE_ERROR
+0xEF		BAD_BLOCK_ERROR
+0xFF		GET_HANDLE_ERROR
+0xE300		PHY_WRITE
+0xE301		PHY_READ
+0xE302		COMPARE_CONFIG_ERROR
+0xE303		COMPARE_FIRMWARE_ERROR
+0xE305		COMPARE_BADBLOCKTABLE_ERROR
+0xE306		NO_AVAILABLE_FIRMWARE_BLOBK
+
+-----------------------------------------------------------------------------------
+
+FAT Error		Fail to Make FAT (Check Bad Block Limit)
+Reset Error		Can't do the reset action
+Write Protect		Device is hardware write protected
+USB Write Fail		SCSI Write Command Fail (Check Bad Block Limit)
+Set Config Fail		Set configuration Command fail
+Get Config Fail		Get Configuration fail
+Flash Size Error	The reserve size is conflict with actual Flash size
+Copy Files Error	The copy files action fail
+Boot Sector Error	Can't boot sector
+Root Sector Error	Can't root sector
+Loader Size Error	The loader Size is conflict with actual Flash size
+Check Config Fail	Check Configuration fail 
+Check Loader Fail	Get back to check loader size fail
+Write Loader Fail	Can't write the loader size
+Check Reserve Fail	Get back to check the reserve size fail 
+Set Partition Fail	Set partition fail
+Read Capacity Fail	Read Capacity Vendor Command Fail
+Write Reserve Fail	Can't write the reserve size
+Too Many Bad Blocks	The Bad Blocks is too many
+Erase Password Fail	Fail to Erase Password
+Get Chip Number Fail	Get Chip Number Vendor Command Fail
+Select Function Fail	Select Function Vendor Command Fail

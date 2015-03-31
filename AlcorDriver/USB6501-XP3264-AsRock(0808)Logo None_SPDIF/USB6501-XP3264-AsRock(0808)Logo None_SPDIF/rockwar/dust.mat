@@ -1,0 +1,11 @@
+mat
+version 3.00
+valid ambient diffuse specular shininess emission alpha
+
+matdef White // id 0
+ambient 1.000000 1.000000 1.000000
+diffuse 1.000000 1.000000 1.000000
+specular 0.000000 0.000000 0.000000
+shininess 5.000000
+emission 1.000000 1.000000 1.000000
+alpha 1.000000

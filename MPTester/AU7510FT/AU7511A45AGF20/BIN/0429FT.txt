@@ -1,0 +1,16 @@
+20090322
+86_D1_K9F.bin			0x04      add support GPIO test (command 0x55)
+SSD_31_K9LBGU1M_RAM.bin	0xFA      for SSD_RAM
+SSD_HOSTfunc_RAM.bin		0xF4      add support GPIO test (command 0x55)
+J_F2_SSD_RAM.bin			0xF3      add support GPIO test (command 0x55)	
+
+
+Host    HOST_RAM_MAJOR_VERSION 0x10
+        HOST_RAM_MINOR_VERSION 0xF2
+
+UFD     RAM_MAJOR_VERSION 	0xFF
+        RAM_MINOR_VERSION 	0x02
+
+EX_Rom  ROM_MAJOR_VERSION 'J';
+	    ROM_MINOR_VERSION 0xF2;
+//JF2 add support test write protect pin(command 0xAF) and check DPram(command 0xAE)

@@ -1,0 +1,158 @@
+;----------------------------------------------------------------------------
+[Version]
+Signature="$WINDOWS NT$"
+Class	  = MTD
+ClassGuid = {4D36E970-E325-11CE-BFC1-08002BE10318}
+Provider=%VENDOR%
+CatalogFile=AmPeStor.cat
+DriverVer=12/06/2012,1.0.09.17
+
+;----------------------------------------------------------------------------
+;   CopyFile Sections
+;----------------------------------------------------------------------------
+[SourceDisksFiles]
+AmPeStor.sys = 1
+AmPeStor.dll = 1
+AmPeStor.ini = 1
+AmRdrIco.icl = 1
+
+[SourceDisksNames.x86]
+1 = %DISK_NAME%
+
+[SourceDisksNames.amd64]
+1 = %DISK_NAME%
+
+[SourceDisksNames.ia64]
+1 = %DISK_NAME%
+
+
+[DestinationDirs]
+CopyFilesSYS = 10, system32\drivers
+CopyFilesCoInstall = 11
+CopyFilesIniIcon   = 11
+
+
+;----------------------------------------------------------------------------
+;   Manufacturer and Product Information
+;----------------------------------------------------------------------------
+[Manufacturer]
+%VENDOR%=DeviceList, NTx86
+
+[DeviceList]
+; For Win2K
+%AMPCIECR% = DriverInstall, PCI\VEN_1aea&DEV_6601
+
+
+[DeviceList.NTx86]
+; For XP and later
+%AMPCIECR% = DriverInstall, PCI\VEN_1aea&DEV_6601
+
+
+;----------------------------------------------------------------------------
+;--------------------------------------
+; NTx86
+[DriverInstall.NTx86]
+CopyFiles=CopyFilesSYS
+
+[DriverInstall.NTx86.CoInstallers]
+CopyFiles = CopyFilesCoInstall, CopyFilesIniIcon
+AddReg = CoInstallersAddReg
+
+;--------------------------------------
+; NTia64
+[DriverInstall.NTia64]
+CopyFiles=CopyFilesSYS
+
+[DriverInstall.NTia64.CoInstallers]
+CopyFiles = CopyFilesCoInstall, CopyFilesIniIcon
+AddReg = CoInstallersAddReg
+
+;--------------------------------------
+; NTamd64
+[DriverInstall.NTamd64]
+CopyFiles=CopyFilesSYS
+
+[DriverInstall.NTamd64.CoInstallers]
+CopyFiles = CopyFilesCoInstall, CopyFilesIniIcon
+AddReg = CoInstallersAddReg
+
+;--------------------------------------
+[CopyFilesSYS]
+AmPeStor.sys
+
+[CopyFilesCoInstall]
+AmPeStor.dll
+
+[CopyFilesIniIcon]
+AmPeStor.ini
+AmRdrIco.icl
+
+
+[CoInstallersAddReg]
+HKR,,CoInstallers32,0x00010000,"AmPeStor.dll, CoInstallerProc"
+
+
+;----------------------------------------------------------------------------
+; Hardware Key
+;----------------------------------------------------------------------------
+[DriverInstall.NTx86.HW]
+AddReg = MsiInterruptConfig
+
+[DriverInstall.NTia64.HW]
+AddReg = MsiInterruptConfig
+
+[DriverInstall.NTamd.HW]
+AddReg = MsiInterruptConfig
+
+[MsiInterruptConfig]
+HKR, "Interrupt Management",,0x00000010
+HKR, "Interrupt Management\MessageSignaledInterruptProperties",,0x00000010
+HKR, "Interrupt Management\MessageSignaledInterruptProperties", "MSISupported", 0x00010001, 1
+
+
+;----------------------------------------------------------------------------
+;   Serives Key
+;----------------------------------------------------------------------------
+[DriverInstall.NTx86.Services]
+Addservice = AmPeStor, 0x00000002, DriverService
+
+[DriverInstall.NTia64.Services]
+Addservice = AmPeStor, 0x00000002, DriverService
+
+[DriverInstall.NTamd64.Services]
+Addservice = AmPeStor, 0x00000002, DriverService
+
+[DriverService]
+DisplayName    = %SERVICE_NAME%
+ServiceType    = %SERVICE_TYPE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %10%\system32\drivers\AmPeStor.sys
+
+;----------------------------------------------------------------------------
+;   String Definitions
+;----------------------------------------------------------------------------
+[Strings]
+DISK_NAME    = "Alcor Micro PCIE Storage Driver Source Disk"
+VENDOR       = "Alcor Micro, Corp."
+AMPCIECR     = "Alcor Micro PCIE Card Reader"
+SERVICE_NAME = "Alcor Micro PCIE Card Reader Driver"
+
+SERVICE_TYPE_KERNEL_DRIVER  = 0x1
+
+SERVICE_BOOT_START     = 0x0
+SERVICE_SYSTEM_START   = 0x1
+SERVICE_AUTO_START     = 0x2
+SERVICE_DEMAND_START   = 0x3
+SERVICE_DISABLED       = 0x4
+
+SERVICE_ERROR_IGNORE   = 0x0
+SERVICE_ERROR_NORMAL   = 0x1
+SERVICE_ERROR_SEVERE   = 0x2
+SERVICE_ERROR_CRITICAL = 0x3
+
+REG_EXPAND_SZ          = 0x00020000
+REG_DWORD              = 0x00010001
+REG_MULTI_SZ           = 0x00010000
+REG_BINARY             = 0x00000001
+REG_SZ                 = 0x00000000

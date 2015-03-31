@@ -1,0 +1,14 @@
+:Base Rebooter.hlp
+:Title Rebooter
+1 Introduction and Overview=HID_OVERVIEW
+1 Reboot and Restart types=HID_REBOOTTYPES
+1 Forcing a reboot=HID_FORCETYPES
+1 Command line options=HID_COMMANDLINE
+1 Auto-run applications=HID_AUTORUN
+1 Auto-login to Windows=HID_AUTOLOGIN
+1 Reboot cycling and looping=HID_CYCLE
+1 What's new=HID_WHATS_NEW
+1 Problems and FAQ=HID_FAQ
+1 System requirements=HID_SYSTEMREQ
+1 Contacting PassMark Software=HID_CONTACTS
+1 Copyright and License=HID_COPYRIGHT
